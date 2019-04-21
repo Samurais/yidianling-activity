@@ -1,0 +1,205 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import {DataStatistics, onlineService} from '../../../../component/semComponent';
+import Wechat from '../../../../component/wechat';
+
+import apiTest from '../../servers/test';
+
+class Page extends Component {
+
+  constructor(props) {
+
+    super(props);
+
+    this.wechatData = this.props.data.wechat;
+
+    this.t1list = [
+      { "face": "/src/images/activity/love/wanhui/p-1-lyf.jpg", "t1": "刘老师", "t2": "从业7年", "t3": "2749" },
+      { "face": "/src/images/activity/love/wanhui/p-1-wpj.jpg", "t1": "王老师", "t2": "从业6年", "t3": "3385" },
+      { "face": "/src/images/activity/love/wanhui/p-1-yhy.jpg", "t1": "于老师", "t2": "从业14年", "t3": "6378" },
+      { "face": "/src/images/activity/love/wanhui/p-1-yln.jpg", "t1": "袁老师", "t2": "从业10年", "t3": "2712" },
+    ];
+
+    this.t2list = [
+      { "face": "/src/images/activity/love/wanhui/p-2-wj.jpg", "t1": "黄老师", "t2": "从业6年", "t3": "1608" },
+      { "face": "/src/images/activity/love/wanhui/p-2-lzz.jpg", "t1": "刘老师", "t2": "从业4年", "t3": "1167" },
+      { "face": "/src/images/activity/love/wanhui/p-2-lmy.jpg", "t1": "陆老师", "t2": "从业7年", "t3": "3056" },
+      { "face": "/src/images/activity/love/wanhui/p-2-zyy.jpg", "t1": "周老师", "t2": "从业8年", "t3": "2541" },
+    ];
+
+    this.t3list = [
+      { "face": "/src/images/activity/love/wanhui/p-3-dxh.jpg", "t1": "邓老师", "t2": "从业13年", "t3": "4047" },
+      { "face": "/src/images/activity/love/wanhui/p-3-wlh.jpg", "t1": "刘老师", "t2": "从业13年", "t3": "2917" },
+    ];
+
+    this.t4list = [
+      { "face": "/src/images/activity/love/wanhui/p-5-la.jpg", "t1": "蓝老师", "t2": "从业13年", "t3": "7320" },
+      { "face": "/src/images/activity/love/wanhui/p-5-yhh.jpg", "t1": "余老师", "t2": "从业14年", "t3": "6070" },
+    ];
+
+    this.t5list = [
+      { "face": "/src/images/activity/love/wanhui/p-4-sbb.jpg", "t1": "桑老师", "t2": "从业4年", "t3": "1042" },
+      { "face": "/src/images/activity/love/wanhui/p-4-zyl.jpg", "t1": "赵老师", "t2": "从业2年", "t3": "925" },
+    ];
+  }
+
+  componentDidMount(){
+    $(function(){
+      DataStatistics();
+      onlineService();
+      $("img.lazy").lazyload();
+    });
+  }
+
+  getHTML(item, index){
+    return (
+      <li className="item" key={index}>
+        <dl>
+          <dt>
+            <img data-original={item.face} src="/src/images/lazy-1.png" className="lazy" />
+            <div className="text t1">
+              <span className="sp1">{item.t1}</span>
+              <span className="sp2">{item.t2}</span>
+            </div>
+          </dt>
+          <dd>
+            <div className="text t2">
+              <span className="sp3">成功案例</span>
+              <span className="sp4"><em>{item.t3}</em>个</span>
+            </div>
+            <a href="javascript:" className="btn js_kf">立即咨询</a>
+          </dd>
+        </dl>
+      </li>
+    )
+  }
+
+  render() {
+    return (
+      <div>
+
+        <Wechat {...this.wechatData} />
+
+        <div className="page-love-wanhui-20181130">
+          <div className="pic">
+            <a href="" className="js_kf">
+              <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/p1.png" className="lazy" />
+              <img src="/src/images/activity/love/wanhui/p2.png" />
+              <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/p3.png" className="lazy" />
+            </a>
+
+            {/* 婚姻家庭 */}
+            <div className="data1">
+              <div className="pic title">
+                <img  src="/src/images/lazy-1.png"  data-original="/src/images/activity/love/wanhui/t1.png" className="lazy" />
+              </div>
+
+              <div className="list">
+                <ul>
+                  {this.t1list.map((item, index) => (
+                    this.getHTML(item, index)
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* 挽回婚姻 */}
+            <div className="data2">
+              <div className="pic title">
+                <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/t2.png" className="lazy" />
+              </div>
+
+              <div className="list">
+                <ul>
+                  {this.t2list.map((item, index) => (
+                    this.getHTML(item, index)
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* 分离第三者 */}
+            <div className="data3">
+              <div className="pic title">
+                <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/t3.png" className="lazy" />
+              </div>
+
+              <div className="list">
+                <ul>
+                  {this.t3list.map((item, index) => (
+                    this.getHTML(item, index)
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* 两性问题 */}
+            <div className="data4">
+              <div className="pic title">
+                <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/t5.png" className="lazy" />
+              </div>
+
+              <div className="list">
+                <ul>
+                  {this.t4list.map((item, index) => (
+                    this.getHTML(item, index)
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* 挽回爱情 */}
+            <div className="data5">
+              <div className="pic title">
+                <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/t4.png" className="lazy" />
+              </div>
+
+              <div className="list">
+                <ul>
+                  {this.t5list.map((item, index) => (
+                    this.getHTML(item, index)
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="pic title">
+              <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/t6.png" className="lazy" />
+            </div>
+            <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/p4.png" className="lazy" />
+            <div className="control pic">
+              <a href="javascript:" className="js_kf"><img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/btn.png" className="lazy" /></a>
+            </div>
+            <img src="/src/images/lazy-1.png" data-original="/src/images/activity/love/wanhui/p5.png" className="lazy" />
+          </div>
+
+          <div className="ft">
+            <div className="link">
+              <a href="javascript:" className="a1 js_kf"></a>
+              <a href="javascript:" className="a2 js_kf"></a>
+              <a href="javascript:" className="a3 js_kf"></a>
+              <a href="javascript:" className="a4 js_kf_phone"></a>
+              <a href="javascript:" className="a5 js_kf"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
+const mapStateToProps = (state) => {
+	return {
+		data: state.data,
+	}
+}
+
+Page = connect(mapStateToProps)(Page);
+
+Page.propTypes = {
+  data: PropTypes.string
+}
+
+export default Page;
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="keywords" content="好柿网，致力于打造中国最专业的情感婚姻服务平台，已覆盖上海，北京，深圳，杭州，广州等城市，24小时提供免费在线咨询服务和专业咨询，帮助需要情感婚姻咨询的客户梳理婚姻修复、分手挽回、家庭关系指导、亲子教育、法律援助等问题。">
+  <link rel="icon" href="//static.ydlcdn.com/v1/images/favicon.hs.ico" />
+  <link rel="shortcut icon" href="//static.ydlcdn.com/v1/images/favicon.hs.ico" />
+  <link rel="stylesheet" href="css/baidu.css">
+  <title>好柿网-最专业的情感服务平台</title>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?4446f7fa4186990430cb61ee85ce0d00";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  //  rem单位的转换
+  document.documentElement.style.fontSize = window.innerWidth/3.75 + 'px';
+  window.onresize = function(){
+      document.documentElement.style.fontSize = window.innerWidth/3.75 + 'px';
+  }
+</script>
+</head>
+ <body touchstart>
+    <div class="logo-fix">
+   	  <img src="images/logo-new.png" class="logo" />
+      <h1 class="title">情感问题专家</h1>
+      <p class="desc">一对一解决情感烦恼</p>
+    </div>
+    <img src="images/bottom-bg.jpg" class="bottom-pic">
+    <img src="images/bottom-text.png" class="bottom-text">
+    <div class="bottom-btn">
+    	<a href='#' class="online kf_haoshi">在线咨询</a>
+    	<a class="dl">下载APP</a>
+    </div>
+  </body>
+  <script src="//static.ydlcdn.com/global/js/jquery-1.11.2.min.js"></script>
+<script src="//static.ydlcdn.com/v4/common/service_online_system/index.js"></script>
+  <script type="text/javascript">
+    window.onload = function(){
+      var _height = $('.bottom-pic').height()
+      var w_height = $(window).height()
+      var obj_height = $('.logo-fix').height()
+      var target_top = (w_height - _height - obj_height) / 2
+      $('.logo-fix').css('top', target_top)
+      $(window).resize(function(){
+        var _height = $('.bottom-pic').height()
+        var w_height = $(window).height()
+        var obj_height = $('.logo-fix').height()
+        var target_top = (w_height - _height - obj_height) / 2
+        $('.logo-fix').css('top', target_top)
+      })
+    }
+    $('.bottom-btn a').on('touchstart',function(){
+      $(this).addClass('active')
+    })
+    $('.bottom-btn a').on('touchend',function(){
+      $(this).removeClass('active')
+    })
+    $('.bottom-btn a.dl').on('touchstart',function(){
+      $(this).addClass('active')
+      var down_link = checkDevice();
+      window.location.href = down_link;
+    })
+    $('.bottom-btn a.dl').on('touchend',function(){
+      $(this).removeClass('active')
+    })
+    function checkDevice(){
+      if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+          var down_link = 'https://itunes.apple.com/us/app/好柿-您的情感咨询专家与幸福导师/id1208422193?mt=8';
+      } else{
+          var down_link = '//a.app.qq.com/o/simple.jsp?pkgname=com.cxzapp.yidianling_atk8';
+      };
+      return down_link;
+    }
+
+  </script>
+</html>

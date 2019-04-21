@@ -1,0 +1,268 @@
+@import '~@/styles/base/var.scss';
+
+.page-proxy-bd-zt{ width: n(750); margin:0 auto; background:#f9f9f9;
+  .tip-top{ width:100%; height: n(100); box-sizing: border-box; padding:n(22) n(30); background: #fff; overflow: hidden;
+    .logo{ float: left; width: n(168); height: n(56);
+      background:url($imgPath+'/activity/m/zonghe/top-logo.png') no-repeat;
+      background-size: cover;
+    }
+    .user{ float: right; width: n(120); padding:n(8) 0;
+      a{ width: n(44); height: n(44);
+        &.login{ float: left;
+          background:url($imgPath+'/activity/m/zonghe/tip-top-ico-login.png') no-repeat;
+          background-size: cover;
+        }
+        &.contact{ float: right;
+          background:url($imgPath+'/activity/m/zonghe/tip-top-ico-wx.png') no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .header{
+    .poster{ width: n(750); height: n(400);
+      background:url($imgPath+'/activity/m/zonghe/top-bg.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .enter{ width: n(690); height: n(268); background: #fff; border-radius: n(12); margin:n(-40) auto 0 auto;
+    box-shadow: 0 0 n(30) rgba(0,0,0,.1);
+    .list{ margin:0 n(20); padding-top:n(40);
+      li{ width: n(96); height: n(145); display: inline-block; margin:0 n(33);
+        a{ display: block; width: n(96); height: n(96); border-radius: 50%; background: red;
+          @for $i from 1 through 4
+          {
+            &.i-#{$i}
+            {
+              background:url($imgPath+'/activity/m/zonghe/i-#{$i}.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        p{ margin-top:n(12); text-align: center; font-size: n(22); color: #444;}
+      }
+    }
+
+    .sign{ width:n(620); height: n(42); margin:n(20) auto 0 auto; font-size: n(20);
+      background:url($imgPath+'/activity/m/zonghe/sign.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .bg-line{ position: relative; padding-bottom:n(26);
+    &::after{ display: block; content: ""; width:100%; height: n(160); left: 0; bottom: 0;
+      position: absolute;
+      background: linear-gradient(#f9f9f9, #f5f5f5);
+    }
+  }
+
+
+  .banner{ width: n(690); height: n(144); margin:n(34) auto 0 auto; position: relative; z-index: 2;
+    a{ width: n(336); height: n(144); border-radius: n(12);
+      &.b-1{ float: left;
+        background:url($imgPath+'/activity/m/zonghe/b-1.png') no-repeat;
+        background-size: cover;
+      }
+      &.b-2{ float: right;
+        background:url($imgPath+'/activity/m/zonghe/b-2.png') no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  .zmd{ width: n(690); height: n(44); margin: n(26) auto 0 auto; border-radius: n(22); position: relative; z-index: 2;
+    background: #fff; box-sizing: border-box; padding:0 n(28);
+    border: n(2) solid rgba(240,240,240,1); position: relative;
+    .status{ float: left; color: #999; line-height: n(44); font-size: n(22);}
+    .zmd-list{ width: n(460); position: absolute; right: n(28); top: 0; text-align: right;
+      height: n(44); line-height: n(44); overflow: hidden;
+      li{ width: n(460); height: n(44); line-height: n(44); font-size: n(20);
+        color: #999;
+        em{ color: #FF5B05; margin: 0 n(10); font-size: n(20);}
+      }
+    }
+  }
+
+  .content{ background: #fff; margin:0 auto 0 auto; width: n(750); padding-bottom:n(160);
+    min-height: n(600); padding-top:n(20);
+    .content-tabs{background: #ffffff; position:relative; margin-top: n(-1)}
+    .list{ width: n(690); height: n(148); margin:0 auto; padding-top: n(40); box-sizing: content-box;
+      padding-bottom: n(40); border-bottom: 1px solid #f0f0f0; overflow: hidden;position: relative;
+      &:last-child{ border-bottom: 0;}
+      .online-chat{position: absolute;width: n(52);height: n(52);
+                  background:url($imgPath+'/activity/m/zonghe/dialog.png') no-repeat;
+                  background-size: cover;
+        top:n(50); right: n(10);
+      }
+      dl{ height: n(148);
+        dt{ float: left; width: n(148); height: n(148); position: relative;
+          border-radius: n(10);
+          img{ width: n(148); height: n(148); position: relative; z-index: 1; border-radius: n(10);}
+          span{ display: block; width: n(72); height: n(40); color: #fff;
+            font-size: n(20); line-height: n(40); text-align: center;
+            background: rgba(29,161,242,.9);
+            position: absolute; left: n(-13); top:n(-8); border-radius: n(10) 0 n(10) 0; z-index: 2;
+            transform: scale(.6);
+          }
+        }
+        dd{ margin-left:n(172);width: n(416);
+
+          .user{height: n(42);line-height: n(42);justify-content: space-between; margin-bottom: n(12);display: flex;
+            .name{font-size: n(32); color: #333333;}
+            .position{font-size: n(22); width: n(220);height: n(42); line-height: n(42); overflow: hidden; color: #666666;}
+            i{display: inline-block; margin-left: n(10);display: none;
+              &.boy{
+                width: n(12); height: n(20);
+                background:url($imgPath+'/activity/m/zonghe/boy.png') no-repeat;
+                background-size: cover;
+              }
+              &.girl{
+                width: n(13); height: n(22);
+                background:url($imgPath+'/activity/m/zonghe/girl.png') no-repeat;
+                background-size: cover;
+              }
+            }
+
+          }
+          .sign { height: n(32); line-height: n(32); font-size: n(24); color: #555555; overflow: hidden;
+            margin-bottom: n(16);  text-overflow:ellipsis; white-space: nowrap;
+            span { display: inline-block; padding: 0 n(12); margin-right: n(8); background: #f7f7f7; }
+          }
+          .info{font-size: n(22);display: flex; justify-content: space-between;
+            .price {
+              color: #FF5B05;
+              em {
+                font-weight: bold;
+                font-size: n(36);
+              }
+            }
+            .count{ padding-top: n(16);color: #666666; font-size: n(22);}
+          }
+        }
+      }
+    }
+  }
+
+
+  .footer{ position: fixed; bottom: 0; width: 100%; height: n(161); box-sizing: border-box;
+   z-index: 9; margin-top:n(-1);
+    .control{ text-align: center; margin-top:n(40);
+      a{ display: inline-block; width: n(360); height: n(80); background: linear-gradient(to left, #1DA1F2, #42C1FF);
+        border-radius: n(40); text-align: center; color: #fff; font-size: n(36); line-height: n(80);
+        box-shadow: 0 n(10) n(30) rgba(29, 161, 242, .35);
+      }
+    }
+
+    .totop{ position: absolute; display: none; width: n(80); height: n(80); right:n(40); top:n(40);
+      background:url($imgPath+'/activity/m/zonghe/backtop.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .am-tabs-default-bar-tab-active{ font-size: n(36); color: #333; font-weight: bold;
+
+  }
+
+  .am-tabs-default-bar-underline{
+    border:2px solid rgba(29,161,242,.8); border-radius: n(4);
+    bottom:n(6);
+    width: n(60) !important;
+    margin-left:n(44);
+  }
+
+  .am-list-footer{
+    div{ font-size: n(24); color: rgba(189,189,189,1);}
+  }
+}
+
+.modal-proxy-bd-zt-contact-wrap{
+  width:n(590); background: none;
+
+  .am-modal-content{ background: none;}
+
+  .modal-proxy-bd-zt-contact{
+    .modal-top{ width: n(590); height: n(248);
+      background:url($imgPath+'/activity/m/zonghe/tip-top-top.png') no-repeat;
+      background-size: cover;
+    }
+
+    .modal-content{ width: n(590); background: #fff; margin-top:n(-2); padding-top:n(50);
+      border-radius: 0 0 n(12) n(12);
+      a{ display: block; width: n(510); height: n(90); margin:0 auto n(30) auto;
+        font-size: n(32); box-sizing: border-box; text-align: center; line-height: n(90);
+        color:#fff; border-radius: n(12);
+        i{ display: inline-block; width: n(36); height: n(36);
+          position: relative; top:n(6); margin-right: n(10);
+        }
+        &.a-1{ background: #1da1f2;
+          i{
+            background:url($imgPath+'/activity/m/zonghe/tip-top-ico-phone.png') no-repeat;
+            background-size: cover;
+          }
+        }
+        &.a-2{ border:n(1) solid #e1e1e1; color: #333;
+          i{
+            background:url($imgPath+'/activity/m/zonghe/tip-top-ico-wechat.png') no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+
+      span{ font-size: n(24); color: #999; display: block; text-align: center; padding: 0 0 n(30) 0;}
+    }
+
+    .modal-control{ margin-top:n(40); text-align: center;
+      a{ display: inline-block; width: n(70); height: n(70);
+        background:url($imgPath+'/activity/m/zonghe/tip-top-close.png') no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.am-tabs-default-bar-tab::after{
+  display: block;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  html:not([data-scale]) .page-proxy-bd-zt .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+    border-bottom: none;
+  }
+  html:not([data-scale]) .page-proxy-bd-zt .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {
+    content: '';
+    position: absolute;
+    background-color: none;
+    display: none;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1PX;
+    transform-origin: 50% 100%;
+    transform: scaleY(0.5);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  html:not([data-scale]) .am-list-body::after {
+    content: '';
+    position: absolute;
+    background-color: #ddd;
+    display: none;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1PX;
+    transform-origin: 50% 100%;
+    transform: scaleY(0.5);
+  }
+
+  @import './mod-banner-top.scss';
+}

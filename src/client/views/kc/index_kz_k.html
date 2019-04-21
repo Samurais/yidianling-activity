@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Title</title>
+    <meta charset="UTF-8">
+
+  <!--<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >-->
+  <!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">-->
+
+  <!--<link rel="stylesheet" href="./css/jquery-weui.css">-->
+  <!--<link rel="stylesheet" href="./css/weui.css">-->
+  <!--<link rel="stylesheet" href="./css/weui_custom.css">-->
+  <link rel="stylesheet" href="./css/kz_kz_k.css">
+  <meta charset="utf-8">
+  <title>壹点灵-心理咨询师考试报名</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+  <meta name="keywords" content="心理咨询师报考条件、2018心理咨询师新政策、心理咨询师考试时间、2018心理咨询师改革、心理学自考、心理学考试、心理咨询师考试、心理咨询师考证、心理咨询师、二级心理咨询师、三级心理咨询师"/>
+  <meta name="description" content="心理咨询师报考条件、2018心理咨询师新政策、心理咨询师考试时间、2018心理咨询师改革、心理学自考、心理学考试、心理咨询师考试、心理咨询师考证、心理咨询师、二级心理咨询师、三级心理咨询师"/>
+  <meta name="renderer" content="webkit">
+  <meta name="HandheldFriendly" content="true">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="icon" href="//static.ydlcdn.com/v1/images/favicon.ico" />
+  <link rel="shortcut icon" href="//static.ydlcdn.com/v1/images/favicon.ico" />
+  <link rel="stylesheet" href="//static1.ydlcdn.com/mobile/css/normalize.css">
+  <link href="//static1.ydlcdn.com/mobile/css/swiper.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/kz_m_2.css?201805111925">
+  <script src="//static1.ydlcdn.com/mobile/js/jquery-2.1.0.min.js"></script>
+</head>
+<style>
+  html{
+    font-size: 100px;
+  }
+.common-wrapper{
+  clear: both;
+
+}
+  .paddB-14{
+    margin-bottom: .6rem;
+  }
+  .common-wrapper .line{
+    background-color: rgb(29,161,242);
+  }
+  .teacher-swiper .swiper-slide .line{
+    background-color: rgb(29,161,242);
+  }
+  .kz_buttom_zezao{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    background: rgba(0,0,0,.6);
+    display: none;
+  }
+  .toast-wrap{
+    opacity: 0;
+    position: fixed;
+    color: #fff;
+    /*width: 100%;*/
+    text-align: center;
+    top: 30%;
+    left: 20%;
+  }
+  .toast-wrap span{
+    width: 230px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    /*line-height: 80px;*/
+    line-height:80px;
+    font-size: 16px;
+
+  }
+  .toast-msg{
+    background-color: rgba(0,0,0,0.7);
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  .toastAnimate{
+    animation: toastKF 2s;
+  }
+  @keyframes toastKF{
+    0% {opacity: 0;}
+    25% {opacity: 1; z-index: 9999}
+    50% {opacity: 1; z-index: 9999}
+    75% {opacity: 1; z-index: 9999}
+    100% {opacity: 0; z-index: 0}
+  }
+  /*.kz_body_buttom1{*/
+    /*width: .27rem;*/
+    /*height: .27rem;*/
+    /*overflow: hidden;*/
+  /*}*/
+  .aa{
+     position: absolute;
+    width: .27rem;
+    height: .27rem;
+    top:0.16rem;
+    left: .16rem;
+  }
+  .aa img{
+    width: 100%;
+  }
+  .kz_body_buttom1{
+    width: 33.3%;
+    position: relative;
+    height: .55rem;
+    float: left;
+  }
+  .kz_body_buttom2{
+    width: 33.3%;
+    position: relative;
+    height: .55rem;float: left;
+  }
+  .kz_body_buttom3{
+    width: 33.3%;
+    position: relative;
+    height: .55rem;float: left;
+  }
+  .kz_body_buttom .p1{
+    position: absolute;
+    font-size: .12rem;
+    color:#fff;
+    top:.16rem;
+    left: .5rem;
+  }
+  .aa-p{
+    position: absolute;
+    top:.31rem;font-size: .12rem;color: #fff;
+    left: .5rem;
+  }
+  .kz_line1{
+    position: absolute;
+    border-right:1px solid #9a9a9a ;
+    height: .27rem;
+    top:.16rem;
+    left: 1.23rem;
+  }
+</style>
+<script>
+  // rem单位的转换
+  document.documentElement.style.fontSize = window.innerWidth/3.75 + 'px';
+  $(window).resize(function(){
+    document.documentElement.style.fontSize = window.innerWidth/3.75 + 'px';
+  });
+</script>
+<body>
+<div class="mian">
+    <div class="header">
+      <a href=""><img src="images/180413kz_m/logo_ico.png" alt=""></a>
+    </div>
+    <div class="kz_body">
+      <div class="kz_body_button">
+        <a href="javascript:void(0)" class="acc">微信质询</a>
+      </div>
+      <div class="kz_body_buttom">
+          <div class="kz_body_buttom1">
+            <div class="aa"><img src="images/qg/icon_xtpx@2x.png" alt=""> </div><p class="p1" >四个月</p><p class="aa-p">系统培训</p>
+            <div class="kz_line1"></div>
+          </div>
+          <div class="kz_body_buttom2">  <div class="aa"><img src="images/qg/icon_mszd@2x.png" alt=""> </div><p class="p1" >中科院</p><p class="aa-p">名师指导</p>
+            <div class="kz_line1"></div></div>
+          <div class="kz_body_buttom3">  <div class="aa"><img src="images/qg/icon_llsj@2x.png" alt=""> </div><p class="p1" >理论实践</p><p class="aa-p">相结合</p>
+           </div>
+      </div>
+    </div>
+    <div class="kz_body_kc">
+        <p class="kz_text_p">心理咨询师认证课程</p>
+        <div class="kz_line"></div>
+        <div class="kz_table">
+          <div class="kz_table-div1">
+          <img src="images/qg/bg1_course@2x.png" alt="" class="kz_img_noe"></div>
+          <div class="kz_table-div2"> <img src="images/qg/bg2_course@2x.png" alt="" class="kz_img_two"></div>
+          <div class="kz_table_text"><p>初级心理咨询师</p><p>认证课程</p></div>
+          <div class="kz_table_text_right"><p>高级心理咨询师</p><p>认证课程</p></div>
+          <div class="kz_table_list">
+            <ul class="kz_table_ul">
+              <li><span>心理概述</span><span>亲子教育咨询</span></li>
+              <li><span>健康心理学</span><span>督导技术</span></li>
+              <li><span>心理测验理论及操作</span><span>个案观摩</span></li>
+              <li><span>心理咨询通用过程</span><span>个案诊断意见及报告</span></li>
+              <li><span>心理咨询理论流派</span><span>催眠疗法</span></li>
+              <li><span>心理咨询技能</span><span>焦点解决技术</span></li>
+              <li><span>心理咨询通服务方式</span><span>后现代心理教练技术</span></li>
+              <li><span>职业道德及伦理</span><span>叙事疗法</span></li>
+              <li><span>心理咨询法律规范</span><span>接纳承若技术(ACT)</span></li>
+              <li><span>咨询礼仪</span><span>个人关系咨询</span></li>
+              <li><span>互联网常识</span><span>团体心理辅导</span></li>
+              <li><span>网络心理咨询</span><span>心理危机干预</span></li>
+            </ul>
+            <div class="kz_table_buttom">
+              <div class="kz_table_buttom_left">
+                <span class="">微信扫一扫 了解更多课程</span>
+              </div>
+              <div class="kz_table_buttom_rigth">
+                <img src="images/qg/ewm_course.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <div class="common-wrapper bg-online">
+    <h3 class="capital c-fff">线上听课+线下小组</h3>
+    <p class="desc">高效便捷学习，同学圈子支持</p>
+    <span class="line"></span>
+    <div class="online-wrapper clearfix">
+      <div class="online-block">
+        <img src="images/180413kz_m/pic1.jpg" />
+        <p class="capital">视频听讲</p>
+        <p class="desc">随时听课多人互动</p>
+      </div>
+      <div class="online-block">
+        <img src="images/180413kz_m/pic2.jpg" />
+        <p class="capital">学习小组</p>
+        <p class="desc">充分讨论和练习</p>
+      </div>
+    </div>
+  </div>
+  <!-- 授课大咖云集 -->
+  <div class="common-wrapper bg-gray paddB-14">
+    <h3 class="capital">授课大咖云集</h3>
+    <span class="line"></span>
+    <div class="swiper-container teacher-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic01.png" class="swiper-lazy">
+          <p class="underline name">杨发辉</p>
+          <span class="line"></span>
+          <p class="desp">北京师范大学副教授、壹点灵顾问督导、ACT认知行为心理治疗师、认证督导师、22部委文件起草人之一</p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic02.png" class="swiper-lazy">
+          <p class="underline name">朱浩亮</p>
+          <span class="line"></span>
+          <p class="desp">中国科学院心理研究所硕士；中央财经大学应用心理学硕士生导师；温州大学教授、硕士生导师</p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic03.png" class="swiper-lazy">
+          <p class="underline name">祝卓宏</p>
+          <span class="line"></span>
+          <p class="desp">中科院心理研究所博士、教授、博士后导师、壹点灵顾问督导、中国心理卫生协会心理师专委会副主任委员</p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic04.png" class="swiper-lazy">
+          <p class="underline name">姜长青</p>
+          <span class="line"></span>
+          <p class="desp">北京安定医院主任医师、心理科主任、壹点灵顾问督导、中国心理卫生协会心理咨询师专业委员会主任 </p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic05.png" class="swiper-lazy">
+          <p class="underline name">郑日昌</p>
+          <span class="line"></span>
+          <p class="desp">北京师范大学教授、博导、壹点灵顾问督导、卫生部心理治疗师考试专委会委员、教育部考试中心研究员</p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic06.png" class="swiper-lazy">
+          <p class="underline name">马建青</p>
+          <span class="line"></span>
+          <p class="desp">浙江大学博士、教授、博士生导师、壹点灵顾问督导、求是特聘学者、心理卫生协会心理师专委会副主任委员 </p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic07.png" class="swiper-lazy">
+          <p class="underline name">史占彪</p>
+          <span class="line"></span>
+          <p class="desp">中科院心理所博士、教授、壹点灵首席专家顾问、壹点灵顾问督导、中科院心理所心理健康促进中心主任</p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic08.png" class="swiper-lazy">
+          <p class="underline name">丁建略</p>
+          <span class="line"></span>
+          <p class="desp">吉林大学副教授、硕士生导师、中国人民大学博士、壹点灵顾问督导、国家心理咨询师高级考评员</p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic09.png" class="swiper-lazy">
+          <p class="underline name">沈健</p>
+          <span class="line"></span>
+          <p class="desp">北华大学教授，硕士生导师，壹点灵顾问督导、中国催眠师大会组委会主席、吉林省心理咨询师协会副会长</p>
+        </div>
+        <div class="swiper-slide">
+          <img data-src="//ts.yidianling.com/kaozheng/images/180226kz/experts_pic010.png" class="swiper-lazy">
+          <p class="underline name">马孟俊</p>
+          <span class="line"></span>
+          <p class="desp">台湾清华大学、宜兰大学讲师、壹点灵顾问督导、美国新泽西州立大学硕士、华南师范大学心理学博士</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="common-wrapper">
+    <h3 class="capital">我们正在寻找这样的你</h3>
+    <span class="line"></span>
+    <div class="find-wrapper clearfix">
+      <img src="images/qg/num_ver.png" class="num-vertical fl" />
+      <div class="find-block fl">
+        <p class="find-text-1">专科以上学历</p>
+        <p class="find-text-2">热爱心理咨询，立志成为专业心理咨询师</p>
+        <p class="find-text-3">已获得国家心理咨询师证书，实践操作经验缺乏者</p>
+        <p class="find-text-4">愿意付出实践和经历，实践成长</p>
+        <p class="find-text-5">开放的心态和足够的耐心</p>
+      </div>
+    </div>
+    <!--<a class="kz-about-btn" href="https://lvt.zoosnet.net/LR/Chatpre.aspx?id=LVT51091364&lng=cn&oname=ydldx099" target="_self" style="background: #1da1f2">立即咨询</a>-->
+  </div>
+  <div class="common-wrapper bg-student">
+    <h3 class="capital c-fff" style="color: #000">学员们这样说</h3>
+    <span class="line bg-ff" style="background:#1da1f2"></span>
+    <div class="student-wrapper">
+      <div class="swiper-container student-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="capital clearfix">31岁，应用心理学硕士<span class="user-head head1"></span></p>
+            <p class="desc">我也考过三级心理咨询师、读过应用心理学硕士，但这次课程的实习让我有机会真正走近有心理帮助需求的人。目前的学习和实习下来，让我真正接触到心理咨询的实践，对接下来的学习也有了更大的期待。</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="capital clearfix">34岁，心理学专业爱好者<span class="user-head head2"></span></p>
+            <p class="desc">以前看过一些这方面的书，对心理学的基础理论了解一部分，但是真的报考以后才发现实践和理论完全是不一样的，有一种理论得到验证的感觉。希望通过后期的学习让我成为一个真正的咨询师。</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="capital clearfix">28岁，大专生<span class="user-head head3"></span></p>
+            <p class="desc">因为自身的一些人际关系一直处理不好，所以抱着尝试的心态学习一下这个课程，但是后来发现真的改变了很多，原来人际中有那么多应该要注意的和应该怎么样处理的诀窍，让我的人际关系得到了很大的改善，也让我的生活得到了很大的帮助。</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="capital clearfix">25岁，研究生在读<span class="user-head head4"></span></p>
+            <p class="desc">错过了国家的心理学考试，但是很幸运的没有错过壹点灵的中级心理咨询师考试，让我真正学会了心理咨询应该怎么做，也让我在学习之余多了一份收入，让我的学习生涯得到了充分的保障。</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 为什么选择壹点灵 -->
+  <div class="common-wrapper">
+    <h3 class="capital">为什么选择壹点灵</h3>
+    <span class="line" style="background:#1da1f2"></span>
+    <div class="reason-item clearfix">
+      <div class="reason-item-ico ico1 fl"></div>
+      <div class="reason-item-info fl">
+        <p class="title">更权威</p>
+        <p class="desc">全国顶尖心理咨询平台，权威大咖督导</p>
+      </div>
+    </div>
+    <div class="reason-item clearfix">
+      <div class="reason-item-ico ico2 fl"></div>
+      <div class="reason-item-info fl">
+        <p class="title">更专业</p>
+        <p class="desc">6000+专业咨询师，100%职业资格认证</p>
+      </div>
+    </div>
+    <div class="reason-item clearfix">
+      <div class="reason-item-ico ico3 fl"></div>
+      <div class="reason-item-info fl">
+        <p class="title">更真实</p>
+        <p class="desc">海量真实咨询案例，平台用户200万</p>
+      </div>
+    </div>
+    <div class="reason-item clearfix">
+      <div class="reason-item-ico ico4 fl"></div>
+      <div class="reason-item-info fl">
+        <p class="title">更有效</p>
+        <p class="desc">付费资讯时长2亿分钟，全面解决心理问题</p>
+      </div>
+    </div>
+    <div class="reason-item clearfix">
+      <div class="reason-item-ico ico5 fl"></div>
+      <div class="reason-item-info fl">
+        <p class="title">更高额</p>
+        <p class="desc">已累计完成上亿咨询收益，平均客单价400+</p>
+      </div>
+    </div>
+    <!--<a class="kz-about-btn" href="https://lvt.zoosnet.net/LR/Chatpre.aspx?id=LVT51091364&lng=cn&oname=ydldx099" target="_self" style="background: #1da1f2">立即咨询</a>-->
+  </div>
+  <!--各大媒体争相报道-->
+  <div class="kz-media">
+    <div class="kz-inner " >
+      <h3 class="kz-title">各大媒体争相报道</h3>
+      <div class="kz-media-list clearfix" >
+        <div class="kz-media-item one fl"><p class="kz-media-text">心理健康助力全面小康。</p></div>
+        <div class="kz-media-item two fr"><p class="kz-media-text">天灾无情人有情，壹点灵赴台风灾区紧急心理...</p></div>
+      </div>
+      <div class="kz-media-list clearfix">
+        <div class="kz-media-item three fl"><p class="kz-media-text">壹点灵：互联网+公益心理咨询=无限可能...</p></div>
+        <div class="kz-media-item four fr"><p class="kz-media-text">心灵花园公益敲门行动在继续 关注弱势青少...</p></div>
+      </div>
+    </div>
+  </div>
+  <!--关于我们-->
+  <div class="kz-about" style="margin-bottom:60px">
+    <div class="kz-inner" >
+      <h3 class="kz-title">关于我们</h3>
+      <div class="kz-about-swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img data-src="//m.hangzhou.yidianling.com/images/index/about03.png" class="swiper-lazy"></div>
+            <div class="swiper-slide"><img data-src="//m.hangzhou.yidianling.com/images/index/about01.png" class="swiper-lazy"></div>
+            <div class="swiper-slide"><img data-src="//m.hangzhou.yidianling.com/images/index/about02.png" class="swiper-lazy"></div>
+            <div class="swiper-slide"><img data-src="//m.love.yidianling.com/images/520/about/4.jpg" class="swiper-lazy"></div>
+            <div class="swiper-slide"><img data-src="//m.love.yidianling.com/images/520/about/5.jpg" class="swiper-lazy"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <p>壹点灵秉承"知心专业，贴心关怀，诚心服务"的理念，力图打造中国最有价值的综合性婚恋服务平台。现有员工300多人，拥有博士、硕士研究生学历者占到10%以上。<br />研发运营团队多来自阿里巴巴、百度、携程、5173等知名互联网公司。汇集了国内外4000多位专家，通过各类成熟的实战经验技巧帮助用户挽救婚姻、劝退第三者、挽回爱情、情感疏导。已经成功挽救了5万多个家庭。</p>
+      <!--<a class="kz-about-btn" href="https://lvt.zoosnet.net/LR/Chatpre.aspx?id=LVT51091364&lng=cn&oname=ydldx099" target="_self"  style="background: #1da1f2">查看详情</a>-->
+    </div>
+  </div>
+  <div class="kz-footer_button" >
+        <a class="kz-footer_a acc"><div class="kz-footer_div">
+          <img src="images/qg/icon_wx@2x.png" alt="">
+        </div><span>微信咨询</span></a>
+  </div>
+  <div class="kz_buttom_zezao">
+      <div class="kz_buttom_z">
+        <div class="kz_buttom_top">
+          <div class="kz_top_img">
+            <img src="images/qg/tx_pop.png" alt="">
+          </div>
+            <div class="kz_top_text">
+              <p class="text_p">课程助理</p>
+              <span class="text_pp">微信号：</span><span id="target">18072868628</span>
+            </div>
+          <div class="kz_top_wx">
+            <img src="images/qg/ewm_pop.png" alt="">
+          </div>
+          <a href="javascript:void(0)" class="kz_top_a Clicka"  id="copy_btn" data-clipboard-action="copy" data-clipboard-target="#target">复制微信号</a>
+        </div>
+        <a class="kz_buttom_bottom">取消</a>
+      </div>
+  </div>
+  <div class="toast-wrap">
+    <span class="toast-msg"></span>
+  </div>
+</div>
+</body>
+<script src="//static.ydlcdn.com/mobile/js/jquery-2.1.0.min.js"></script>
+<script src="//static1.ydlcdn.com/mobile/js/swiper.min.js"></script>
+<script src="//cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+<!--<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>-->
+<!--<script src="//cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>-->
+<script>
+  function copyText() {
+    var text = document.getElementById("text").innerText;
+    var input = document.getElementById("input");
+    input.value = text; // 修改文本框的内容
+    input.select(); // 选中文本
+    document.execCommand("copy"); // 执行浏览器复制命令
+    alert("复制成功");
+  }
+  var mySwiper = new Swiper('.teacher-swiper', {
+    speed: 600,
+    slidesPerView : 1.344,
+    initialSlide :4,
+    spaceBetween : 15,
+    centeredSlides : true,
+    lazyLoading: true,
+    pagination : '.swiper-pagination',
+  })
+  var mySwiper = new Swiper('.student-swiper', {
+    autoplay: 5000,
+    autoplayDisableOnInteraction : false,
+    speed: 600,
+    pagination : '.swiper-pagination',
+    loop: true,
+    onSlideChangeStart: function(swiper){
+      $('.user-head').addClass('opa-0')
+    },
+    onSlideChangeEnd: function(swiper){
+      $('.user-head').removeClass('opa-0')
+    }
+  })
+
+  setTimeout(function(){
+    var about_swiper = new Swiper('.kz-about-swiper .swiper-container', {
+      autoplay: 5000,
+      spaceBetween: 20,
+      pagination: '.kz-about .swiper-pagination',
+      paginationType: 'bullets',
+      paginationClickable: true,
+      slidesPerView: 'auto',
+      loop: true,
+      autoplayDisableOnInteraction: false,
+      lazyLoading : true,
+      centeredSlides: true,
+    })
+  },50)
+$('.acc').click(function(){
+  $('.kz_buttom_zezao').css('display','block');
+  })
+  $('.kz_buttom_bottom').click(function(){
+    $('.kz_buttom_zezao').css('display','none');
+  })
+  function toast(msg){
+    setTimeout(function(){
+      document.getElementsByClassName('toast-wrap')[0].getElementsByClassName('toast-msg')[0].innerHTML=msg;
+      var toastTag = document.getElementsByClassName('toast-wrap')[0];
+      toastTag.className = toastTag.className.replace('toastAnimate','');
+      setTimeout(function(){
+        toastTag.className = toastTag.className + ' toastAnimate';
+      },3300);
+    },100);
+  }
+  $('.Clicka').click(function(){
+    toast('复制成功,请到微信添加课程助理');
+  })
+  $(document).ready(function(){
+    var clipboard = new Clipboard('#copy_btn');
+    clipboard.on('success', function(e) {
+      e.clearSelection();
+      console.log(e.clearSelection);
+    });
+  });
+</script>
+<script src="./js/main.js"></script>
+
+</html>

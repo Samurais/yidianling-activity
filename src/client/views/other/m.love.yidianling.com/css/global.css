@@ -1,0 +1,544 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "PingFang SC","Microsoft Yahei","Helvetica Neue",Helvetica,Arial,PingFang SC,"Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+	font-size: 62.5%;
+	background: #FFFFFF;
+	color: #333333;
+	position: relative;
+	height: 100%;
+	overflow: auto;
+	overflow-y: scroll;
+}
+p,
+ul,
+li{
+	list-style: none;
+	line-height: 1;
+}
+input{
+	outline: none;
+	border: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input::-moz-placeholder{
+	color: gray;
+	font-size: 12px;
+}
+input::-ms-input-placeholder{
+	color: gray;
+	font-size: 12px;
+}
+input::-webkit-input-placeholder{
+	color: gray;
+	font-size: 12px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+select{
+	outline: none;
+}
+textarea{
+	border: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+img{
+	border: 0;
+	border-style: none;
+}
+.clrfloat:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+header{
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 99;
+	background-color: white;
+	border-bottom: solid 1px #F0F0F0;
+	width: 100%;
+	padding: 11.5px 4.667%;
+	height: 58px;
+}
+header .logo{
+	width: 41.73%;
+}
+header .logo img{
+	width: 100%;
+}
+header .desp{
+	font-size: 13px;
+	line-height: 17px;
+	color: #606060;
+	text-align: right;
+}
+
+/********************************common************************************/
+.haoshi{
+	margin-top: 58px;
+	margin-bottom: 65px;
+}
+.haoshi .banner{
+	position: relative;
+	display: block;
+}
+.haoshi .banner .banner-pic{
+	width: 100%;
+	display: block;
+}
+.haoshi .banner .btn{
+	position: absolute;
+	top: 342px;
+	left: 8%;
+	display: block;
+	width: 38.13%;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 22px;
+	background-color: rgb(248, 77, 106);
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.haoshi .banner .sale_point{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.sub{
+	width: 28px;
+	height: 2px;
+	background: rgb(248, 77, 106);
+	margin: 0 auto;
+}
+
+/******************************************落地页A******************************************/
+.haoshi-a{
+	margin-bottom: 65px;
+}
+.haoshi-a .banner{
+	position: relative;
+	display: block;
+}
+.haoshi-a .banner .banner-a{
+	width: 100%;
+	display: block;
+}
+.haoshi-a .banner .logo{
+	position: absolute;
+	top: 20px;
+	left: 23px;
+}
+.haoshi-a .banner .logo img{
+	width: 34.93%;
+}
+.haoshi-a .content01{
+	background: rgb(247, 247, 247);
+	padding: 32px 5.6%;
+}
+.haoshi-a .title{
+	width: 100%;
+	padding-bottom: 20px;
+}
+.haoshi-a .title h1{
+	font-size: 28px;
+	color: rgb(51, 51, 51);
+	padding-bottom: 12px;
+	text-align: center;
+	font-weight: normal;
+	line-height: 28px;
+}
+.haoshi-a .content01 ul li{
+	width: 48.65%;
+	background-color: #FFFFFF;
+	float: left;
+	border-radius: 5px;
+	padding-top: 12px;
+}
+.haoshi-a .content01 ul li:nth-child(1),
+.haoshi-a .content01 ul li:nth-child(3){
+	margin-right: 2.67%;
+}
+.haoshi-a .content01 ul li:nth-child(1),
+.haoshi-a .content01 ul li:nth-child(2){
+	margin-bottom: 10px;
+}
+.haoshi-a .content01 ul li .img{
+	width: 74px;
+	height: 74px;
+	margin: 0 auto;
+}
+.haoshi-a .content01 ul li .img img{
+	width: 100%;
+	height: 100%;
+}
+.haoshi-a .content01 ul li h3{
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 6px
+}
+.haoshi-a .content01 ul li p{
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	line-height: 19px;
+	padding: 0 11.11% 19px;
+	height: 76px;
+}
+.haoshi-a .content02{
+	background-color: #FFFFFF;
+	padding: 32px 0 10px 8.5%;
+}
+.haoshi-a .content02 ul li{
+	margin-bottom: 18px;
+}
+.haoshi-a .content02 ul li .pic{
+	width: 16.88%;
+}
+.haoshi-a .content02 ul li .pic img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.haoshi-a .content02 ul li .text{
+	margin-left: 15px;
+}
+.haoshi-a .content02 ul li .text h3{
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 18px;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+.haoshi-a .content02 ul li .text p{
+	font-size: 14px;
+	color: rgba(50, 51, 51, 0.7);
+	line-height: 14px;
+}
+
+/******************************************落地页B******************************************/
+.haoshi-b .content01{
+	background: rgb(247, 247, 247);
+	padding: 38px 0 25px 5.6%;
+}
+.haoshi-b .content01 ul li{
+	margin-bottom: 17px;
+}
+.haoshi-b .content01 ul li .pic{
+	width: 17.86%;
+}
+.haoshi-b .content01 ul li .pic img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.haoshi-b .content01 ul li .text{
+	margin-left: 15px;
+}
+.haoshi-b .content01 ul li .text h3{
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 18px;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+.haoshi-b .content01 ul li .text p{
+	font-size: 14px;
+	color: rgba(50, 51, 51, 0.7);
+	line-height: 14px;
+}
+.haoshi-b .content02{
+	background-color: #FFFFFF;
+	padding: 40px 4.667% 34px;
+}
+.haoshi-b .content02 .step{
+	width: 100%;
+	padding-top: 8px;
+}
+.haoshi-b .content02 .step img{
+	width: 100%;
+}
+.haoshi-b .title{
+	width: 100%;
+	padding-bottom: 24px;
+}
+.haoshi-b .title h1{
+	font-size: 28px;
+	color: rgb(51, 51, 51);
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: normal;
+	line-height: 28px;
+}
+
+/******************************************落地页C******************************************/
+.haoshi-c .title{
+	width: 100%;
+	padding-bottom: 28px;
+}
+.haoshi-c .title h1{
+	font-size: 28px;
+	color: rgb(51, 51, 51);
+	padding-bottom: 22px;
+	text-align: center;
+	font-weight: normal;
+	line-height: 28px;
+}
+.haoshi-c .content01{
+	background: rgb(247, 247, 247);
+	padding: 60px 5.6% 56px ;
+}
+.haoshi-c .content01 ul li{
+	width: 48.65%;
+	background-color: #FFFFFF;
+	float: left;
+	border-radius: 5px;
+	padding-top: 12px;
+}
+.haoshi-c .content01 ul li:nth-child(1),
+.haoshi-c .content01 ul li:nth-child(3){
+	margin-right: 2.67%;
+}
+.haoshi-c .content01 ul li:nth-child(1),
+.haoshi-c .content01 ul li:nth-child(2){
+	margin-bottom: 10px;
+}
+.haoshi-c .content01 ul li .img{
+	width: 74px;
+	height: 74px;
+	margin: 0 auto;
+}
+.haoshi-c .content01 ul li .img img{
+	width: 100%;
+	height: 100%;
+}
+.haoshi-c .content01 ul li h3{
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 6px
+}
+.haoshi-c .content01 ul li p{
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	line-height: 19px;
+	padding: 0 11.11% 19px;
+	height: 76px;
+}
+
+/******************************************落地页D******************************************/
+.haoshi-d .content01{
+	background: rgb(247, 247, 247);
+	padding: 38px 0 25px 5.6%;
+}
+.haoshi-d .content01 ul li{
+	margin-bottom: 17px;
+}
+.haoshi-d .content01 ul li .pic{
+	width: 17.86%;
+}
+.haoshi-d .content01 ul li .pic img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.haoshi-d .content01 ul li .text{
+	margin-left: 15px;
+}
+.haoshi-d .content01 ul li .text h3{
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 18px;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+.haoshi-d .content01 ul li .text p{
+	font-size: 14px;
+	color: rgba(50, 51, 51, 0.7);
+	line-height: 14px;
+}
+.haoshi-d .content02{
+	background-color: #FFFFFF;
+	padding: 40px 4.667% 34px;
+}
+.haoshi-d .content02 .step{
+	width: 100%;
+	padding-top: 8px;
+}
+.haoshi-d .content02 .step img{
+	width: 100%;
+}
+.haoshi-d .title{
+	width: 100%;
+	padding-bottom: 22px;
+}
+.haoshi-d .title h1{
+	font-size: 28px;
+	color: rgb(51, 51, 51);
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: normal;
+	line-height: 28px;
+}
+
+/******************************************落地页E******************************************/
+.haoshi-e.haoshi{
+	margin-top: 0;
+	background-color: rgb(247, 247, 247);
+}
+.haoshi-e .content01{
+	background: rgb(247, 247, 247);
+	padding: 26px 0 25px;
+}
+.haoshi-e .title{
+	width: 100%;
+}
+.haoshi-e .title h1{
+	font-size: 28px;
+	color: rgb(51, 51, 51);
+	padding-bottom: 14px;
+	text-align: center;
+	font-weight: normal;
+	line-height: 28px;
+}
+.haoshi-e .content01 ul li{
+	float: left;
+	width: 33.33%;
+}
+.haoshi-e .content01 ul li .img{
+	width: 94.8%;
+	margin: 0 auto;
+}
+.haoshi-e .content01 ul li .img img{
+	width: 100%;
+}
+.haoshi-e .content01 ul li h3{
+	text-align: center;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+.haoshi-e .content01 ul li p{
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+}
+
+footer{
+	width: 100%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 99;
+	height: 65px;
+}
+footer a{
+	display: block;
+	text-align: center;
+	line-height: 65px;
+	font-size: 18px;
+}
+footer .tel{
+	height: 65px;
+	width: 35%;
+	background-color: #FFFFFF;
+	padding-left: 5px;
+	border-top: 1px solid #cacaca;
+	color: #999;
+}
+footer .tel .icon_tel img{
+	width: 24px;
+	height: 24px;
+	margin-top: 5px;
+	margin: 20px 4px 0 4px;
+}
+footer .tel span{
+	float: left;
+}
+footer .tel span{
+	float: left;
+}
+footer .online{
+	width: 65%;
+	background-color: #f84d6a;
+	color: #FFFFFF;
+	border-top: 1px solid #f84d6a;
+	font-size: 18px;
+}
+.tel_fixed{
+	position: fixed;
+	bottom: 115px;
+	right: 5px;
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+}
+.tel_fixed a{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 15px;
+}
+.tel_fixed a img{
+	width: 29px;
+	height: 29px;
+	line-height: 58px;
+}
+@media only screen and (max-width: 374px){
+	.haoshi-a .content01 ul li p{
+		font-size: 12px;
+	}
+	.haoshi-a .content02 ul li .text h3{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.haoshi-a .content02 ul li .text p{
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.haoshi-b .content01 ul li .text h3{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.haoshi-b .content01 ul li .text p{
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.haoshi-c .content01 ul li p{
+		font-size: 12px;
+	}
+	.haoshi-d .content01 ul li .text h3{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.haoshi-d .content01 ul li .text p{
+		font-size: 12px;
+		line-height: 12px;
+	}
+	footer a{
+		font-size: 16px;
+	}
+	footer .online{
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,65 @@
+.page-m-shanghai{
+  .new-bottom{
+    z-index: 1000;
+    margin:0 auto; width: n(750);height: n(120);
+    position:fixed;bottom:0;left:0;right:0;
+    margin:0 auto;
+    display: flex;
+    align-items:center;
+    .left_button{
+      .tel-box{
+        width:n(360);
+        height:n(120);
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        // background:linear-gradient(90deg,#ffb142 0%,#ff8f58 100%);
+        background-image: linear-gradient(90deg, #FFAF45 0%, #FF8E57 100%);
+        img{
+          width: n(48);
+          height: n(48);
+          margin-right:n(16);
+        }
+        span{
+          font-size:n(40);
+          font-family: PingFangSC-Medium;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          line-height:n(40);
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    .vertical-line{
+      display:block;
+      width:1px;
+      height:n(74);
+      background:rgba(255,255,255,.5);
+      border-radius:n(3);
+    }
+    .right_button{
+      .tel-box{
+        width:n(390);
+        height:n(120);
+        background:#FB3A4D;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        img{
+          width: n(48);
+          height: n(48);
+          margin-right:n(16);
+        }
+        span{
+          font-size:n(40);
+          font-family: PingFangSC-Medium;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          line-height:n(40);
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}

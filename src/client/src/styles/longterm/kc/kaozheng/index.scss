@@ -1,0 +1,30 @@
+
+.page-longterm-kc-kaozheng{ width: 100%; max-width: n(750); margin:0 auto; padding-bottom: n(120);
+  background: #EFF0F6; overflow: hidden;
+  position: relative;
+
+  .item{ width: 100%; font-size: 0;
+    img{ display: block; width: 100%;}
+  }
+
+  .p-footer{ width: 100%; max-width: n(750); height: n(120); font-size: 0;
+    position: fixed; bottom: 0; z-index: 2;
+    img{ width: 100%;}
+    a{ display: block; width: 100%; height: 100%;}
+  }
+
+  .p-swiper{
+    .swiper-container{ width: n(670); overflow: inherit;
+
+      li{
+        .item-pic{ width: n(640); font-size: 0;
+          box-shadow: 0 0 n(30) rgba(0,0,0,.1);
+          img{ width: 100%;}
+        }
+      }
+
+      .swiper-pagination{ bottom:n(0);}
+      .swiper-pagination-bullet-active{ background: #1da1f2;}
+    }
+  }
+}

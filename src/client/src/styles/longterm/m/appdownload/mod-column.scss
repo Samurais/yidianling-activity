@@ -1,0 +1,21 @@
+
+  .mod-column{ width: n(706); margin: n(26) auto 0;
+    .item{ display: inline-block; width: n(160); height: n(156);
+      margin:0 n(8); position: relative; border-radius: n(8);
+      box-shadow: 0 n(6) n(10) rgba(0,0,0,.04);
+
+      img{ display: block; width: 100%; height: 100%; position: absolute;
+        left: 0; top: 0; z-index: 1;
+      }
+
+      .info{ position: relative; z-index: 2;
+        i{ display: block; position: absolute; left: 0; top: 0;
+          background:url($imgPathLongterm+'/appdownload/column-hot.png') no-repeat;
+          background-size: cover; width: n(56); height: n(28);
+        }
+
+        strong{ display:block; font-size: n(32); padding-top:n(40); margin-left: n(16); color: #000;}
+        span{ display: block; margin-left: n(16); color: #444; font-size: n(24); font-weight: 300;}
+      }
+    }
+  }

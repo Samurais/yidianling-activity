@@ -1,0 +1,222 @@
+@import '~@/styles/base/var.scss';
+
+.page-proxy-bd-yy{ background: #fff; width: n(750); margin:0 auto; padding-bottom:n(140); overflow: hidden;
+
+  .control{ text-align: center;
+    .btn{
+      width:n(690); border-radius: n(12); height: n(92); line-height: n(92); font-size: n(32);
+      color:#fff; background: #1DA1F2; margin-top:n(30); display: inline-block;
+      &.yellow{ background: #FF9542;}
+    }
+
+    &.mt{ margin-top:n(20);}
+    &.mtbg{ margin-top:n(26);}
+  }
+
+  h3{ font-size: n(44); color:#333;
+    text-align: center; padding:n(68) 0 n(52) 0;
+
+    &.cor1{ color: #fff;}
+  }
+
+  .header{
+    .top{ width: 100%; height: n(108); padding:n(24) n(30); box-sizing: border-box;
+      .logo{ float: left; width: n(168); height: n(56);
+        background:url($imgPath+'/activity/m/biaodan/top-logo.png') no-repeat;
+        background-size: cover;
+      }
+
+      .phone{ float: right; width: n(352); height: n(60);
+        background:url($imgPath+'/activity/m/biaodan/top-phone.png') no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .banner{ width: n(750); height: n(360);
+      background:url($imgPath+'/activity/m/biaodan/top-banner.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    .title{ width: n(690); height: n(120); margin:n(-20) auto 0 auto; border-radius: n(12);
+      box-shadow: 0 0 n(30) rgba(0,0,0,.1);
+      background:url($imgPath+'/activity/m/biaodan/top-title.png') no-repeat;
+      background-size: 100% auto;
+    }
+  }
+
+  .obtain{ margin-top:n(30); background: #fff;
+    h3{ padding-top:n(44); font-size: n(44); color:#333; text-align: center;
+      em{ color: #FF9542; font-size: n(60);}
+      padding-bottom:0;
+    }
+    p{ font-size: n(30); color: #242424; text-align: center;}
+    .form{ text-align: center;
+      input{ width: n(690); height: n(96); line-height: 100%; font-size: n(32);
+        box-sizing: border-box;
+        padding: 0; border: 1px solid #666; background:none;
+        padding-left: n(30); margin-top:n(40); border-radius: n(12);
+      }
+    }
+  }
+
+  .intro{ width: n(690); padding-bottom: n(40); margin:0 auto; margin-top:n(60);
+    box-shadow: 0 0 n(30) rgba(0,0,0,.1); border-radius: n(12);
+
+    .banner{ width: n(690); height: n(296);
+      background:url($imgPath+'/activity/m/biaodan/banner2.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    .list{ margin:0 n(40);
+      dl{ height: n(96); margin-top:n(40);
+        dt{ float: left; width: n(96); height: n(96);
+          @for $i from 1 through 4
+          {
+            &.i-#{$i}
+            {
+              background:url($imgPath+'/activity/m/biaodan/i-#{$i}.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+
+        dd{ margin-left:n(130);
+          strong{ color: #333; font-size: n(30);}
+          p{ color: #666; font-size: n(24); margin-top:n(5);}
+        }
+      }
+    }
+  }
+
+  .fuwu{ width:n(750); padding:0 0 n(60) 0; margin-top:n(60);
+    background:url($imgPath+'/activity/m/biaodan/bg.jpg') repeat;
+    background-size: 100% auto;
+
+    .list{ padding:0 n(15); margin-top:n(-30);
+      dl{ display: inline-block; width: n(330); height: n(436); margin:n(30) n(15) 0 n(15);
+        background: #fff; border-radius: n(12); overflow: hidden;
+        dt{ width: n(330); height: n(260);
+          @for $i from 1 through 4
+          {
+            &.p-#{$i}
+            {
+              background:url($imgPath+'/activity/m/biaodan/p-#{$i}.jpg') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+
+        dd{ padding:n(28) n(20);
+          strong{ color: #333; font-size: n(30);}
+          p{ color: #666; font-size: n(24); margin-top:n(5);}
+        }
+      }
+    }
+  }
+
+  .comment{ padding-bottom: n(60);
+
+    .poster{ width: n(670); height: n(670); position: relative; z-index: 2; margin:0 auto;
+
+      ul{
+        li{ width: n(670); height: n(670);
+          @for $i from 1 through 5
+          {
+            .t-#{$i}
+            { width: n(640); height: n(650); margin:0 auto; border-radius: n(12); box-shadow: 0 0 n(30) rgba(0,0,0,.1);
+              background:url($imgPath+'/activity/m/biaodan/t-#{$i}.jpg') no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+      }
+
+      .swiper-pagination{ bottom: n(-30);}
+    }
+  }
+
+  .team{ background: #f7f7f7; padding-bottom: n(60);
+    .poster{ width: n(670); height: n(800); position: relative; z-index: 2; margin:0 auto;
+
+      ul{
+        li{ width: n(670); height: n(800);
+          dl{ width: n(640); height: n(780); padding-top:n(60); border-radius: n(12);
+            background: #fff; margin:0 auto; box-shadow: 0 0 n(30) rgba(0,0,0,.1);
+            box-sizing: border-box;
+
+            dt{ width: n(280); height: n(280); margin:0 auto; border:n(16) solid #f5f5f5; border-radius: 50%;
+              @for $i from 1 through 5
+              {
+                &.face-#{$i}
+                {
+                  background:url($imgPath+'/activity/m/biaodan/face-#{$i}.jpg') no-repeat;
+                  background-size: 100% auto;
+                }
+              }
+            }
+
+            dd{ padding:0 n(60);
+              h6{ height: n(140); line-height: n(140); font-size: n(44); text-align: center; color: #333;}
+              p{ font-size: n(30); color: #666;}
+            }
+          }
+        }
+      }
+
+      .swiper-pagination{ bottom: n(-30);}
+    }
+  }
+
+  .aboutus{ padding-bottom:n(60);
+    .banner{ width: n(750); height: n(360);
+      background:url($imgPath+'/activity/m/biaodan/banner3.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    ul{ width: n(670); margin: 0 auto;
+      li{ margin-top:n(60);
+        h5{ color: #333; font-size: n(34);}
+        p{ color: #666; font-size: n(30);}
+      }
+    }
+  }
+
+  .footer{ height: n(140); width: n(750); box-sizing:border-box; padding:0 n(15); position: fixed; bottom: 0;
+    border-top:n(1) solid #e0e0e0; z-index: 999; background: #fff;
+
+    a{ display: inline-block; width: n(330); height: n(88); border-radius: n(44); padding-left:n(40);
+      text-align: center; line-height: n(44); color: #fff; font-size: n(34); margin:n(26) n(15) 0 n(15);
+      line-height: n(88); box-sizing:border-box;
+
+      &.btn1{ color: #1DA1F2; border:n(1) solid #1DA1F2;
+        background: #E8F5FD url($imgPath+'/activity/m/biaodan/ico-f-1.png') no-repeat n(50) n(24);
+        background-size: n(38);
+      }
+      &.btn2{ color: #fff;
+        border:n(1) solid #1DA1F2;
+        background: #1DA1F2 url($imgPath+'/activity/m/biaodan/ico-f-2.png') no-repeat n(50) n(24);
+        background-size: n(38);
+      }
+    }
+  }
+
+  .swiper-container{ overflow: inherit;}
+  .swiper-pagination-bullet{ background: rgba(0,0,0,.2);
+    &.swiper-pagination-bullet-active{
+      background: rgba(0,0,0,.4);
+    }
+  }
+}
+
+.modal-proxy-bd-yy{ text-align: center;
+  .top{ width: 100%; height: n(200);
+    background: #1DA1F2 url($imgPath+'/activity/m/biaodan/dialog.jpg') no-repeat;
+    background-size: cover;
+  }
+  h1{ font-size: n(44); margin-top:n(20); color: #3d3d3d;}
+  p{ color: #3d3d3d; font-size: n(30);}
+  a{ margin:n(30) 0 n(50) 0; display: inline-block; width: n(280); height: n(76); border-radius: n(38);
+    color: #fff; font-size: n(30); line-height: n(76); background: #1DA1F2;
+  }
+}
+

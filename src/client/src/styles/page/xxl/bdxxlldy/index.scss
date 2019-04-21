@@ -1,0 +1,214 @@
+@import '~@/styles/base/var.scss';
+
+body{background: #1C608C 100%}
+
+.page-bdxxlldy{ max-width: n(750); margin:0 auto;
+  .header{width:n(750);height: n(692);background:url($imgPath+'/xxl/bdxxlldy/banner.png') no-repeat;
+    background-size: cover;
+  }
+  .header_text{width: n(641);height: n(472);margin: 0 auto;text-align: center;position: relative}
+  .header_text p{font-size: n(30);
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: n(56);
+    color: #fff;
+  }
+  .header_img1{
+    position: absolute;
+    top:n(0);
+    left: n(0);
+    width: n(31);
+    height: n(30);
+  }
+  .header_img2{
+    position: absolute;
+    bottom:n(0);
+    right: n(0);
+    width: n(31);
+    height: n(30);
+  }
+  .bdxxlldy_hongbao{
+    width: n(690);
+    height: n(306);
+    background: url($imgPath+'/xxl/bdxxlldy/hong21.png')no-repeat;
+    background-size: cover;
+    margin: n(0) n(30);
+  }
+  .bdxxlldy_we{
+    width: n(690);
+    height: n(700);
+    background: #fff;
+    box-shadow: 0 n(8) n(16) 0
+    rgba(30, 124, 237, 0.2);
+    border-radius: n(12);
+    margin: n(60) n(30);
+    position: relative;
+    background: url($imgPath+'/xxl/bdxxlldy/ccc.png')no-repeat;
+    background-size: cover;
+  }
+  .bdxxlldy_we_img{
+  width: n(476);
+    height: n(41);
+    margin: n(80) n(107);
+  }
+  .bdxxlldy_we_icon{
+
+  }
+  .bdxxlldy_we_icon img{
+    width: n(110);
+    height: n(110);
+  }
+  .bdxxlldy_we_icon span{
+    font-family: PingFangSC-Light;
+    font-size:n(36);
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: n(40);
+    color: #505050;
+  }
+  .bdxxlldy_we_icon p{
+    font-family: PingFangSC-Light;
+    font-size: n(28);
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: n(40);
+    letter-spacing: 0;
+    color: #999999;
+  }
+  .bdxxlldy_we_span1{
+       position: absolute;
+       top:n(199);
+       left: n(190);
+     }
+  .bdxxlldy_we_p1{
+    position: absolute;
+    top:n(248);
+    left: n(190);
+  }
+  .bdxxlldy_we_icon1{
+    position: absolute;
+    top:n(181);
+    left: n(60);
+  }
+  .bdxxlldy_we_icon2{
+    position: absolute;
+    top:n(341);
+    left: n(60);
+  }
+  .bdxxlldy_we_span2{
+    position: absolute;
+    top:n(359);
+    left: n(190);
+  }
+  .bdxxlldy_we_p2{
+    position: absolute;
+    top:n(407);
+    left: n(190);
+  }
+  .bdxxlldy_we_icon3{
+    position: absolute;
+    top:n(501);
+    left: n(60);
+  }
+  .bdxxlldy_we_span3{
+    position: absolute;
+    top:n(519);
+    left: n(190);
+  }
+  .bdxxlldy_we_p3{
+    position: absolute;
+    top:n(568);
+    left: n(190);
+  }
+  .goHongbao{
+    display: inline-block;
+    width: n(690);
+    height: n(306);
+    background: url($imgPath+'/xxl/bdxxlldy/hhh.png')no-repeat;
+    background-size: cover;
+
+  }
+  .topRemind{ display: none; position:fixed; top: 0; left: 0; height: n(60); line-height: n(60);
+    background: rgba(0,0,0,.5); font-size: n(24);
+    color: #fff; text-align: center; z-index: 1000; width: 100%;
+  }
+  .topRemind2{ display: none; position:fixed; top: 0; left: 0; height: n(60); line-height: n(60);
+    background: rgba(0,0,0,.5); font-size: n(24);
+    color: #fff; text-align: center; z-index: 1000; width: 100%;
+  }
+  .qgzj{ width: n(750); min-height: n(320); margin: 0 auto; position: relative;
+    .qgzj_title{width: n(750);height: n(42);background: url($imgPath+'/xxl/bdxxlldy/zx.png')no-repeat;
+      background-size: cover; }
+    .title3{ height: n(42); color: #fff; font-weight: normal;
+      margin-top:n(50); position: relative; padding-left:n(22); position: relative; overflow: hidden;
+      &::before{ display: block; content: ""; width: n(10); height: n(34); font-size: 0;
+        background: #fff; border-radius: n(5); overflow: hidden; position: absolute; left: 0; top: n(4);
+      }
+      span{ float: left; font-weight: normal; font-size: n(30);}
+      a{ float: right; color: #fff; font-size: n(26);}
+    }
+
+
+
+    .qgzj_content{ margin-top:n(120); position: relative; z-index: 1;
+      .item{ width:n(720); display: none;margin-left: n(20);
+        margin-top: n(-90);
+        li{ border: none;float: left; width: n(330); height: n(368); margin:n(10) n(12);  border-radius: n(12);
+         margin-top: n(20);border-radius: n(12);
+          dt{ width: n(330); height: n(248); border-radius: n(12) n(12) 0 0; overflow: hidden; background: #ddd;
+            font-size: 0;
+            img{ width: n(330); height: auto;border-radius: n(10); }
+          }
+
+          dd{ padding-top:n(20); padding-left: n(20);padding-bottom: n(20);
+            background: #fff;border-radius: 0 0 n(12)n(12);
+            .info{ height: n(40); overflow: hidden; line-height: n(40);
+              .anni{float: right;text-align: center;line-height: n(38);display: inline-block;font-size:n(20);color:#fff;width: n(68);height: n(36);border-radius: n(60);margin-right:n(20);
+                background:linear-gradient(#1DA1F2 ,#35AAF2 );font-weight: 300;
+              }
+              .name{ float: left; color: #1a1a1a; font-size: n(26);
+                i{ display: inline-block; width: n(12); height: n(20); font-size: 0; overflow: hidden;
+                  background: url($imgPath+'/qixi/ico-nv.png') no-repeat;
+                  background-size: cover;
+
+                  &.ico-nan{
+                    background: url($imgPath+'/xxl/bdxxlldy/n2.png') no-repeat;
+                    background-size: cover;
+                  }
+                  &.ico-nv{
+                    background: url($imgPath+'/xxl/bdxxlldy/v1.png') no-repeat;
+                    background-size: cover;
+                  }
+                }
+              }
+              .online{ float: right;  height: n(40); background: #4fb5f5; box-sizing: border-box;
+                line-height: n(40); color: #fff; font-size: n(22); padding:n(2) n(20) 0 n(20); border-radius: n(20);
+
+                &.out{ background: #e5e5e5; color: #818181;}
+              }
+            }
+
+            .count{ height: n(32); overflow: hidden; margin-top:n(10); color: #999999;font-weight:300;font-size: n(20);
+              span{ color: #666;font-weight:300;font-size: n(20);}
+            }
+          }
+        }
+
+        &:first-child{ display: block;}
+
+        &::after{ display: block; content: ""; clear: both; width: 0; height: 0; font-size: 0; overflow: hidden;}
+      }
+    }
+  }
+  .fother{
+    width:n(750);
+    height: n(65);
+      margin-top: n(30);
+    line-height: n(20);
+    color: rgba(255, 255, 255, 1);
+    font-size: n(20);
+  text-align: center;
+    font-family: PingFangSC-Light;
+
+  }
+}

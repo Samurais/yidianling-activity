@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head id="Head1">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>上海心理健康服务壹点灵</title>
+  <link rel="icon" href="//static.ydlcdn.com/v1/images/favicon.xn.ico"/>
+  <link rel="shortcut icon" href="//static.ydlcdn.com/v1/images/favicon.xn.ico"/>
+  <link rel="stylesheet" href="//static1.ydlcdn.com/global/css/global.css">
+  <link href="//static1.ydlcdn.com/mobile/css/baidu/marea.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//static1.ydlcdn.com/mobile/css/swiper-3.3.1.min.css">
+  <script src="//static1.ydlcdn.com/global/js/jquery-1.11.2.min.js"></script>
+  <script src="//static1.ydlcdn.com/global/js/swiper/swiper-3.3.1.jquery.min.js"></script>
+
+  <style>
+    .ourTeam {
+      background: #f5f5f5;
+      padding-bottom: 25px;
+    }
+
+    .ourTeam .tt0 {
+      text-align: center;
+      font-size: 30px;
+      color: #ff5722;
+      padding: 38px 0 10px 0;
+    }
+    .ourTeam .txt0 {
+      font-size: 18px;
+      color: #7f8c8d;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    .ourTeam .expert1 {
+      padding: 60px 0 0 40%;
+      position: relative;
+    }
+    .ourTeam .expert1 .imge {
+      width: 30%;
+      position: absolute;
+      left: 6%;
+      top: 25px;
+    }
+    .ourTeam .expert1 .name, .ourTeam .expert2 .name {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .ourTeam .expert1 .name em, .ourTeam .expert2 .name em {
+      color: #999;
+      margin-left: 8px;
+    }
+    .ourTeam .expert1 .introp, .ourTeam .expert2 .introp {
+      font-size: 14px;
+      line-height: 24px;
+      color: #666;
+    }
+    .ourTeam .expert1 .detail, .ourTeam .expert2 .detail {
+      font-size: 14px;
+      color: #ff5722;
+      display: inline-block;
+      zoom: 1;
+      margin-top: 8px;
+    }
+    .ourTeam .btn {
+      text-align: center;
+      padding: 30px 0 10px 0;
+    }
+    .ourTeam .moreExpert, .evaluteTxt .moreExpert {
+      font-size: 18px;
+      color: #ff5722;
+      border: 1px solid #ff5722;
+      display: inline-block;
+      zoom: 1;
+      padding: 8px 12px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+    .ourTeam .expert2 .imge {
+      width: 30%;
+      position: absolute;
+      right: 6%;
+      top: 26px;
+    }
+    .ourTeam .expert2 {
+      padding: 60px 33% 0 6%;
+      position: relative;
+    }
+    .evaluteTxt {
+      background: #f5f5f5;
+    }
+    .evaluteTxt .tt0 {
+      text-align: center;
+      font-size: 40px;
+      color: #ff5722;
+      padding: 38px 0 10px 0;
+    }
+    .evaluteTxt .lists li {
+      width: 80%;
+      margin-left: 10%;
+      padding: 20px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #fff;
+      margin-bottom: 14px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      font-size: 16px;
+      color: #999;
+      line-height: 1.6;
+    }
+    .evaluteTxt .lists li .name {
+      color: #ff5722;
+    }
+    .evaluteTxt .btn {
+      text-align: center;
+      padding: 10px 0 30px 0;
+    }
+    .content4 .lookDetail {
+      display: inline-block;
+      font-size: 16px;
+      zoom: 1;
+      *display: inline;
+      border: 1px solid #ff5722;
+      height: 32px;
+      line-height: 32px;
+      color: #ff5722;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      width: 120px;
+      text-align: center;
+      position: absolute;
+      right: 30px;
+      bottom: 29px;
+    }
+    .content3 .txt {
+      position: relative;
+    }
+    .content3 .txt img {
+      width: 12px;
+      position: absolute;
+      top: 1px;
+      left: 50%;
+      margin-left: 54px;
+    }
+
+    .redpackage {
+      width: 100%;
+      height: 56px;
+      background: rgba(0,0,0,0.6);
+      position: fixed;
+      bottom: 56px;
+      left: 0;
+      z-index: 100;
+      display: none;
+    }
+
+    .redpackage .txt {
+      color: #fff;
+      font-size: 16px;
+      position: absolute;
+      left: 40px;
+      top: 20px;
+    }
+    .redpackage .link1 {
+      display: block;
+      width: 20%;
+      height: 38px;
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+
+    .redpackage .link2 {
+      display: block;
+      width: 50%;
+      height: 38px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+  </style>
+</head>
+<body style="overflow-x: hidden">
+
+  <div class="redpackage">
+    <img src="//static1.ydlcdn.com/mobile/images/baidu/area/tryme.png" alt="" style="width: 100%;height: 56px;">
+    <p class="txt">15分钟免费体验</p>
+    <a href="" class="link1"></a>
+    <a href="https://jinshuju.net/f/T6dPhG" class="link2"></a>
+  </div>
+
+  <div class="banner">
+    <a href="index.html">
+      <img src="//static1.ydlcdn.com/mobile/images/baidu/area/logo_shanghai.png" alt="" class="bannerBg">
+    </a>
+  </div>
+  <div class="bannerSub banSubSH">
+    <dl>
+      <dt>累计咨询案例</dt>
+      <dd><span>20116</span>个</dd>
+    </dl>
+    <dl>
+      <dt>专家平均从业</dt>
+      <dd><span>8</span>年</dd>
+    </dl>
+    <dl>
+      <dt>客服在线</dt>
+      <dd><span>7×24</span>小时</dd>
+    </dl>
+  </div>
+
+  <div class="ourTeam">
+    <h1 class="tt0">中科院教授领衔</h1>
+    <p class="txt0">顶尖专家团队定制解决方案</p>
+    <div class="expert1">
+      <img src="//img.ydlcdn.com/file/2016/08/knp4hlu8x4pbshu5.jpg!s200x200" alt="" class="imge" style="-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;">
+      <h1 class="name">赵颖<em>博士</em></h1>
+      <p class="introp">约克大学 Ph. D. -心理学 博士 </p>
+      <p class="introp">英国 A.P.H.P 执业心理治疗师</p>
+      <p class="introp">美国 A.C.H.E 临床催眠治疗师</p>
+      <!--<a href="//wapbaike.baidu.com/view/5525184.htm?adapt=1&fr=aladdin" class="detail">了解详情》</a>-->
+    </div>
+    <div class="expert2">
+      <img src="//static1.ydlcdn.com/mobile/images/baidu/qingganNew/expert04.png" alt="" class="imge">
+      <h1 class="name">朱浩亮<em>教授</em></h1>
+      <p class="introp">公共危机干预专家</p>
+      <p class="introp">知名平台首席情感顾问</p>
+      <P class="introp">20年婚姻情感研究专家</P>
+      <a href="//wapbaike.baidu.com/view/4403153.htm?adapt=1&" class="detail">了解详情》</a>
+    </div>
+    <div class="expert1">
+      <img src="//static1.ydlcdn.com/mobile/images/baidu/qingganNew/expert03.png" alt="" class="imge">
+      <h1 class="name">夏一梦<em>专家</em></h1>
+      <p class="introp">婚姻恋爱权威专家</p>
+      <p class="introp">情绪问题专家</p>
+      <p class="introp">资深情感分析专家</p>
+      <!--<a href="//m.hangzhou.yidianling.com/mobile/html/baidu/experts.html" class="detail">了解详情》</a>-->
+    </div>
+    <p class="btn"><a href="experts_area_shanghai.html" class="moreExpert">查看更多心理专家</a></p>
+
+  </div>
+
+  <div class="content2" style="text-align: center;padding-bottom: 40px;">
+    <h1 class="tt">我们擅长处理这些问题</h1>
+    <p class="txt">现在就和心理问题说再见</p>
+    <img src="//static1.ydlcdn.com/mobile/images/baidu/area/gerenchengzhang1.png" alt="">
+    <img src="//static1.ydlcdn.com/mobile/images/baidu/area/gerenchengzhang2.png" alt="">
+  </div>
+  <div class="content3">
+    <h1 class="tt">设施专业齐全</h1>
+    <p class="txt"><a href="about_CompanyArea_shanghai.html" style="color: #7f8c8d;">关于壹点灵<img src="//static1.ydlcdn.com/mobile/images/baidu/qingganNew/outlink.png" alt=""></a></p>
+    <div class="scroll2" style="position: relative;width: 80%;margin: 0 auto;padding-bottom: 20px;overflow: hidden;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/area001.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/area002.JPG" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/area003.JPG" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/area004.JPG" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/area005.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/area006.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/area007.jpg" alt="">
+        </div>
+      </div>
+      <div class="pagination2" style="position: absolute;bottom: 2px;text-align: center;"></div>
+    </div>
+  </div>
+  <div class="content7">
+    <h1 class="tt">已帮助<span>10000</span>多人</h1>
+    <p class="txt">解决心理烦恼 找回快乐</p>
+    <div class="scroll3" style="position: relative;width: 100%;margin: 0 auto;  padding-bottom: 20px;overflow: hidden;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/suncase01.png" alt="">
+          <h1 class="tt3">孙同学：成功控制网络成瘾</h1>
+          <p class="txt3">喜欢上网，网瘾很大，每天上网玩游戏至少8小时，学生本人无法控制自己的状态，这个状态持续了3年，学生家长非常着急，在网上联系到了心理壹点灵。经过深度催眠沟通，网络成瘾获得解决。</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/jincase003.png" alt="">
+          <h1 class="tt3">金同学：初三学生 从厌学爱上学习</h1>
+          <p class="txt3">初一以前内向腼腆，不愿意说话，沉默，情绪化，没精神；初二暗恋同学，变得更加不想读书，学习成绩下降明显。孩子父母不知道怎么解决。经过在上海心理壹点灵心理辅导后开始一步步走出了封闭，热爱学习。</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/licase004.png" alt="">
+          <h1 class="tt3">李女士：抑郁情绪不再可怕</h1>
+          <p class="txt3">心情非常抑郁压抑，伴有严重失眠，敏感多疑，经常以泪洗面，经过上海心理壹点灵疏导后生活态度变得积极，学会调整自己心态，睡眠也逐渐好转。</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/wangcase005.png" alt="">
+          <h1 class="tt3">王先生：挽回自己的婚姻幸福</h1>
+          <p class="txt3">意外出轨，妻子知道后要求离婚，但是王先生在事发后很后悔，渴望保住这段婚姻。心理壹点灵接到求助后，和夫妻双方都进行了沟通，经过心理壹点灵阶段性的心理疏导后，妻子对未来的家庭生活重新燃起希望。</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/liucase002.png" alt="">
+          <h1 class="tt3">刘先生：摆脱焦虑失眠的痛苦</h1>
+          <p class="txt3">长期焦虑失眠，对生活工作造成很大影响。接到求助后，心理壹点灵根据刘先生的情况专门制定了心理疏导方案，经过3次疏导后情况改善明显，在专家制定的康复周期内刘先生基本走出了焦虑失眠的痛苦。</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="//static1.ydlcdn.com/mobile/images/baidu/area/chencase006.png" alt="">
+          <h1 class="tt3">陈女士：从此告别强迫症</h1>
+          <p class="txt3">患强迫症10年，之前尝试了很多方法，也花费了很多精力和金钱，但是收效甚微。经过心理壹点灵专家的咨询后，情况改善，专家提醒陈女士，强迫症康复是一个长期过程，需要不断巩固效果。</p>
+        </div>
+      </div>
+      <div class="pagination3" style="position: absolute;bottom: 18px;text-align: center;"></div>
+    </div>
+  </div>
+  <div class="content5" style="text-align: center;position: relative;">
+    <h1 class="tt">合作权威的心理机构</h1>
+    <p class="txt">创新模式推动心理健康行业发展</p>
+    <img src="//static1.ydlcdn.com/mobile/images/baidu/area/partner001.png" alt="">
+    <img src="//static1.ydlcdn.com/mobile/images/baidu/area/partner002.png" alt="">
+  </div>
+<div class="content4" style="text-align: center;position: relative;">
+  <h1 class="tt">近<span>100</span>家媒体争相报道</h1>
+  <p class="txt">创新模式推动心理健康行业发展</p>
+  <img src="//static1.ydlcdn.com/mobile/images/baidu/qingganNew/meiti00.png" alt=" " style="width: 90%;margin-left: 5%;">
+  <a href="about_mediaArea_shanghai.html" class="lookDetail">查看详细报道</a>
+</div>
+
+<div class="content6" style="text-align: center;background: #f5f5f5;">
+  <h1 class="tt">简单<span>3</span>步完成咨询</h1>
+  <div id="lich">
+    <ul class="licLists">
+      <li>Step<span class="order">01</span><br>联系客服 <img src="//static1.ydlcdn.com/v3/images/baidu/lc_step01.png" alt=""></li>
+      <li>Step<span class="order">02</span><br>预约专家 <img src="//static1.ydlcdn.com/v3/images/baidu/lc_step02.png" alt=""></li>
+      <li>Step<span class="order">03</span><br>完成咨询 <img src="//static1.ydlcdn.com/v3/images/baidu/lc_step03.png" alt=""></li>
+    </ul>
+  </div>
+
+  <div style="background: #ff5722;">
+    <h1 class="tt" style="color: #fff;padding: 10px 0;font-weight: normal;font-size: 20px;">咨询无效<span>100%</span>退款</h1>
+    <p class="txt" style="color: #f5f5f5;padding-bottom: 10px;font-size: 16px;">咨询无效只收取成本费 百分百退款</p>
+  </div>
+
+</div>
+
+  <div class="evaluteTxt">
+    <h1 class="tt0" style="margin-bottom: 20px;">用户评价</h1>
+    <ul class="lists">
+      <li>
+        <p class="name">风信子的悲伤<span>2016/07/08</span></p>还行，相当于找个地方发泄一下
+      </li>
+      <li>
+        <p class="name">陈先生<span>2016/06/10</span></p>分析的很到位，点出了重点，还教了我要怎么做，瞬间心里就想开了很多
+      </li>
+      <li>
+        <p class="name">流星雨の情<span>2016/06/12</span></p>很耐心很专业很优秀
+      </li>
+      <li>
+        <p class="name">李晓霞<span>2016/06/15</span></p>南茜老师特别好。从高中开始到现在，一直受焦虑折磨，很少有心里平静的快乐时光，在医院找过3个心理医生，第一个说了半小时断定我是焦虑型强迫症，直接开药，让我觉得自己是个不正常的精神病人，更不自信了。第二个让我想说的话都说出来，等说完了我还是不知道自己该怎么做，医生也没说。第三个听我说了很多话，最后让我不要放弃继续工作，然后开药。后来在网上找了一个心理医生，医生特别耐心，每次都耐心地听我把话说完，最后建议我坚持运动和每天早上打扮精致，和父母不和的时候表达出来，但是那个礼拜坚持运动3次，也花了很多时间把自己打扮好，我的状态并没有改善，依旧非常非常害怕失去很多东西，仿佛自己随时随地会被周围的人和单位抛弃。直到今天意外看到有心理健康服务，抱着试一试的态度，和助理说了自己的基本情况，助理帮我推荐了南茜老师，一个小时的沟通，老师听完我的叙述，一针见血地点出了我最根源的问题，我经不起任何风吹草动的心突然定了下来，找到了自己长久以来费了很多很多力气都没有找到的可以延展一生的目标，心里有了寄托，终于感受到了许久没有过的安宁和平静，特别感谢老师。
+      </li>
+      <li>
+        <p class="name">夕阳下<span>2016/06/12</span></p>感觉还好
+      </li>
+    </ul>
+    <p class="btn"><a href="evalute_area_shanghai.html" class="moreExpert">查看更多评价</a></p>
+  </div>
+
+  <div style="background: #f5f5f5;padding: 10px 10px 80px 10px;">
+    <p style="font-size: 14px;line-height: 20px;color: #666;">地址：杭州市滨江区阡陌路459号聚光中心C楼西楼-302(公交江陵路站或地铁1号线江陵路站，步行至聚光中心)。</p>
+  </div>
+  <div class="g-kefu">
+    <a href="index.html"><i>
+      <img src="//static1.ydlcdn.com/mobile/images/baidu/wanjiu/home@3x.png" alt=" " style="background: #ffa922;"></i></a>
+    <a href="tel:400-114-1010" class="phoneNumber"><img src="//static1.ydlcdn.com/mobile/images/baidu/wanjiu/tel@3x.gif" alt=" " class="loaded"><em>客服热线</em></a>
+    <a href="//dat.zoosnet.net/LR/Chatpre.aspx?id=DAT83236505&lng=cn" target="_blank"><img src="//static1.ydlcdn.com/mobile/images/baidu/wanjiu/mag@3x.gif" alt=" " class="loaded" style="margin-top: -4px;"><em>在线客服</em></a>
+  </div>
+
+  <script>
+    $(function(){
+      var swiper2=new Swiper('.scroll2',{
+        loop: true,
+        pagination: '.pagination2',
+        paginationClickable :true,
+        autoPlay: 5000,
+        scrollbarHide:true
+      });
+      var swiper3=new Swiper('.scroll3',{
+        loop: true,
+        pagination: '.pagination3',
+        paginationClickable :true,
+        autoPlay: 5000,
+	      scrollbarHide:true
+      });
+      $('.link1').click(function(e){
+        e.preventDefault();
+        $('.redpackage').css('display','none');
+      })
+    })
+  </script>
+
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?def33305469533e77c369a78a0b64a2a";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

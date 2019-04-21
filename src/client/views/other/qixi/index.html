@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN" ng-app="APP">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <title>七夕</title>
+    <link rel="icon" href="https://static.ydlcdn.com/v1/images/favicon.ico">
+    <link rel="shortcut icon" href="https://static.ydlcdn.com/v1/images/favicon.ico">
+    <link rel="stylesheet" href="/dist/<%= G.dist %>/qixi-main.css?_=10">
+    <script type="text/javascript">
+			window.$G = <%- JSON.stringify(G) %>;
+		</script>
+	</head>
+
+	<body>
+
+    <div class="page-qixi">
+
+      <!--顶部提示-->
+      <div class="topRemind">红包仅限新人领取哦。</div>
+
+      <!--头图-->
+      <div class="header"></div>
+
+      <!--弹幕-->
+      <div class="danmu_box">
+        <div class="danmu_content">
+          <div id="danmu"></div>
+        </div>
+      </div>
+
+      <!--写弹幕-->
+      <div class="tanmu-control">
+        <div class="select">
+          <span class="selected"><span>心情</span> <i></i></span>
+          <select>
+            <option value="0">无状态</option>
+            <option value="1">蔷薇红</option>
+            <option value="2">鹅蛋黄</option>
+            <option value="3">石青蓝</option>
+            <option value="4">荧月白</option>
+            <option value="5">青紫梅</option>
+          </select>
+        </div>
+
+        <div class="enter">
+          <input type="text" placeholder="20个子说出您的心事">
+          <a href="javascript:" class="addDanmu"> </a>
+        </div>
+
+        <div class="remind">xxx</div>
+      </div>
+
+      <!--标题1-->
+      <h1 class="title t1"></h1>
+
+      <!--红包-->
+      <div class="hongbao"><a href="javascript:" class="goHongbao"></a></div>
+
+      <!--标题2-->
+      <h1 class="title t2"></h1>
+
+      <!--情感专家-->
+      <div class="qgzj">
+        <h3 class="title3"><span>情感专家</span> <a href="#" class="more">更多>></a></h3>
+
+        <ul class="qgzj_list">
+        </ul>
+
+        <div class="qgzj_content">
+          <div class="item"><ul></ul></div>
+          <div class="item"><ul></ul></div>
+          <div class="item"><ul></ul></div>
+          <div class="item"><ul></ul></div>
+        </div>
+      </div>
+
+      <!--活动解释说明-->
+      <div class="explain">
+        <h1 class="title2">活动解释说明</h1>
+        <p>活动期间每位新注册用户均可领取一张30元的倾诉红包，直接抵扣无限制；</p>
+        <p>优惠券会自动下发至用户账户-红包优惠中。</p>
+        <p>用户使用平台倾诉热线服务时，每单倾诉限使用一张优惠券。</p>
+        <p>活动最终解释权归壹点灵所有</p>
+      </div>
+
+      <!--下载-->
+      <div class="download"><a href="https://m.ydl.com/app"></a></div>
+    </div>
+
+    <script type="text/javascript" src="/lib/vendor.js"></script>
+    <script type="text/javascript" src="/dist/<%= G.dist %>/qixi-main.js?_=10"></script>
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?709754f516138e611122a5d559d83423";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+	</body>
+</html>

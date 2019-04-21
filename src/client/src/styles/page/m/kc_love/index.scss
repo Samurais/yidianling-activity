@@ -1,0 +1,423 @@
+@import '~@/styles/base/var.scss';
+
+.page-m-kclove{ max-width: n(750); margin: 0 auto;
+
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfix {
+    display: inline-table;
+  }
+
+  .header{
+    width: 100%;
+    height: n(100); background: #fff;
+
+    .logo{ float: left;
+      margin: n(20) 0 0 n(20);
+      width: n(186); height: n(60);
+      background: url($imgPath+'/activity/m/kc_love/logo_ico.png') no-repeat;
+      background-size: cover;
+    }
+
+    .tel{ float: right;
+      height: n(100);
+      font-size: n(40);
+      line-height: n(100);
+      color: #34cd65;
+      padding:0 n(20) 0 n(54);
+
+      background: url($imgPath+'/activity/m/kc_love/tel_ico.png') no-repeat left center;
+      background-size: n(44) n(44);
+    }
+  }
+
+  .banner{ display: block; overflow: hidden; font-size: 0;
+    img{ width: 100%;}
+  }
+
+  .kc-adv{
+    width: 100%;
+    height: n(130);
+    background-color: #FF6E79;
+
+    .kc-adv-item{
+      padding-top: n(30);
+      float: left;
+      width: 33.33%;
+      text-align: center;
+    }
+
+    .kc-img{
+      width: n(50);
+      height: n(50);
+    }
+    .kc-adv-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: n(20);
+    }
+
+    .adv-info{ display: block;
+      color: #fff;
+      font-size: n(28);
+      line-height: n(32);
+      text-align: center;
+      margin-top:n(12);
+    }
+  }
+
+  .common-wrapper{
+    padding: n(60) 0;
+    text-align: center;
+
+    &.bgfff{ background: #fff;}
+  }
+  .common-wrapper.paddT-diff{
+    padding: n(70) 0;
+  }
+  .common-wrapper .capital{
+    font-weight: bold;
+    font-size: n(48);
+    color: #242424;
+  }
+  .common-wrapper>.desc{
+    margin-top: n(20);
+    font-size: n(26);
+    color: #fff;
+  }
+  .common-wrapper .capital.c-fff{
+    color: #000000;
+  }
+  .common-wrapper .line{
+    display: block;
+    margin: n(36) auto n(60);
+    width: n(56);
+    height: n(6);
+    background-color: #f84d6a;
+  }
+  .common-wrapper .line.bg-ff{
+    background-color: #ec5f61;
+  }
+  .chance-p {
+    height: n(40);
+    font-family: PingFang-SC-Regular;
+    font-size: n(30);
+    line-height: n(60);
+    color: #333333;
+  }
+  .profession-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    color: #333333;
+  }
+  .profession-wrapper .pro-list{
+    text-align: left;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: n(60);
+    box-sizing: border-box;
+
+    p{ padding:0 n(24) 0 n(30); font-size: n(28);}
+
+    h2{ margin: n(14) 0; font-size:n(38);}
+
+    img{ width: n(160); height: n(160);}
+  }
+
+  .teacher-swiper{
+    height: n(660); padding-bottom: n(100);
+  }
+  .teacher-swiper .swiper-slide{
+    padding-top: n(70);
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0px 12px 21.12px 2.88px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+  }
+  .teacher-swiper .swiper-pagination-bullet{
+    width: 7px;
+    height: 7px;
+    margin: 0 4.5px!important;
+    background-color: #e0e0e0;
+    opacity: 1;
+  }
+  .teacher-swiper .swiper-pagination-bullet-active{
+    background-color: #999;
+  }
+  .teacher-swiper .swiper-slide img{
+    margin-bottom: n(5);
+    width: n(24);
+    height: n(24);
+    border: 8px solid #f5f5f5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .teacher-swiper .swiper-slide .name{
+    font-size: n(40);
+    color: #242424;
+  }
+
+  .teacher-swiper .swiper-slide .desp{
+    width: n(460);
+    margin: 0 auto;
+    font-size: n(26);
+    color: #333;
+    text-align: left;
+    line-height: n(42);
+    text-align: justify;
+  }
+
+  .marriage-swiper{
+    color: #333;
+
+    .swiper-pagination{ bottom: 0;}
+  }
+  .marriage-class{
+    height: n(140);
+  }
+  .marriage-swiper .marriage-class i{
+    font-family: EffraMedium-Regular;
+    font-size: n(120);
+    color: #ff6e78;
+  }
+  .marriage-swiper .marriage-class span{
+    font-family: PingFang-SC-Bold;
+    font-size: n(40);
+    /* line-height: 3rem; */
+    color: #ff6e78;
+  }
+  .marriage-swiper h2{
+    font-size: n(60);
+    margin-bottom: n(20);
+    font-weight: normal;
+  }
+  .marriage-swiper-ul{
+    margin-left: 50px;
+  }
+  .marriage-swiper-ul .circle{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ff6e78;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .nocircle .circle{
+    background-color: transparent;
+  }
+  .marriage-swiper-ul li {
+    text-align: left;
+    font-size: n(32);
+    font-family: PingFang-SC-Regular;
+    line-height: n(46);
+  }
+
+  .actual-teacher .swiper-slide .desp{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .teacher-swiper .swiper-slide img{
+    margin-bottom: n(50);
+    width: n(240);
+    height: n(240);
+    border: 8px solid #f5f5f5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .common-wrapper .core-advantages-img{
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .common-wrapper.kz-about{
+    background-image: none;
+
+  }
+  .kz-about p{
+    color: #333;
+  }
+
+  .capital .number{
+    display: inline-block;
+    width: n(50);
+    height: n(50);
+    line-height: n(50);
+    border-radius: 50%;
+    color: #fff;
+    background-color: #333333;
+    text-align: center;
+    margin-right: 5px;
+    font-size: n(40);
+  }
+
+  .middle-imgs{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+  }
+
+  .practical-list{ padding:0 n(20);}
+
+  .practical-list p{
+    font-family: PingFang-SC-Bold;
+    font-size: n(32);
+    line-height: n(60);
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .practical-img-box{
+    width: n(710);
+  }
+  .middle-imgs{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+  }
+  .practical-img1{ width: n(710);}
+  .practical-img-box .practical-img2,
+  .practical-img-box .practical-img3{
+    width: 49%;
+    height: n(400);
+  }
+
+  .kz-about-wrapper{ width: n(620); height: n(352);
+    .swiper-slide{
+      width: n(620); height: n(352);
+      img{ width: n(620);}
+    }
+  }
+
+  #kz-inner-p{
+    width: 89.86%;
+    margin: 0 5.07%;
+    font-size: n(32);
+    text-align: left;
+    font-family:PingFang-SC-Bold;
+    color: #666;
+    padding-top:n(40);
+  }
+
+  .list-img{ width: 100%;}
+
+  .student-wrapper{
+    margin: 0 auto n(12);
+    padding-top: n(48);
+    width: n(690);
+    height: n(506);
+
+    background: url($imgPath+'/activity/m/kc_love/shuangyinhao.png') no-repeat center top;
+    background-size: n(690) auto;
+    box-shadow: none;
+    box-sizing: content-box;
+
+    .student-swiper{
+      height: n(506);
+      .swiper-pagination{ bottom: n(0);}
+    }
+
+
+  }
+
+
+  .one{
+
+
+    text-align: center;
+  }
+  .two{
+    width: n(100);
+    height: n(100);
+    margin: 0 auto
+  }
+  .two-font{
+    font-size: n(30);
+    font-weight: bold;
+    margin-bottom: n(20);
+    margin-top: n(20);
+  }
+  .one-img{
+    width: n(100); height: n(100);
+  }
+  .des{ padding:0 n(60); text-align: left; font-size: n(26);}
+
+  .cooperate-item{
+    width: n(750);
+    text-align: center;
+    img{ width: 100%;}
+  }
+
+  .kz-footer-yuyue-icon{
+    display: inline-block;
+    width: n(60);
+    height: n(60);
+    margin: 0 10px 0 0;
+    background: url($imgPath+'/activity/m/kc_love/phone.png') no-repeat center;
+    background-size: cover;
+    vertical-align: middle;
+  }
+
+  .kz-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    font-size: n(36);
+    text-align: center;
+    height: n(130);
+    line-height: n(130);
+    background: red;
+  }
+
+  .kz-footer-tel{
+    float: left;
+    width: 50%;
+    height: n(130);
+    background-color: #ff9600;
+    color: #fff;
+  }
+
+  .kz-footer-online{
+    display: inline-block;
+    width: 50%;
+    height: n(130);
+    background-color: #ff4650;
+    color: #fff;
+  }
+  .kz-footer-online-icon{
+    display: inline-block;
+    width: n(60);
+    height: n(60);
+    margin: 0 10px 0 0;
+    background: url(http://m.love.yidianling.com/images/newLove/bottom_online.png) no-repeat center;
+    background-size: cover;
+    vertical-align: middle;
+  }
+
+  .control{ text-align: center;
+    .btn{ display: inline-block; width: n(380); height: n(88); line-height: n(88); border-radius: n(44); background: #00b43c;
+      color: #fff; font-size: n(32); text-align: center; margin-top:n(40);
+    }
+  }
+}

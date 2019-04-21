@@ -1,0 +1,116 @@
+@import '~@/styles/base/var.scss';
+@import '~@/styles/base/global.scss';
+
+.page-m-rexian{ width: 100%; padding-bottom:n(180); overflow: hidden;
+
+  .datasurvey{ margin:n(20) n(12); height: n(180); text-align: center;
+    .item{ float: left; width: n(220); height: n(180); margin:0 n(11); background: #fff;
+      text-align: center;
+      i{ display: block; width: n(60); height: n(60); margin:n(30) auto n(20) auto;
+        @for $i from 1 through 3
+        {
+          &.i-#{$i}
+          {
+            background:url('https://static.ydlcdn.com/activity/images/update171212/info_icon0#{$i}.png') no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+
+      strong{ color: #666; font-size: n(26); font-weight: normal;}
+    }
+  }
+
+  .sign{ background: #fff; margin-top:n(20);
+    ul{ width: n(670); margin: 0 auto; height: n(320*3);
+      li{ width: n(320); height: n(280); margin-top:n(40);
+        float: left; text-align: center; box-sizing: border-box;
+
+        img{ width: n(106); height: n(96);}
+        strong{ display: block; font-size: n(30); color: #333; font-weight: normal;}
+        h3{ font-size: n(30); color: #666; font-weight: normal;}
+      }
+    }
+  }
+
+  .professor{
+    .professorPoster{ margin-top:n(40);}
+    .control{ text-align: center; margin-top:n(40);}
+  }
+
+  .wmsszyqq{
+    background:#fff; padding:n(40) 0; margin-top:n(40);
+
+    .wmsszyqqPoster{ width: n(670); margin:n(40) auto 0;
+      li,img,.swiper-container{ border-radius: n(12);}
+    }
+  }
+
+  // 合作权威的心理机构
+  .hzqwdxljg{
+    .pic{ font-size: 0; text-align: center; padding-top:n(40);
+      img{ width: n(252);}
+    }
+  }
+
+  // 媒体争相报道
+  .mtzxbd{ width: 100%; margin-top:n(80);
+    background: url("https://static.ydlcdn.com/activity/images/update171212/media_bg.png") no-repeat;
+    background-size: cover; padding-bottom: n(60);
+
+    .pic{ font-size: 0; text-align: center; background: rgba(255,255,255,.5); margin:n(40) n(40) 0;
+      border-radius: n(12);
+      img{ width: 100%;}
+    }
+  }
+
+  // 用户评价
+  .evaluate{ margin:n(60) 0;
+    .title2{ color: #1da1f2; font-size: n(80); font-weight: bold; text-align: center;}
+
+    ul{
+      li{ background: #fff; padding: n(30); border-radius: n(12); margin:n(20) n(60) 0;
+        strong{ font-size: n(32); color: #1da1f2;}
+        p{ color: #999; margin-top:n(10); font-size: n(32); text-indent: n(64);}
+      }
+    }
+
+    .control{ margin-top:n(40); text-align:center;}
+  }
+
+  // 简单3步完成咨询
+  .jdwczx{ margin-top:n(80);
+    .title3{ color: #000; text-align: center; font-size: n(60); font-weight: bold;}
+
+    .step{
+      ul{ height: n(120); margin:0 n(46);
+        li{ float: left; position: relative; margin-right: n(60);
+
+          i{ display: block; width: n(30); height: n(50); position: absolute;  right: n(-50); top: n(32);
+            background:url($imgPath+'/activity/m/rexian/arrow.png') no-repeat;
+            background-size: n(30) auto;
+          }
+          .num{ font-size: n(70); font-weight: bold; color: #1da1f2;}
+          .text{ color: #000; font-size: n(24); left:n(10); position: relative; top:n(-26); font-weight: bold;}
+          small{ display: block; width: n(200); position: absolute; left: n(90); bottom: n(20); font-size: n(16); color: #999;}
+
+          &:last-child{ margin-right: 0;
+            i{ display: none;}
+          }
+        }
+      }
+    }
+
+    .des{ background: #ff9542; margin-top:n(40); color: #fff; text-align: center; padding:n(20) 0;
+      strong{ display: block; font-size: n(40);}
+      span{ display: block; font-size: n(34); color: rgba(255,255,255,.8);}
+    }
+  }
+
+  .title{ text-align: center; font-size: n(50); color: #333; padding-top:n(40);
+    strong{ display: block;}
+    span{ display: block; color: #999; font-size: n(28);
+      a{ color: #999;}
+    }
+  }
+}

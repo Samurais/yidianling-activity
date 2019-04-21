@@ -1,0 +1,47 @@
+@import '~@/styles/base/var.scss';
+
+@import '~@/styles/base/global.scss';
+
+.page-m-qingxu{ width: 100%; padding-bottom:n(180); background:#fff;
+  .datasurvey{ font-size: 0;
+    img{ width: 100%;}
+  }
+
+  .title{
+    text-align: center; font-size: n(34); color: #666; padding-top:n(40);
+  }
+
+  .pic-control{ margin-left:n(30); margin-right: n(30); font-size: 0;
+    img{ width: 100%;}
+
+    &.nomlr{ margin-left:n(0); margin-right: n(0);}
+  }
+
+  .step{ border-top:n(2) solid #ececec;}
+
+  .bgf5f5f5{ background: #f5f5f5;}
+
+  .pm40{ padding-bottom: n(40);}
+
+  .text{ margin:n(20) n(30);
+    p{ color: #333; font-size: n(30); padding-bottom: n(10);
+      &:last-child{ padding-bottom: 0;}
+    }
+  }
+
+  .onlineTime{
+    text-align: center; color: #333; font-size: n(32);
+    a{ color: #333;}
+  }
+
+  .copyright{ text-align: center; color: #999; font-size: n(32);}
+
+  .expert{ width: 100%; padding:n(60) 0; border-top:n(40) solid #f5f5f5; box-sizing: border-box;
+    background:url("https://static.ydlcdn.com/activity/images/activity002/team_bg.jpg") repeat-y;
+    background-size: 100% auto;
+
+    .expertPoster{ margin-top:n(40); width: 100%; overflow: hidden;}
+
+    .title{ color: #fff;}
+  }
+}

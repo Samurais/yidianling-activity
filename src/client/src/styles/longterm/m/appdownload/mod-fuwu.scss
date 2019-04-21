@@ -1,0 +1,27 @@
+
+  .mod-fuwu{ width: n(750); margin: 0 auto;
+
+    .content{ width: n(690); margin: 0 auto;
+      ul{ margin-top:n(50);
+        li{ width: n(690); height: n(280); box-shadow: 0 n(10) n(20) rgba(0,0,0,.1);
+          margin-top:n(40); border:n(1) solid #f0f0f0; border-radius: n(18);
+          dl{
+            dt{ float: left; width: n(220); height: n(280); font-size: 0; display: flex;
+              justify-content:center; align-items:center;
+              img{ width: n(92); height: n(92);}
+            }
+
+            dd{ margin-left:n(220); padding-right:n(30); position: relative;
+              strong{ font-size: n(36); display: block; padding-top:n(50);}
+              p{ font-size: n(26); color: #666; margin-top:n(20);}
+              i{ display: block; width: n(290); height: n(60);
+                position: absolute; right: 0; top: 0;
+                img{ width: 100%;}
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }

@@ -1,0 +1,115 @@
+@import '~@/styles/base/var.scss';
+.kc-page-marriage{
+  background-color: #fff;
+  img {
+    display: block;
+    width: 100%;
+  }
+  width: 100%;
+  .title{
+    padding: 0 10px;
+    p{
+      float: right;
+      line-height: 45px;
+    }
+    .kc_logo{
+      float: left;
+      height: 45px;
+      img{
+        width: n(180);
+        margin-top: 8px;
+      }
+    }
+  }
+  .common-wrapper{
+    padding: n(60) 0;
+    text-align: center;
+
+    &.bgfff{ background: #fff;}
+  }
+  .common-wrapper.paddT-diff{
+    padding: n(70) 0;
+  }
+  .common-wrapper .capital{
+    font-weight: bold;
+    font-size: n(42);
+    color: #242424;
+  }
+  .common-wrapper>.desc{
+    margin-top: n(20);
+    font-size: n(26);
+    color: #fff;
+  }
+  .common-wrapper .capital.c-fff{
+    color: #000000;
+  }
+  .common-wrapper .line{
+    display: block;
+    margin: 0 auto n(20);
+    width: n(180);
+    height: n(6);
+    background-color: rgb(244, 165, 40);
+  }
+  .chance-p {
+    height: n(40);
+    font-family: PingFang-SC-Regular;
+    font-size: n(30);
+    line-height: n(60);
+    color: #333333;
+  }
+  .student-wrapper{
+    margin: 0 auto n(12);
+    padding-top: n(48);
+    width: n(690);
+    height: n(506);
+
+    background: url($imgPath+'/activity/m/kc_love/shuangyinhao.png') no-repeat center top;
+    background-size: n(690) auto;
+    box-shadow: none;
+    box-sizing: content-box;
+
+    .student-swiper{
+      height: n(506);
+      .swiper-pagination{ bottom: n(0);}
+    }
+  }
+  .one{
+
+
+    text-align: center;
+  }
+  .two{
+    width: n(100);
+    height: n(100);
+    margin: 0 auto
+  }
+  .two-font{
+    font-size: n(30);
+    font-weight: bold;
+    margin-bottom: n(20);
+    margin-top: n(20);
+  }
+  .one-img{
+    width: n(100); height: n(100);
+  }
+  .des{ padding:0 n(60); text-align: left; font-size: n(26);}
+  .cooprate-in{
+    position: relative;
+  }
+  .hanjin,.jieduan,.gonglue,.kc-list{
+    position: relative;
+  }
+  .btn1{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .btn2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+  }
+}

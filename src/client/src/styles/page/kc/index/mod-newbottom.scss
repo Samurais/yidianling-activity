@@ -1,0 +1,46 @@
+.page-index-m{
+  .new-bottom{
+    z-index: 1000;
+    margin:0 auto; width: n(750);height: n(120);
+    position:fixed;bottom:0;left:0;right:0;
+    margin:0 auto;
+    display: flex;
+    align-items:center;
+    .left_button{
+      .tel-box{
+        width:n(286);
+        height:n(120);
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        // background:linear-gradient(90deg,#ffb142 0%,#ff8f58 100%);
+        img{
+          width: n(286);
+          height: n(120);
+        }
+      }
+    }
+
+    .vertical-line{
+      display:block;
+      width:1px;
+      height:n(74);
+      background:rgba(255,255,255,.5);
+      border-radius:n(3);
+    }
+    .right_button{
+      .tel-box{
+        width:n(464);
+        height:n(120);
+        background:#FB3A4D;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        img{
+          width: n(464);
+          height: n(120);
+        }
+      }
+    }
+  }
+}

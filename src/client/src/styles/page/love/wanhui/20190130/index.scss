@@ -1,0 +1,89 @@
+.page-love-wanhui-20190130{
+  @import "./mod-newbottom.scss";
+  $baseImageUrl:"/src/images/activity/love/wanhui/";
+  max-width: n(750);
+  margin: 0 auto;
+  background: #fff;
+  .container{
+    overflow: hidden;
+    width:n(750);
+    font-size:0;
+    img.item{
+      width:n(750);
+    }
+  }
+  .in-bottom{
+    height:n(118);
+  }
+  .hide-img{
+    display: none;
+  }
+  .ceshi-box{
+    width:n(750);
+    height:n(702);
+    position: relative;
+    font-size:0;
+    .ceshi-bg{
+      width:n(750);
+      height:n(702);
+      position: absolute;
+      top:0;
+      left:0;
+    }
+    .ceshi-item{
+      width:n(590);
+      height:n(288);
+      position: absolute;
+      bottom:n(152);
+      font-size:0;
+      left:0;
+      right:0;
+      margin:0 auto;
+      img{
+        width:n(590);
+        height:n(288);
+      }
+      .item-7{
+        width:n(590);
+        height:n(232);
+      }
+      .last{
+        width:n(110);
+        height:n(50);
+        position: absolute;
+        left:0;
+        top:0;
+      }
+      .next1,.next2,.next3,.next4{
+        width:n(284);
+        height:n(70);
+        position:absolute;
+      }
+      .next1{
+        left:0;
+        bottom:n(103);
+      }
+      .next2{
+        right:0;
+        bottom:n(103);
+      }
+      .next3{
+        left:0;
+        bottom:n(0);
+      }
+      .next4{
+        right:0;
+        bottom:n(0);
+      }
+      .next5{
+        width:n(467);
+        height:n(91);
+        position: absolute;
+        top:n(142);
+        left:0;
+        right:0;
+        margin:0 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+
+
+.page-term-kc-20190130{ width: 100%; height: 100%;
+
+  .page-term-kc-20190130-content{ width: 100%;
+    .pic{ width: 100%; max-width: n(750); margin: 0 auto; font-size: 0; overflow: hidden;
+      position: relative; z-index: 1;
+      img{ width: 100%; display: block;}
+    }
+
+    .item{ position: relative; z-index: 1;
+      a{ display: block; width: 100%; height: 100%; position: absolute; z-index: 2;
+        &.l{ width: 50%; left: 0;}
+        &.r{ width: 50%; right: 0;}
+      }
+    }
+
+    .pic-title{ width: 100%; height: n(452); font-size: 0;
+      position: absolute; left: 0; top: n(180); z-index: 2;
+      transform:preserve-3d perspective(500px) rotateY(0deg) rotateZ(0deg);
+
+      .act{  width: n(680); height: n(417); margin: 0 auto;
+        // transition: rotateZ 3s ease-in-out;
+        //transform:rotate(-10deg)
+        //transform:rotateX(10deg) rotateY(10deg) rotateZ(100deg) ;
+        // transform:rotateX(10deg) rotateY(10deg) rotateZ(100deg)
+
+        // transform: translateZ(500px) rotateX(30deg) rotateZ(10deg);
+      }
+    }
+
+    // transition: opacity .6s ease-in-out;
+
+    // &.show{ opacity: 1; z-index: 2;}
+  }
+
+  #test{ height: n(50); line-height: n(50); font-size: n(30); text-align: center;}
+
+  // .loading-page{ width: 100%; height: 100%; background: #000; text-align: center; position: absolute;
+  //   top: 0; left: 0;
+  //   .loading-progress-bar{ display: inline-block; width: n(600); height: n(8); font-size: 0;
+  //     position: relative; top: 45%;
+  //     border:n(1) solid #fff; border-radius: n(4); overflow: hidden;
+
+  //     span{ display: block; width: n(596); height: n(4); margin: n(2); position: relative; overflow: hidden;
+  //       i{ display: block; position: absolute; left: 0; top: n(0); height: n(4);
+  //         background: #fff; border-radius: n(2);
+  //         width: 0%;
+  //         transition: width .1s ease-in-out;
+  //       }
+  //     }
+  //   }
+
+  //   transition: opacity .6s ease-in-out;
+
+  //   &.hide{ opacity: 0; z-index: -1;}
+  // }
+}

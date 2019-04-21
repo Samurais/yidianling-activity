@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN" ng-app="APP">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <title></title>
+    <style>
+      body{ margin: 0; padding: 0; border: 0;}
+    </style>
+	</head>
+
+	<body>
+
+    <iframe scrolling="no" id="main" name="main" frameborder="0" onreadystatechange="fnStartInit()" src="http://dev.activity.yidianling.com:8080/festival/MidAutumn" style="min-height:600px;width:100%;height:100%;"></iframe>
+
+    <script>
+      let ifr = document.getElementById('main');
+      ifr.style.height = Math.max(document.body.clientHeight, document.documentElement.clientHeight) + 'px';
+
+      function fnStartInit(){
+        if(ifr.src.indexOf("m.dyl.com") >= 0) {
+          window.location.href = ifr.src;
+        }
+      }
+    </script>
+	</body>
+</html>

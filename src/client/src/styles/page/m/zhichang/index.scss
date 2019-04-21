@@ -1,0 +1,326 @@
+@import '~@/styles/base/var.scss';
+.page-m-zhichang{
+  font-size: n(32);
+  width: n(750);
+  margin: 0 auto;
+  img {
+    border: none;
+    vertical-align: middle;
+  }
+  .blockImge {
+    width: 100%;
+  }
+  .fr {
+    float: right !important;
+  }
+  .tt1 {
+    font-size: n(32); 
+    color: #888; 
+    text-align: center; 
+    padding: n(60) 0 n(20) 0; 
+  }
+  .tt2 {
+    font-size: n(32);
+    color: #888;
+    text-align: center;
+    padding-bottom: n(40);
+  }
+  .top_banner {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .text1{
+    .tt1 {
+        font-size: n(32);
+        color: #888;
+        text-align: center;
+        padding: n(60) 0 n(20) 0;
+    }
+    .contInner01 {
+      overflow: hidden;
+      padding: 0 5.5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .kf_xinnuan{
+        width: 45%;
+      }
+      dl {
+        width: 100%;
+        text-align: center;
+        margin: n(32) 0;
+      }
+      dt {
+        img {
+          width: n(100);
+          opacity: 0.7;
+        }
+      }
+      .txt01 {
+        font-size: n(40);
+        color: #333;
+      }
+      .txt02 {
+        font-size: n(28);
+        color: #999;
+        line-height: n(40);
+        margin: n(20) 0;
+      }
+      .txt03 {
+        span {
+          display: inline-block;
+          zoom: 1;
+          font-size: n(24);
+          color: #333;
+          padding: n(8) n(16);
+          border: 1px solid #dcdcdc;
+          -webkit-border-radius: n(40);
+          -moz-border-radius: n(40);
+          border-radius: n(40);
+        }
+      }
+    }
+  }
+  .btn1 {
+    display: block;
+    width: 50%;
+    text-align: center;
+    height: n(76);
+    line-height: n(76);
+    background: #fff;
+    border: 1px solid #34cd65;
+    -webkit-border-radius: n(60);
+    -moz-border-radius: n(60);
+    border-radius: n(60);
+    margin: n(28) auto;
+    color: #444;
+    color: #34cd65;
+    margin-top: n(40); 
+    margin-bottom: n(80);
+    font-size: n(32);
+  }
+  .cont02 {
+    border-top: 1px solid #efefef;
+    background: #eee;
+    padding-bottom: n(40);
+  }
+  .cont03 {
+    height: n(836);
+    background: url(https://static.ydlcdn.com/activity/images/activity002/team_bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    .tt1 {
+      color: #fff;
+    }
+    .tt2 {
+      color: #fff;
+    }
+    .contInner03 {
+      .swiper-slide {
+        background: #fff;
+        text-align: center;
+        -webkit-border-radius: n(12);
+        -moz-border-radius: n(12);
+        border-radius: n(12);
+        width: n(355);
+        margin-right: n(40);
+      }
+      .expertImge {
+        width: n(160);
+        height: n(160);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        margin: n(40) 0;
+      }
+      .name {
+        font-size: n(40);
+        line-height: 1;
+      }
+      .poster {
+        font-size: n(28);
+        color: #888;
+        margin: n(20) 0 n(40) 0;
+     }
+     .tag {
+      color: #fff;
+      display: inline-block;
+      zoom: 1;
+      padding: n(16) n(24);
+      -webkit-border-radius: n(40);
+      -moz-border-radius: n(40);
+      border-radius: n(40);
+      background: #34cd65;
+      margin-bottom: n(32);
+      font-size: n(32);
+      }
+    }
+  }
+  .cont04 {
+    .contInner04 {
+      padding: 0 n(30);
+      .item {
+        padding: n(36) 0 n(24) n(140);
+        position: relative;
+        border-bottom: 1px solid #ececec;
+        .txt02 {
+          font-size: n(28);
+          color: #888;
+          line-height: n(40);
+        }
+        .txt01 {
+          font-size: n(28);
+          color: #888;
+        }
+        .txt03 {
+          line-height: n(52);
+          color: #333;
+          font-size: n(32);
+        }
+        .userImge {
+          width: n(80);
+          height: n(80);
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          position: absolute;
+          left: n(12);
+          top: n(32);
+        }
+      }
+    }
+  }
+  .cont05 {
+    background: #F5F5F5;
+    padding: 0 n(30) n(40);
+  }
+  .cont06 {
+    padding: 0 n(30) n(40);
+  }
+  .cont07 {
+    background: #F5F5F5;
+    padding: 0 n(30) n(40);
+    div{
+      margin-top: n(20);
+    }
+    .txt01 {
+      line-height: n(40);
+      margin: n(20) 0;
+      font-size: n(32);
+    }
+  }
+  .footer {
+    padding: n(40) n(30) n(120);
+    text-align: center;
+    .txt01 {
+      text-align: center;
+      font-size: n(32);
+      position: relative;
+      margin: n(60) 0 n(8) 0;
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+    }
+    .txt02 {
+      color: #333;
+      text-align: center;
+      font-size: n(28);
+      margin-top: n(20);
+    }
+    .txt03 {
+      color: #888;
+      text-align: center;
+      font-size: n(28);
+      margin-top: n(52);
+      line-height: n(40);
+    }
+    .navs {
+      overflow: hidden;
+      li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        border-bottom: 1px solid #ececec;
+        padding-bottom: n(40);
+        a {
+          color: #4586B9;
+          font-size: n(32);
+          width: 100%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .footer-fix {
+    text-align: center;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    height: n(112);
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    a{
+      float: left;
+      height: n(112);
+      i {
+        width: n(50);
+        height: n(40);
+        background-size: cover;
+        display: block;
+        margin: n(20) auto n(10) auto;
+        }
+      .icon_wechat {
+        background-image: url(https://static.ydlcdn.com/activity/images/update171121/icon_tel.png);
+      }
+      &.online {
+        width: 50%;
+        color: white;
+        background-color: #ff962f;
+        line-height: n(112);
+        font-size: n(36);
+      }
+    }
+    a.wechat {
+      width: 50%;
+      color: #999;
+      background-color: white;
+      font-size: n(22);
+    }
+  }
+  .area_floatMenu {
+    width: 100%;
+    position: fixed;
+    bottom: -2px;
+    z-index: 9999;
+    background: #ff5722;
+    display: flex;
+    a{
+      width: 50%;
+      height: 65px;
+      background: url(https://static.ydlcdn.com/activity/images/update171212/float_bg.png) no-repeat center;
+      background-size: cover;
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+      position: relative;
+      bottom: -6px;
+      img{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+    :nth-child(1) {
+      border-right: 0.5px solid #FF311A;
+    }
+    :nth-child(2) {
+      border-left: 0.5px solid #FF311A;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@import '~@/styles/base/var.scss';
+
+.page-kc-qinzi{ width: 100%; background: #F8F8F1;
+  .header{
+    .datasurvey{ width: n(652); height: n(212); margin: n(-40) auto 0; border-radius: n(20);
+      position: relative; z-index: 1;
+      box-shadow: 0 0 n(30) rgba(0,0,0,.3); box-sizing: border-box; padding-top:n(20);
+      background:#6FA1C1 linear-gradient(to right, #A3D87E, #6FA1C1);
+
+      .item{ text-align: center; display: inline-block; color: #fff;
+        width: 33%;
+        img{ width: n(80); height: n(80);}
+        strong, span{ display: block; text-align: center;}
+        strong{ margin-top:n(-10); font-weight: normal;
+          font-size: n(30);
+        }
+        span{ font-size: n(24);}
+      }
+    }
+  }
+
+  .control{
+    text-align: center;
+    .btn{ display:inline-block; width:n(392); height: n(80); background: #E8AA67; font-size: n(30);
+      text-align: center; line-height: n(80); color: #fff; border-radius: n(40);
+    }
+  }
+
+  .mt20{ margin-top:n(20);}
+  .mt80{ margin-top:n(80);}
+
+  .title{ width: n(750); height: n(70); margin-top:n(80);
+    @for $i from 1 through 7
+    {
+      &.t-#{$i}
+      {
+        background:url($imgPath+'/activity/kc/qinzi/t-#{$i}.png') no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  // 四大学习阶段
+  .sdxxjd{ width: 100%; font-size: 0; margin-top:n(20);
+    img{ width: 100%;}
+
+    .control{ margin-top:n(-140);}
+  }
+
+  // 面授教学
+  .msjx{ width: n(652); height: n(600); margin:n(50) auto 0; border-radius: n(20);
+    position: relative; z-index: 1;
+    box-shadow: 0 0 n(30) rgba(0,0,0,.3); box-sizing: border-box; padding-top:n(20);
+    background:#6FA1C1 linear-gradient(to right, #A3D87E, #6FA1C1);
+
+    .msjxPoster{ width: n(600); padding-top:n(30); margin: 0 auto;}
+
+    .content{ text-align: center; color: #fff; font-size: n(30);}
+  }
+
+  // 授课大咖云集
+  .skdkyj{ width: n(652); margin:n(50) auto 0;
+    .item{ width: 100%; position: relative; height: n(246);
+      .line{ display: block; width: n(32); height: n(272);
+        background:url($imgPath+'/activity/kc/qinzi/line.png') no-repeat;
+        background-size: cover;
+        position: absolute; left: 0; top: 0;
+        overflow: hidden;
+      }
+      dl{ margin-left:n(40); width: n(600); background: #D99C61; height: n(190);
+        border-radius: n(60) n(20) n(20) n(20);
+        dt{ width: n(92); height: n(92); font-size: 0; float: left; margin:n(10);
+          img{ display: block; width: 100%; height: 100%; border-radius: 50%;}
+        }
+        dd{ margin-left:n(120); padding-top:n(16);
+          span{ height: n(40); display: inline-block; background: #EBC150;
+            padding:0 n(10); color: #fff; font-size: n(20); border-radius: n(20);
+            line-height: n(40);
+          }
+          p{ font-size: n(24); color:#fff; padding:n(8) n(20) 0 0;}
+        }
+      }
+
+      &:nth-child(3){
+        .line{ height: n(246);}
+      }
+
+      &:last-child{
+        .line{ height: n(34);}
+      }
+    }
+  }
+
+  // 我们正在寻找这样的你
+  .wmzzxzzydy{ width: n(750); font-size: 0;
+    img{ width: 100%;}
+  }
+
+  // 为什么选择壹点灵
+  .wsmxzydl{
+    ul{ width: n(652); margin: n(50) auto 0;
+      li{ height: n(150); margin-top:n(30);
+        box-shadow: 0 0 n(30) rgba(0,0,0,.3); box-sizing: border-box; border-radius: n(20);
+        background:#6FA1C1 linear-gradient(to right, #A3D87E, #6FA1C1);
+        color: #fff; text-align: center;
+        strong{ padding-top:n(10); display: block; font-size: n(48); font-weight: normal;}
+        h3{ font-size: n(30); font-weight: normal;}
+      }
+    }
+  }
+
+  // 各大媒体争相报道
+  .gdmtzxbd{ width: n(652); margin: n(50) auto 0;
+    box-shadow: 0 0 n(30) rgba(0,0,0,.3); box-sizing: border-box; border-radius: n(20);
+    background:#6FA1C1 linear-gradient(to right, #A3D87E, #6FA1C1);
+
+    ul{ margin:0 n(30); padding:n(60) 0 n(20); height: n(132 * 2 + 40);
+      li{ float: left; background: #fff; width: n(276); position: relative;
+        height: n(132); overflow: hidden; margin:0 n(10) n(20) n(10);
+        p{ padding:n(20) 0 n(20) n(20); color: #666; font-size: n(20);
+        }
+
+        img{ width:n(122); height: n(56);
+          position: absolute; right: 0; bottom: n(6);
+        }
+      }
+    }
+  }
+
+  // 关于我们
+  .aboutus{ width: n(652); margin: n(50) auto 0; padding-bottom: n(60);
+    box-shadow: 0 0 n(30) rgba(0,0,0,.3); box-sizing: border-box; border-radius: n(20);
+    background:#6FA1C1 linear-gradient(to right, #A3D87E, #6FA1C1);
+
+    .des{ width: n(600); margin:0 auto; padding:n(20) 0; color: #fff;
+      p{ font-size: n(24); padding-top:n(20);
+        text-indent:n(50);
+      }
+    }
+
+    .aboutusPoster{ width: n(600); padding-top:n(30); margin: 0 auto;}
+  }
+
+  // 底部
+  .footer{ width: 100%; font-size: 0;
+    img{ width: 100%;}
+  }
+}

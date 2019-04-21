@@ -1,0 +1,187 @@
+@import '~@/styles/base/var.scss';
+
+.page-hd-day1111{
+  width:100%; background:#ad3933;
+
+  .page-hd-day1111-main{ width: 100%; margin:0 auto; background:url($imgPath+"/activity/hd/day1111/bg.jpg") repeat-y center n(900);
+    background-size: 100% auto; padding-bottom: n(60);
+
+    // banner
+    .banner{ width: n(750); margin:0 auto; height: n(920); background: url($imgPath+"/activity/hd/day1111/banner.png") no-repeat;
+      background-size: cover;
+    }
+
+    // 标题
+    .title{ width: n(750);margin:0 auto;
+
+      $arr: (
+        (h: n(104)),
+        (h: n(105)),
+        (h: n(120)),
+        (h: n(104)),
+      );
+
+      @for $i from 1 through length($arr) {
+        $item: nth($arr, $i);
+
+        &.t-#{$i} {
+          background:url($imgPath+"/activity/hd/day1111/t-#{$i}.png") no-repeat;
+          background-size: cover;
+          height: map-get($item, h);
+        }
+      }
+    }
+
+    // 盒子
+    .box{ width: n(750); padding:n(66) 0 n(78) 0;
+      background: url($imgPath+"/activity/hd/day1111/box-top.png") no-repeat left top,
+                  url($imgPath+"/activity/hd/day1111/box-bottom.png") no-repeat left bottom;
+      background-size: n(750) n(69), n(750) n(80);
+
+      .box-content{ width: n(750);
+        background: url($imgPath+"/activity/hd/day1111/box-bg.png") repeat-y left top;
+        background-size: n(750) auto;
+      }
+    }
+
+    // 礼券
+    .coupon{width: n(750);margin:0 auto;
+      .card{ width: n(750);
+        a{ display: block; width: n(750); height: n(206);
+          &.card-1{
+            background: url($imgPath+"/activity/hd/day1111/card-1.png") repeat-y left top;
+            background-size: n(750) auto;
+          }
+          &.card-2{ margin-top:n(20);
+            background: url($imgPath+"/activity/hd/day1111/card-2.png") repeat-y left top;
+            background-size: n(750) auto;
+          }
+        }
+      }
+
+      .ceshi{ text-align: center;
+        p{ font-size: n(28); color: #666;}
+        strong{ display: block; color: #333; font-size: n(36); margin:n(6) 0;}
+      }
+    }
+
+    // vip会员5折卡
+    .vip{width: n(750);margin:0 auto;
+      .vip_content{ width: n(750); height: n(698); position: relative;
+        background: url($imgPath+"/activity/hd/day1111/vip.png") repeat-y left top;
+        background-size: cover;
+
+        .control{ position: absolute; bottom: n(100); width: n(750);}
+      }
+    }
+
+    // 限时秒杀
+    .sale{width: n(750);margin:0 auto;
+      ul{ width: n(720); margin:0 auto;
+        li{ display: inline-block; width: n(320); height: n(400); margin:n(40) n(18) 0 n(18); background: #fff;
+          border-radius: n(12); box-shadow: 0 n(20) n(30) rgba(0,0,0,.1); overflow: hidden;
+
+          dl{
+            dt{ width: n(320); height: n(160); text-align: center; overflow: hidden;
+              img{ width: n(320); height: n(160); max-width: n(320); max-height: n(160);}
+            }
+
+            dd{ padding: n(16) n(20);
+              p{ color: #666; font-size: n(26); height: n(80); overflow: hidden;}
+              .info{
+                span{ display: inline-block;
+
+                  &.sp1{ color: #be4b48; font-size: n(36); font-weight: bold;
+                    i{ font-size: n(20); position: relative; top:n(-10); margin-right: n(4);}
+                  }
+
+                  &.sp2{ display: none; height: n(28); line-height: n(28); padding:n(2) n(8) 0 n(8); border-radius: n(12) n(12) n(12) 0;
+                    background: #ffae02; color: #fff; font-size: n(16); position: relative; left: n(20); top: n(-6);
+                    box-sizing: border-box;
+                  }
+                }
+              }
+
+              a{ display: block; width: n(280); height: n(60); line-height: n(60); text-align: center;
+                background: #f7e5e5; color: #be4b48; font-size: n(26); margin-top:n(10);
+                border-radius: n(6);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 任性买买买
+    .buybuybuy{width: n(750);margin:0 auto;
+      .items{ width: n(616); height: n(700); margin: 0 auto; overflow: hidden;
+
+        ul{
+          li{ height: n(180);
+            dt{ width: n(74); height: n(74); border-radius: 50%; margin-top:n(10);
+              float: left; border: n(2) solid #dcdcdc;
+
+              @for $i from 1 through 13
+              {
+                &.f-#{$i}
+                {
+                  background:url($imgPath+'/activity/hd/day1111/f-#{$i}.png') no-repeat center;
+                  background-size: cover;
+                }
+              }
+            }
+
+            dd{ margin-left:n(104);
+              .name{ color: #999; font-size: n(18);}
+              .text{ background:#edf3ff; border-radius: 0 n(12) n(12) n(12); margin-top:n(10); height: n(100); position: relative;
+                padding:n(14) n(20); color: #333; box-sizing: border-box;
+                p{
+                  height: n(66); overflow: hidden; font-size: n(24);
+                }
+                i{ display: block; width:n(10); height: n(14);
+                  position: absolute; left: n(-10); top: 0;
+                  background:url($imgPath+'/activity/hd/day1111/ico.png') no-repeat center;
+                  background-size: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 说明
+    .explain{width: n(750);margin:0 auto;
+      .textlist{
+        width: n(640); margin:0 auto; padding: n(20) 0; position: relative; left: n(24); margin-bottom:n(-2);
+        strong{ display: block; font-size: n(40);}
+        .text{ margin-top:n(30);
+          p{ color: #333; font-size: n(24); margin-top:n(20);
+            position: relative; padding-left: n(50);
+            i{ display: inline-block; width: n(34); height: n(34); border-radius: 50%;
+              background:#b19f8d; color: #fff; text-align: center; line-height: n(34);
+              font-size: n(20); position: absolute; left: 0; top: n(0);
+
+            }
+          }
+        }
+      }
+    }
+
+    .control{ text-align: center;
+      a{ display: inline-block; border-radius: n(12); color: #fff;
+        background: linear-gradient( to right,#f09557,#ec663f);
+        &.btn-s{ width: n(284); height: n(72); font-size: n(28); line-height: n(72); }
+        &.btn-b{ width: n(616); height: n(86); line-height: n(86); font-size: n(32); }
+        &.btn-b2{ width: n(616); height: n(86); line-height: n(86);
+          background: #f9ec9e; color: #060200; font-size: n(32);
+        }
+        &.btn-b3{ width: n(680);}
+      }
+    }
+
+    .mt10{ margin-top:n(20);}
+    .mt20{ margin-top:n(40);}
+    .mt40{ margin-top:n(80);}
+  }
+}

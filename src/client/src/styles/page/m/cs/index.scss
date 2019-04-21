@@ -1,0 +1,38 @@
+@import '~@/styles/base/var.scss';
+
+.page-ceshi-cs{
+  width: n(750); min-height: n(1000);  margin:0 auto; padding-top:n(950); background:#143AAD url($imgPath+'/ceshi/cs2/ceshi_banner.jpg') no-repeat center top;
+  background-size: n(750) auto;
+
+  .title{
+    background:url($imgPath+'/ceshi/cs2/ceshi_title.png') no-repeat center top;
+    background-size: n(600) auto;
+    margin: 0 auto; height: n(40);
+  }
+
+  .list{ width: n(720); margin-top:n(40);
+    li{ display: inline-block; width: n(330); padding:n(15);
+      dl{
+        height: n(320); background: #fff; overflow: hidden; border-radius: n(10);
+
+        dt{ width: n(330); height: n(185); overflow: hidden;
+          img{ width: 100%;}
+        }
+
+        dd{ padding:n(15) n(20);
+          h1{ font-size: n(28); color: #333; font-weight: normal;}
+
+          p{ margin-top:n(20); height: n(40);
+            .sp1{ float: left; color: #FF5B05; line-height: n(50);
+              em{ font-weight: normal; font-size: n(32);}
+            }
+            .sp2{ float: right; color: #999; font-size: n(20); line-height: n(50);}
+          }
+        }
+      }
+
+    }
+  }
+
+  .footer{ text-align: center; color: #fff; font-size: n(20); padding:n(30) 0;}
+}

@@ -1,0 +1,165 @@
+@import '~@/styles/base/var.scss';
+
+body{ background: #7838ad;}
+
+.page-qixi{ max-width: n(750); margin:0 auto;
+
+  .topRemind{ display: none; position:fixed; top: 0; left: 0; height: n(60); line-height: n(60);
+     background: rgba(0,0,0,.5); font-size: n(24);
+     color: #fff; text-align: center; z-index: 1000; width: 100%;
+  }
+
+  .header{ width: n(750); height: n(1091);
+    background: url($imgPath+'/qixi/header.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .danmu_box{ width: n(670); height: n(535); margin:n(0) auto 0 auto;
+    background: url($imgPath+'/qixi/tanmu.png') no-repeat;
+    background-size: cover; position: relative;
+
+    .danmu_content{ width: n(565); height: n(355); position: absolute; left: n(80); top: n(140);
+      border-radius: n(10);
+    }
+  }
+
+  .tanmu-control{ width: n(670); height: n(120); margin: n(30) auto 0 auto; overflow: hidden;
+    .select{ float: left; width: n(160); height: n(80); position: relative;
+      select{ width: 100%; height: n(80); position: absolute; left: 0; top: 0; opacity: 0; z-index: 2;}
+      .selected{ display: block; position: relative; width: 100%; height: n(80); border-radius: n(40);
+        background: #fff; z-index: 1; color: #444; line-height: n(80);
+        box-sizing: border-box; padding-left: n(30); position: relative;
+        span{ font-size: n(26);}
+        i{ display: block; width: n(20); height: n(10);
+          position: absolute; top:n(30); right: n(25);
+          background: url($imgPath+'/qixi/select-ico.png') no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+    .enter{ float: right; width: n(500); height: n(80); background: #fff; border-radius: n(40); overflow: hidden;
+      input{ float: left; width: n(350); height: n(80); margin-left: n(40); border: 0; padding: 0;
+        font-size: n(26);
+      }
+      a{ float: right; width: n(55); height: n(55); margin: n(12) n(20) 0 0;
+        background: url($imgPath+'/qixi/send.png') no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .remind{ display: none; clear: both; width: n(500); margin-left:n(160); color: red;}
+  }
+
+  .qgzj{ width: n(690); min-height: n(320); margin: 0 auto; position: relative;
+    .title3{ height: n(42); color: #fff; font-weight: normal;
+      margin-top:n(50); position: relative; padding-left:n(22); position: relative; overflow: hidden;
+      &::before{ display: block; content: ""; width: n(10); height: n(34); font-size: 0;
+        background: #fff; border-radius: n(5); overflow: hidden; position: absolute; left: 0; top: n(4);
+      }
+      span{ float: left; font-weight: normal; font-size: n(30);}
+      a{ float: right; color: #fff; font-size: n(26);}
+    }
+
+    .qgzj_list{ height: n(300); border-radius: n(10); width: 100%; position: absolute; left: 0; top:n(70);
+      background:linear-gradient(to top, #f7446e, #fe6480); display: flex; padding-top:n(30);
+
+      li{ width: 25%; text-align: center; opacity: .8; height: n(32); line-height: n(32); font-size: n(26);
+        position: relative; color: #fff;
+
+        &.cur{ opacity: 1; font-size: n(30);
+          &::after{ display: block; content: ""; width: n(40); height: n(6); font-size: 0; overflow: hidden;
+            background: #fdde38; position: absolute; bottom: n(-10); left: 50%; margin-left:n(-20);
+            border-radius: n(3);
+          }
+        }
+      }
+    }
+
+    .qgzj_content{ margin-top:n(120); position: relative; z-index: 1;
+      .item{ width: 100%; display: none;
+        li{ float: left; width: n(320); height: n(450); margin:n(10) n(12); background: #fff; border-radius: n(8);
+          dt{ width: n(320); height: n(320); border-radius: n(8) n(8) 0 0; overflow: hidden; background: #ddd;
+            font-size: 0;
+            img{ width: n(320); height: n(320);}
+          }
+
+          dd{ margin-top:n(30); padding: 0 n(20);
+            .info{ height: n(40); overflow: hidden; line-height: n(40);
+              .name{ float: left; color: #1a1a1a; font-size: n(26);
+                i{ display: inline-block; width: n(12); height: n(20); font-size: 0; overflow: hidden;
+                  background: url($imgPath+'/qixi/ico-nv.png') no-repeat;
+                  background-size: cover;
+
+                  &.ico-nan{
+                    background: url($imgPath+'/qixi/ico-nan.png') no-repeat;
+                    background-size: cover;
+                  }
+                  &.ico-nv{
+                    background: url($imgPath+'/qixi/ico-nv.png') no-repeat;
+                    background-size: cover;
+                  }
+                }
+              }
+              .online{ float: right;  height: n(40); background: #4fb5f5; box-sizing: border-box;
+                line-height: n(40); color: #fff; font-size: n(22); padding:n(2) n(20) 0 n(20); border-radius: n(20);
+
+                &.out{ background: #e5e5e5; color: #818181;}
+              }
+            }
+
+            .count{ height: n(32); overflow: hidden; margin-top:n(10); color: #a9a9a9;
+              span{ color: #666;}
+            }
+          }
+        }
+
+        &:first-child{ display: block;}
+
+        &::after{ display: block; content: ""; clear: both; width: 0; height: 0; font-size: 0; overflow: hidden;}
+      }
+    }
+  }
+
+  .title{ width: n(440); height: n(69); margin:n(150) auto 0 auto;
+    &.t1{
+      background: url($imgPath+'/qixi/title1.png') no-repeat;
+      background-size: cover;
+    }
+    &.t2{
+      background: url($imgPath+'/qixi/title2.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .hongbao{ width: n(670); height: n(180); margin: n(40) auto 0 auto;
+    background: url($imgPath+'/qixi/hongbao.png') no-repeat;
+    background-size: cover;
+
+    a{ display: block; width: 100%; height: 100%;}
+  }
+
+  .explain{ width: n(660); margin: n(140) auto 0 auto; padding-bottom: n(100); text-align: center;
+    .title2{ display: inline-block; height: n(68); font-size: n(30); color: #fff; line-height: n(68);
+      padding:0 n(40); border: 1px solid #fff; border-radius: n(40); font-weight: normal; margin-bottom: n(20);
+    }
+
+    p{ position: relative; text-align: left; padding-left: n(30); color: #fff; margin-top:n(30); font-size: n(24);
+      &::before{ display: block; content: ""; width: n(12); height: n(12); border-radius: 50%; background: #fff;
+        font-size: 0; overflow: hidden; position: absolute; left: 0; top: n(12);
+      }
+    }
+  }
+
+  .download{ width: n(750); height: n(360);
+    background: url($imgPath+'/qixi/download.png') no-repeat;
+    background-size: cover;
+
+    a{ display: block; width: 100%; height: 100%;}
+  }
+}
+
+.flying{ width: n(600);
+  span{ color: #fff; font-size: n(30)}
+  i{ font-size: n(40); font-weight: bold; position: relative; top: n(6);}
+}

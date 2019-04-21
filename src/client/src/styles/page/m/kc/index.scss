@@ -1,0 +1,487 @@
+@import '~@/styles/base/var.scss';
+
+.page-m-kc{
+  max-width: n(750);
+
+  margin: 0 auto;
+
+
+  .clearfix {
+    display: inline-table;
+
+    &.clearfix:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+  }
+
+  .kc-adv{
+    width: 100%;
+    height: n(130);
+    background-color: #34cd65;
+
+    .kc-adv-item{
+      display: inline-block;
+      padding: n(30) n(20) 0 n(20);
+      width: 33.33%;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .adv-ico{
+      float: left;
+      display: inline-block;
+      width: n(64);
+      height: n(64);
+      background: url($imgPath+'/activity/m/kc/ico_white.png');
+      background-size: n(192) n(64);
+    }
+    .adv-ico.ico1{
+      background-position: 0 0;
+    }
+    .adv-ico.ico2{
+      background-position: n(-64) 0;
+    }
+    .adv-ico.ico3{
+      background-position: n(-128) 0;
+    }
+    .adv-info{
+      display: inline-block;
+      text-align: left;
+      color: #fff;
+      font-size: n(28);
+      line-height: n(32);
+    }
+  }
+
+
+  .kz_title{
+    font-size: n(48);
+    text-align: center;
+    font-weight: bold;
+
+    &:after{
+      content: '';
+      display: block;
+      width: n(56);
+      height: n(6);
+      margin: n(36) auto n(30);
+      background-color: #34cd65;
+    }
+  }
+
+  .kz_about{ width: 100%;
+    padding:n(100) 0 n(170) 0; background:url($imgPath+'/activity/m/kc/07-BG.png') no-repeat;
+    background-size: 100% auto;
+    color:#fff;
+
+    p{ font-size: n(26); color: #fff; padding:n(20) n(52); line-height: n(50); font-weight: normal;}
+
+    .control{ text-align: center;
+      .btn{ display: inline-block; width: n(380); height: n(88); line-height: n(88); border-radius: n(44); background: #00b43c;
+        color: #fff; font-size: n(32); text-align: center; margin-top:n(40);
+      }
+    }
+  }
+
+  .kz_media{ width: 100%;
+    padding:n(100) 0; background:url($imgPath+'/activity/m/kc/06-BG.png') no-repeat;
+    background-size: 100% auto;
+
+    ul{
+      li{ float: left; width: n(345); height: n(158); margin:n(30) 0 0 n(20); font-size: n(24);
+        overflow: hidden; box-sizing: border-box; border-radius: n(8); padding:n(20); color: #333;
+
+        @for $i from 1 through 4
+        {
+          &.i-#{$i}
+          {
+            background:#fff url($imgPath+'/activity/m/kc/0#{$i}.png') no-repeat n(160) bottom;
+            background-size: n(174) n(76);
+          }
+        }
+      }
+
+      &::after{ display: block; content: " "; clear: both; font-size: 0; width: 0; height: 0; overflow: hidden;}
+    }
+  }
+
+  .slide_li{ height: n(480); padding-top:n(80); box-sizing: border-box; position: relative;}
+
+  .user-head{
+    position: absolute; right: n(10); top: n(50);
+    display: inline-block;
+    width: n(88);
+    height: n(88);
+    border-radius: 50%;
+    background: url($imgPath+'/activity/m/kc/userhead.png');
+    background-size: n(352) n(88);
+  }
+  .user-head.head2{
+    background-position: n(-88) 0;
+  }
+  .user-head.head3{
+    background-position: n(-172) 0;
+  }
+  .user-head.head4{
+    background-position: n(-264) 0;
+  }
+
+  .kc_logo{
+    background: #fff;
+    padding: n(15);
+    img{width: n(185);height: n(60)}
+  }
+  .kc_bg{
+    height: n(500);
+    img{width: 100%}
+  }
+  .kc_tab{
+    background: #34cd65;
+    height: n(120);
+    .tab{
+      width: 33.33%;
+      .bgImga{
+        width: n(50);
+        height: n(50);
+        background: url('http://kc.haoshi99.com/images/180413kz_m/ico_white.png')no-repeat ;
+        background-size:100% 100% ;
+
+      }
+    }
+  }
+  .kc_items{
+    padding-top: n(60);
+    padding-bottom: n(60);
+    background: #fff;
+    .kc_title{
+      font-weight: bold;
+      font-size: n(48);
+      text-align: center;
+    }
+
+    .kc_title:after {
+      content: '';
+      height: n(8);
+      width: n(50);
+      background-color: #34cd65;
+      margin: n(15) auto n(27.5) auto;
+      display: block;
+    }
+    img{width: 100%;}
+    span{margin-left: n(112);color: #333;
+      font-weight: bold;font-size: n(26)}
+    .span_frist{
+      margin-left: n(90);
+    }
+    .button_a{display: inline-block;width: n(400);height: n(75);border-radius: n(50);
+      margin-left: n(160);margin-top: n(50);text-align: center;line-height: n(75);color: #fff;
+      font-size: n(30);
+      background-image: linear-gradient(90deg, #34cd65 0%, #00bf40 100%), linear-gradient(#34cd65, #34cd65);
+    }
+  }
+  .kc_group{
+    padding-top: n(80);padding-bottom: n(60);
+    height: n(730);
+    background: url('http://kc.haoshi99.com/images/180413kz_m/bg_online.jpg')no-repeat;
+    background-size: 100% 100%;
+    .kc_title{
+      font-weight: bold;
+      font-size: n(48);
+      text-align: center;
+    }
+    .kc_label{
+      color: #fff;font-size: n(24);text-align: center;
+    }
+    .kc_label:after{
+      content: '';
+      height: n(5);
+      width: n(50);
+      background-color: #34cd65;
+      margin: n(15) auto n(27.5) auto;
+      display: block;
+    }
+    .kc_iamges{
+      width: n(320);height: n(500);background: #fff;float: left;margin-left: n(32);
+      border-radius: n(8);overflow: hidden;margin-top: n(50);
+      img{width: 100%}
+      p{
+        text-align: center;font-size: n(35);font-weight: bold;margin-top: n(30);
+      }
+      .kc_p{
+        text-align: center;font-size: n(28);font-weight: normal;margin-top:n(4) ;
+      }
+    }
+  }
+  .kc_shot{
+    background: #fff;
+    padding-top: n(60);
+    padding-bottom:n(60) ;
+    .kc_title{
+      font-weight: bold;
+      font-size: n(48);
+      text-align: center;
+    }
+
+    .kc_title:after {
+      content: '';
+      height: n(8);
+      width: n(50);
+      background-color: #34cd65;
+      margin: n(15) auto n(27.5) auto;
+      display: block;
+    }
+    .swiper-slide{
+      width: 75%;
+      height: n(680);
+      margin-left: n(20); text-align: center;
+      box-shadow: 0px n(24) n(42) n(5) rgba(0, 0, 0, 0.08);
+      border: n(2) solid rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+      img{
+        border-radius: 100%;
+        border: n(16) solid #f5f5f5;
+        margin-top: n(80);
+      }
+      .kc_names{
+        font-size: n(38);font-weight: normal;margin-top: n(30);
+      }
+      .kc_names:after{
+        content: '';
+        height: n(5);
+        width: n(30);
+        background-color: #34cd65;
+        margin: n(15) auto n(27.5) auto;
+        display: block;
+      }
+      p{
+        margin-left: n(40);margin-right: n(40);font-size: n(28);text-align: left;
+      }
+    }
+    .swiper-pagination{ width: 100%; box-sizing: border-box; text-align: center;
+      margin-top: n(20);
+      ;
+    }
+    .swiper-pagination-bullet{
+      margin-left: n(10);
+    }
+  }
+  .kc_seek{
+    padding-top: n(80);
+    background: #fff;
+    height: n(880 );
+    padding-bottom: n(80);
+    .kc_title{
+      font-weight: bold;
+      font-size: n(48);
+      text-align: center;
+    }
+
+    .kc_title:after {
+      content: '';
+      height: n(8);
+      width: n(50);
+      background-color: #34cd65;
+      margin: n(15) auto n(27.5) auto;
+      display: block;
+    }
+    img {width: n(150);margin-left: n(80);margin-top: n(50);float: left}
+    .kc_text{
+      width: n(500);
+      text-align: left;
+      float: left;
+      p{
+        font-size: n(29);
+        margin-top: n(60);
+        margin-left: n(20);
+      }
+    }
+    .button_a{display: inline-block;width: n(400);height: n(75);border-radius: n(50);
+      margin-left: n(160);margin-top: n(70);text-align: center;line-height: n(75);color: #fff;
+      font-size: n(30);
+      background-image: linear-gradient(90deg, #34cd65 0%, #00bf40 100%), linear-gradient(#34cd65, #34cd65);
+    }
+  }
+  .kc_Student{
+    padding-top: n(80);
+    padding-bottom: n(100);
+
+    background: #f5f5f5;
+    .kc_title{
+      font-weight: bold;
+      font-size: n(48);
+      text-align: center;
+    }
+
+    .kc_title:after {
+      content: '';
+      height: n(8);
+      width: n(50);
+      background-color: #34cd65;
+      margin: n(15) auto n(27.5) auto;
+      display: block;
+    }
+    .kc_alert{
+      width: n(700);
+      height: n(480);
+      background: #fff;
+      margin: 0  auto;
+      box-shadow: 0px 12px 21.12px 2.88px rgba(0, 0, 0, 0.08);
+      background: url('http://kc.haoshi99.com/images/180413kz_m/card_ico.png')no-repeat;
+      background-size:100% 100% ;
+    }
+    .kc_boeder{
+      width: n(552) !important;
+      height: n(340);
+     margin: 0 auto;
+      .swiper-slide{
+
+      h3{
+        font-size: n(30);
+      }
+      p{
+        margin-top: n(40);font-size: n(28);
+      }
+     }
+    }
+    .swiper-pagination{
+      margin-left: n(310);
+      margin-top: n(30);
+    }
+    .swiper-pagination-bullet{
+      margin-left: n(10);
+
+    }
+    .swiper-pagination-bullet-active{
+      background: #fff !important;
+    }
+  }
+  .kc_Choice {
+    padding-top: n(80);
+    padding-bottom: n(80);
+    background: #fff;
+    height: n(1060);
+    .kc_title {
+      font-weight: bold;
+      font-size: n(48);
+      text-align: center;
+    }
+
+    .kc_title:after {
+      content: '';
+      height: n(8);
+      width: n(50);
+      background-color: #34cd65;
+      margin: n(15) auto n(27.5) auto;
+      display: block;
+    }
+    .kc_list {
+      clear: both;
+      .choice_img {
+        width: n(120);
+        height: n(120);
+        overflow: hidden;
+        float: left;
+        margin-left: n(70);
+        margin-bottom: n(50);
+      }
+      img {
+        width: n(600);
+        height: n(120)
+      }
+      .img1{
+        margin-left: n(-119);
+      }
+      .img2{
+        margin-left: n(-238);
+      }
+      .img3{
+        margin-left: n(-358);
+      }
+      .img4{
+        margin-left: n(-479);
+      }
+      .kc_test {
+        float: left;
+        margin-left: n(20);
+        p {
+          font-size: n(38);
+          color: #333;
+          margin-bottom: n(10);
+        }
+        span {
+          color: #999;
+          font-size: n(24)
+        }
+      }
+    }
+    .button_a{display: inline-block;width: n(400);height: n(75);border-radius: n(50);
+      ;margin-top: n(70);text-align: center;line-height: n(75);color: #fff;
+      font-size: n(30);
+      background-image: linear-gradient(90deg, #34cd65 0%, #00bf40 100%), linear-gradient(#34cd65, #34cd65);
+    }
+  }
+
+  .footer_poster{ width:n(620); height: n(352);
+    img{ width: 100%; height: 100%;}
+  }
+
+  .kz_footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: #ff4650;
+    height: n(130);
+    line-height: n(130);
+    text-align: center;
+
+    a{ color: #fff; font-size: n(40);}
+  }
+
+  .kc_media{
+    padding-top:n(80);
+    height: n(500);
+    background: url('http://kc.haoshi99.com/images/180307kz_m/06-BG.png')no-repeat;
+    background-size: 100% 100%;
+    .kc_title {
+      font-weight: bold;
+      font-size: n(48);
+      text-align: center;
+    }
+
+    .kc_title:after {
+      content: '';
+      height: n(8);
+      width: n(50);
+      background-color: #34cd65;
+      margin: n(15) auto n(27.5) auto;
+      display: block;
+    }
+    .kc_lists{
+      width: n(300);
+      height: n(120);
+      padding: n(30);
+      border-radius: n(8);
+      background: url('http://kc.haoshi99.com/images/sgs/01.png')#ffffff no-repeat no-repeat right bottom;
+      background-size: 50%;
+      p{font-size: n(26); }
+    }
+    .lista{
+      background: url('http://kc.haoshi99.com/images/sgs/02.png')#ffffff no-repeat no-repeat right bottom;
+      background-size: 50%;
+    }
+    .listb{
+      background: url('http://kc.haoshi99.com/images/sgs/03.png')#ffffff no-repeat no-repeat right bottom;
+      background-size: 50%;
+    }
+    .listc{
+      background: url('http://kc.haoshi99.com/images/sgs/04.png')#ffffff no-repeat no-repeat right bottom;
+      background-size: 50%;
+    }
+  }
+}

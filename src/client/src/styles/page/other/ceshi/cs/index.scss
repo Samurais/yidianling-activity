@@ -1,0 +1,140 @@
+@import '~@/styles/base/var.scss';
+
+body{background: #27adff}
+
+.chesi_cs{max-width: n(750); margin:0 auto;
+  .cs_header{
+    width: n(750); height: n(1043);
+    background: url($imgPath+'/ceshi/cs/acc.png') no-repeat;
+    background-size: cover;
+  }
+  .cs_items{
+    width: n(690);
+    height: n(548);
+    border-radius:n(12);
+    margin: n(-365) auto;
+    background: url($imgPath+'/ceshi/cs/ceshi.png') no-repeat;
+    background-size: cover;
+  }
+  .cs_items a{
+    display: inline-block;
+    width: n(690);
+    height: n(605);
+  }
+  .qgzj{ width: n(690); min-height: n(320); margin: n(320) auto; position: relative;
+    .title3{ height: n(42); color: #fff; font-weight: normal;
+      margin-top:n(50); position: relative; padding-left:n(22); position: relative; overflow: hidden;
+      &::before{ display: block; content: ""; width: n(10); height: n(34); font-size: 0;
+        background: #fff; border-radius: n(5); overflow: hidden; position: absolute; left: 0; top: n(4);
+      }
+      span{ float: left; font-weight: normal; font-size: n(30);}
+      a{ float: right; color: #fff; font-size: n(26);}
+    }
+
+    .qgzj_list{ height: n(300); border-radius: n(10); width: 100%; position: absolute; left: 0; top:n(70);
+     display: flex; padding-top:n(30);
+
+      li{ width: 25%; text-align: center; opacity: .8; height: n(32); line-height: n(32); font-size: n(28);
+        position: relative; color: #fff;
+
+        &.cur{ opacity: 1; font-size: n(28);
+          &::after{ display: block; content: ""; width: n(40); height: n(6); font-size: 0; overflow: hidden;
+            background: #fdde38; position: absolute; bottom: n(-10); left: 50%; margin-left:n(-20);
+            border-radius: n(3);
+          }
+        }
+      }
+    }
+
+    .qgzj_content{ margin-top:n(220); position: relative; z-index: 1;
+      .item{ width: 100%; display: none;
+        position: absolute;
+        top:n(160);
+        li{ float: left; width: n(320); height: n(318); margin:n(10) n(12); background: #fff; border-radius: n(8);
+          dt{ width: n(320); height: n(320); border-radius: n(8) n(8) n(8) n(8); overflow: hidden; background: #fff;
+            font-size: 0;
+            img{ width: 100%; height: n(184);}
+          }
+
+          dd{ margin-top:n(30); padding: 0 n(20);
+            .info{ height: n(40); overflow: hidden; line-height: n(40);
+              .name{ float: left; color: #1a1a1a; font-size: n(26);
+                i{ display: inline-block; width: n(12); height: n(20); font-size: 0; overflow: hidden;
+                  background: url($imgPath+'/qixi/ico-nv.png') no-repeat;
+                  background-size: cover;
+
+                  &.ico-nan{
+                    background: url($imgPath+'/qixi/ico-nan.png') no-repeat;
+                    background-size: cover;
+                  }
+                  &.ico-nv{
+                    background: url($imgPath+'/qixi/ico-nv.png') no-repeat;
+                    background-size: cover;
+                  }
+                }
+              }
+              .online{ float: right;  height: n(40); background: #4fb5f5; box-sizing: border-box;
+                line-height: n(40); color: #fff; font-size: n(22); padding:n(2) n(20) 0 n(20); border-radius: n(20);
+
+                &.out{ background: #e5e5e5; color: #818181;}
+              }
+            }
+
+            .count{ height: n(32); overflow: hidden; margin-top:n(10); color: #a9a9a9;
+              span{ color: #666;}
+            }
+          }
+        }
+
+        &:first-child{ display: block;}
+
+        &::after{ display: block; content: ""; clear: both; width: 0; height: 0; font-size: 0; overflow: hidden;}
+      }
+    }
+  }
+.item p{
+  font-size: n(24);
+ margin-left: n(30);
+  margin-right: n(10);
+  margin-top: n(20);
+  line-height: n(32);
+  color:#797979 ;
+  margin-bottom: n(10);
+  height: n(60);
+}
+  .item span{
+    color:#a9a9a9;
+    font-size: n(20);
+    margin-left: n(30);
+  }
+  .fotehr_a{
+    width: n(585);
+    height: n(90);
+    border-radius: n(45);
+    background: url($imgPath+'/ceshi/cs/annn.png') no-repeat;
+    position: absolute;
+    top:n(900);
+    left: n(50);
+    background-size: cover;
+
+  }
+  .fotehr_a a{
+    display: inline-block;
+    width: n(585);
+    height: n(90);
+    border-radius: n(45);
+  }
+  .a{
+    margin: 0;
+  }
+  .fotehr_b{
+    width:100%;
+    height: n(158);
+    background: url($imgPath+'/ceshi/cs/bo.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:n(2220);
+
+  }
+
+}

@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="always" name="referrer">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <meta name="csrf-param" content="_csrf">
+  <meta name="csrf-token" content="I2G0u9S9pCsHPj1HQmu60iAg6dGBFArDU5gtVZAdyWZGWPHD7fuSajBsTiIWMtHrVlqF4fBgOe4VzlQN3Uu5Dg==">
+  <title>618知识狂欢节</title>
+  <meta name="keywords" content="壹点灵"/>
+  <meta name="description" content="壹点灵"/>
+  <!-- css -->
+  <link rel="stylesheet" href="//static.ydlcdn.com/global/weui/lib/weui.min.css" />
+  <!--<link rel="stylesheet" href="//static.ydlcdn.com/global/weui/css/jquery-weui.min.css" />-->
+  <link rel="stylesheet" href="//static.ydlcdn.com/mobile/css/ydl_v3.css?20180606" />
+  <link rel="stylesheet" href="//static.ydlcdn.com/global/weui/fonts/iconfont.css">
+  <script src="//static.ydlcdn.com/mobile/js/jquery-2.1.0.min.js"></script>
+  <script src="//static.ydlcdn.com/global/weui/js/jquery-weui.min.js"></script>
+  <script src="//static.ydlcdn.com/global/weui/lib/fastclick.js"></script>
+  <link rel="stylesheet" href="//kc.yidianling.com/618mobile/static/css/common.css">
+  <link rel="stylesheet" href="//kc.yidianling.com/618mobile/static/css/index.css">
+  <!-- css end -->
+  <script>console.log('m_baidu');</script>
+
+  <style>
+    body{
+      max-width: 100%;
+    }
+  </style>
+
+</head>
+
+<body class="positionr">
+
+<div class="mobile-nav">
+  <div class="mobile-nav-bg"></div>
+  <div class="common-header">
+    <ul class="overH">
+      <li class="fl person-center">
+        <a href="/">
+          <img src="//static.ydlcdn.com/mobile/images/btn_nav_home.png" alt="" class="nav-icon" />
+        </a>
+        <span>618知识狂欢节</span>
+      </li>
+      <li class="fr">
+        <a href="/login">
+          <img src="//static.ydlcdn.com/mobile/images/btn_nav_my.png" alt="" class="nav-icon">
+        </a>
+        <a href="javascript:void(0);" class="kefu">
+          <img src="//static.ydlcdn.com/mobile/images/btn_nav_kefu.png" alt="" class="nav-icon">
+        </a>
+        <a href="javascript:void(0);" class="menu">
+          <img src="//static.ydlcdn.com/mobile/images/btn_nav_menu.png" alt="" class="nav-icon">
+        </a>
+      </li>
+    </ul>
+    <p class="line"></p>
+  </div>
+  <div class="common-aside">
+    <ul class="overH btn-icon">
+      <li class="fl">
+        <a href="/sms-web/" class="news">
+          <img src="//static.ydlcdn.com/mobile/images/btn_nav_news.png" alt="" class="nav-icon">
+        </a>
+      </li>
+      <li class="fr">
+        <a href="javascript:void(0);" class="close">
+          <img src="//static.ydlcdn.com/mobile/images/btn_nav_close.png" alt="" class="nav-icon">
+        </a>
+      </li>
+    </ul>
+    <ul class="items items1">
+      <li class="item">
+        <a href="/" class="fs-17 fc-333">首页</a>
+      </li>
+    </ul>
+    <div class="lines">
+      <p></p>
+    </div>
+    <ul class="items items2">
+      <li class="item">
+        <a href="/experts/category/" class="fs-17 fc-333">找专家</a>
+      </li>
+      <li class="item">
+        <a href="/listen/" class="fs-17 fc-333">电话倾诉</a>
+      </li>
+      <li class="item">
+        <a href="/course/" class="fs-17 fc-333">心理课程</a>
+      </li>
+      <li class="item">
+        <a href="/ask/" class="fs-17 fc-333">在线问答</a>
+      </li>
+      <li class="item">
+        <a href="/ceshi/" class="fs-17 fc-333">心理测试</a>
+      </li>
+      <li class="item">
+        <a href="/jingyan/" class="fs-17 fc-333">文章</a>
+      </li>
+      <li class="item">
+        <a href="/case/" class="fs-17 fc-333">案例</a>
+      </li>
+    </ul>
+    <!-- <div class="load-btn fs-15" onclick="javaScript:window.location.href = '/app';">下载APP</div> -->
+    <a href="/app"><div class="load-btn fs-15">下载app</div></a>
+    <div class="lines">
+      <p></p>
+    </div>
+    <ul class="items items3">
+      <li class="item">
+        <a href="/enter/" class="fs-17 fc-333">专家入驻</a>
+      </li>
+      <li class="item">
+        <a href="/about/" class="fs-17 fc-333">关于我们</a>
+      </li>
+      <li class="item">
+        <a href="/help/" class="fs-17 fc-333">帮助中心</a>
+      </li>
+      <li class="item last-item">
+        <a href="//m2.yidianling.com/opion/opion" class="fs-17 fc-333">意见反馈</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  //导航
+  $(function() {
+    $(".mobile-nav .menu").off("click").on("click", function(e) {
+      event.stopPropagation();//阻止事件的冒泡
+      $(".mobile-nav-bg").show().css("overflow", "hidden");
+      $(".mobile-nav .common-aside").show();
+      $("body").css({"overflow":"hidden","position":"fixed"});
+    });
+    $(".mobile-nav-bg").off("click").on("click", function() {
+      $(this).hide().css("overflow", "auto");
+      $(".mobile-nav .common-aside").hide();
+      $("body").css({"overflow":"auto","position":"relative"});
+    });
+    $(".mobile-nav-bg").off("touchmove").on("touchmove", function(e) {
+      e.preventDefault();  //禁止touchmove的默认操作（即拖动页面）
+      e.stopPropagation();  //禁止touchmove的默认操作（即拖动页面）
+    });
+    $(".mobile-nav .close").off("click").on("click", function() {
+      $(".mobile-nav-bg").hide().css("overflow", "auto");
+      $(".mobile-nav .common-aside").hide();
+      $("body").css({"overflow":"auto","position":"relative"});
+    })
+  })
+</script>
+
+<script src="//kc.yidianling.com/618mobile/static/js/rem.js"></script>
+<script src="//hm.baidu.com/hm.js?709754f516138e611122a5d559d83423"></script>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?709754f516138e611122a5d559d83423";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<script>
+  var hostInfo = '//testm2.yidianling.com';
+  var platform = 'windows';
+  var browser = 'chrome';
+  window.sendDataToOC = function(params) {
+
+  };
+  if(browser == 'applewebkit') {
+    function connectWebViewJavascriptBridge(callback) {
+      if (window.WebViewJavascriptBridge) {
+        callback(WebViewJavascriptBridge)
+      } else {
+        document.addEventListener('WebViewJavascriptBridgeReady', function() {
+          callback(WebViewJavascriptBridge)
+        }, false)
+      }
+    }
+    connectWebViewJavascriptBridge(
+      function(bridge) {
+        bridge.init(function(message, responseCallback) {
+        })
+
+        bridge.registerHandler('javascriptHandler', function(data, responseCallback) {
+        })
+
+        window.sendDataToOC = function(params) {
+          bridge.callHandler("javascriptHandler", params, function(response){
+
+            if(typeof response.uid == 'undefined') {
+              return;
+            }
+            loginSite(response);
+          });
+        }
+      }
+    );
+  } else {//android
+
+    window.sendDataToOC = function(params) {
+      var a = '';
+      a = JSON.stringify(params);
+      window.javascriptHandler.sendDataToOC(a);
+      //alert(123);
+    };
+  }
+
+  //专家版 使用 wkview 注册方法
+  function sendDataToExp(params) {
+    if(browser == 'applewebkit') {
+      window.webkit.messageHandlers.MModel.postMessage(params);
+    } else {
+      var a = '';
+      a = JSON.stringify(params);
+      window.javascriptHandler.sendDataToOC(a);
+    }
+  }
+
+  function gotoOCChatCall(args) {
+    var params = {};
+    params.cmd = {};
+
+    params.cmd.params = args;
+    params.cmd.action_name = 'chat_call';
+
+    params.url = 'ydl_app';
+
+    sendDataToExp(params);
+  }
+  function sendData (par, action_name, scheme, type) {
+    var params = {};
+    params.cmd = {params:par, action_name: action_name};
+    params.url = scheme;
+
+    console.log(params);
+    if(type == 2) {//专家版本
+      sendDataToExp(params);
+      return;
+    }
+    sendDataToOC(params);
+  }
+  function loginOc() {
+    var params = {};
+    params.cmd = {};
+
+    params.cmd.params = {};
+    params.cmd.action_name = 'login';
+    params.url = 'ydl_app';
+
+    sendDataToOC(params);
+  }
+  //组装传入参数
+  function setParams(action_name,params,_url) {
+    var data = {
+      url:_url,
+      cmd:{
+        action_name:action_name,
+        params:params
+      }
+    };
+    console.log(data);
+    sendDataToOC(data);
+  }
+</script>
+<body>
+<header class="mt50">
+  <img src="//kc.yidianling.com/618mobile/static/images/banner.jpg" alt="" width="100%">
+  <div class="tac mb30">
+    <span class="time">抢购时间：6.16-6.18</span>
+  </div>
+  <div class="df white lists mb30">
+    <div class="fx1">
+      <div class="paneOne">
+        <a href="#a1">
+          <h3>精品好课</h3>
+          <div>
+            折扣不止6.18折
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="fx1">
+      <div class="paneOne">
+        <a href="#a2">
+          <h3>买二赠一</h3>
+          <div>
+            优惠不止一点点
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="fx1">
+      <div class="paneOne">
+        <a href="#a3">
+          <h3>新课推荐</h3>
+          <div>
+            618好课来袭
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="container">
+  <div class="box">
+    <div id="a1"></div>
+    <div class="mb30">
+      <h2 class="boxTitle">精品好课</h2>
+    </div>
+    <div class="boxContent">
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(693)" >
+            <img src="//img.yidianling.com/file/2018/04/11/9fnikhrt95iastvz.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(693)" >
+            <div class="row1 fz16 b w200">测试一下</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">哈哈哈哈哈哈哈哈哈</div>
+          </a>
+          <div>
+            <span class="fz20 b">0.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(693)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(695)" >
+            <img src="//img.yidianling.com/file/2018/04/12/q84ja24saahrt932.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(695)" >
+            <div class="row1 fz16 b w200">测试二下2</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">亲子课程,青春期教育,早恋指导)</div>
+          </a>
+          <div>
+            <span class="fz20 b">10.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(695)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(697)" >
+            <img src="//img.yidianling.com/file/2018/05/10/c5fl3xbr4kb99pmf.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(697)" >
+            <div class="row1 fz16 b w200">杭州</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">as的发发</div>
+          </a>
+          <div>
+            <span class="fz20 b">0.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(697)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="a2"></div>
+  </div>
+
+  <div class="box">
+    <div class="mb30">
+      <h2 class="boxTitle">买二赠一</h2>
+    </div>
+    <div class="boxContent">
+      <div class="df mb20">
+        <div class="fx1">
+          <div  class="bd1 bdrs10">
+            <div class="bannerBj" style='background: url("https://img.yidianling.com/file/2018/04/12/q84ja24saahrt932.png") no-repeat center; background-size: 100% 0.9rem;'>
+              <a href="javascript:toCourse(695)"  style="width: 100%;height:100%;"></a>
+            </div>
+            <div class="p5">
+              <a href="javascript:toCourse(695)"  style="width: 100%;" >
+                <div class="rel">
+                  <div class="row2 fz16 b mb5" style="height: 0.45rem">测试二下2</div>
+                  <div>
+                    <span class="fz20 b">¥ 10.0</span>
+                    <del class="fz12 c9">¥ 0.0</del>
+                  </div>
+                  <span class="flag2">
+                                        618特价
+                                    </span>
+                </div>
+              </a>
+              <button class="btn r0 b0 w100p mt5 bdrs5" onclick="new_go_order(695)">
+                立即抢购
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="width:0.08rem"></div>
+
+        <div class="fx1">
+          <div  class="bd1 bdrs10">
+            <div class="bannerBj" style='background: url("https://img.yidianling.com/file/2018/05/10/c5fl3xbr4kb99pmf.png") no-repeat center; background-size: 100% 0.9rem;'>
+              <a href="javascript:toCourse(697)"  style="width: 100%;height:100%;"></a>
+            </div>
+            <div class="p5">
+              <a href="javascript:toCourse(697)"  style="width: 100%;" >
+                <div class="rel">
+                  <div class="row2 fz16 b mb5" style="height: 0.45rem">杭州</div>
+                  <div>
+                    <span class="fz20 b">¥ 0.0</span>
+                    <del class="fz12 c9">¥ 0.0</del>
+                  </div>
+                  <span class="flag2">
+                                        618特价
+                                    </span>
+                </div>
+              </a>
+              <button class="btn r0 b0 w100p mt5 bdrs5" onclick="new_go_order(697)">
+                立即抢购
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="mb15">
+      <div class="labelBj">
+        <span class="pl5">玩法说明</span>
+      </div>
+      <ul>
+        <li class="df mb5">
+          <div style="width: 0.35rem;">
+            <span class="bot">1</span>
+          </div>
+          <div>
+            购买“买二赠一”活动内两个及以上课程，皆可享受赠一活动；
+          </div>
+        </li>
+
+        <li class="df mb5">
+          <div style="width: 0.35rem;">
+            <span class="bot">2</span>
+          </div>
+          <div>
+            一个用户只享受一次赠送活动;
+          </div>
+        </li>
+
+        <li class="df mb5">
+          <div style="width: 0.35rem;">
+            <span class="bot">3</span>
+          </div>
+          <div>
+            赠送课程不限课程内容，可选择用户课程中任一课程进行兑换;
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="mb15">
+      <div class="labelBj">
+        <span class="pl5">兑换方式</span>
+      </div>
+      <p>
+        请添加客服微信领取兑换奖励
+      </p>
+      <div>
+        搜索微信号：<b>17826978324</b>
+        <div style="padding-left: 0.83rem">(备注壹点灵+注册手机号)</div>
+      </div>
+
+    </div>
+    <div id="a3"></div>
+  </div>
+  <div class="box">
+    <div class="mb30">
+      <h2 class="boxTitle">课程推荐</h2>
+    </div>
+    <div class="boxContent">
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(695)" >
+            <img src="//img.yidianling.com/file/2018/04/12/q84ja24saahrt932.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(695)" >
+            <div class="row1 fz16 b w200">测试二下2</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">主讲专家：李青</div>
+          </a>
+          <div>
+            <span class="fz20 b">10.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(695)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(697)" >
+            <img src="//img.yidianling.com/file/2018/05/10/c5fl3xbr4kb99pmf.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(697)" >
+            <div class="row1 fz16 b w200">杭州</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">主讲专家：王</div>
+          </a>
+          <div>
+            <span class="fz20 b">0.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(697)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box" style="background: #d1a2ff;margin-top: 0.3rem;margin-bottom: 0.3rem;">
+    <div class="line_01">
+            <span>
+                活动说明
+            </span>
+    </div>
+    <ul>
+      <li class="df mb5">
+        <div style="width: 0.2rem;">
+          <span class="bot" style="background: #ab6bff;">1</span>
+        </div>
+        <div>
+          课程购买后，不支持退费
+        </div>
+      </li>
+
+      <li class="df mb5">
+        <div style="width: 0.2rem;">
+          <span class="bot" style="background: #ab6bff;">2</span>
+        </div>
+        <div>
+          任何疑问，请联系客服协助处理
+        </div>
+      </li>
+    </ul>
+
+    <div class="tac" style="width: 1.8rem;margin:0.3rem auto 0 auto" >
+      <div class="test1">
+        客服电话:400-114-1010
+      </div>
+      <div class="test1">
+        服务热线(早8:00-凌晨1:00)
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var csrfToken = 'I2G0u9S9pCsHPj1HQmu60iAg6dGBFArDU5gtVZAdyWZGWPHD7fuSajBsTiIWMtHrVlqF4fBgOe4VzlQN3Uu5Dg==';
+  var uid = '';
+  var ffrom = 'web';
+  var hostInfo = '//testm2.yidianling.com';
+  console.log(location.href);
+</script>
+</body><script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
+<script type="text/javascript">
+  var share_info = JSON.parse('{"desc":"\u7cbe\u54c1\u597d\u8bfe6.18\u6298\uff0c\u66f4\u6709\u4e70\u4e8c\u9001\u4e00\uff0c\u65b0\u8bfe\u5c1d\u9c9c\uff0c\u4f18\u60e0\u4e0d\u6b62\u4e00\u70b9\u70b9\uff01","title":"618\u77e5\u8bc6\u72c2\u6b22\u8282\uff0c\u4f60\u60f3\u4e0d\u5230\u7684\u7684\u4f18\u60e0","cover":"https:\/\/img.ydlcdn.com\/file\/2018\/06\/13\/52lrcqecke85810n.jpg","share_url":"http:\/\/testm2.yidianling.com\/activity\/course18618"}');
+  console.log(share_info);
+  wx.config({
+    debug: false,
+    appId: '', // 必填，公众号的唯一标识
+    timestamp: '', // 必填，生成签名的时间戳，切记时间戳是整数型，别加引号
+    nonceStr: '', // 必填，生成签名的随机串
+    signature: '', // 必填，签名，见附录1
+    jsApiList: [
+      'checkJsApi',
+      'onMenuShareTimeline',
+      'onMenuShareAppMessage',
+      'onMenuShareQQ',
+      'onMenuShareWeibo',
+      'hideMenuItems',
+      'showMenuItems',
+      'hideAllNonBaseMenuItem',
+      'showAllNonBaseMenuItem',
+      'translateVoice',
+      'startRecord',
+      'stopRecord',
+      'onRecordEnd',
+      'playVoice',
+      'pauseVoice',
+      'stopVoice',
+      'uploadVoice',
+      'downloadVoice',
+      'chooseImage',
+      'previewImage',
+      'uploadImage',
+      'downloadImage',
+      'getNetworkType',
+      'openLocation',
+      'getLocation',
+      'hideOptionMenu',
+      'showOptionMenu',
+      'closeWindow',
+      'scanQRCode',
+      'chooseWXPay',
+      'openProductSpecificView',
+      'addCard',
+      'chooseCard',
+      'openCard'
+    ]
+  });
+  wx.ready(function(){
+    var shareconfig = { //分享到朋友圈
+      title: share_info.title, // 分享标题
+      desc: share_info.desc,
+      link: share_info.share_url, // 分享链接
+      imgUrl: share_info.cover, // 分享图标
+      success: function (res) {
+      },
+      cancel: function () {
+      }
+    };
+    wx.onMenuShareTimeline(shareconfig);  //朋友圈
+    wx.onMenuShareAppMessage(shareconfig); //分享给朋友
+  });
+
+
+  function toCourse(course_id) {
+    if(course_id) {
+      window.location.href = '/course/'+course_id+'?from=singlemessage&isappinstalled=0';
+    }
+  }
+
+  function goLogin() {
+    location.href = '/login';
+  }
+
+  //下订单
+  function new_go_order(course_id) {
+    if( !uid ){
+      goLogin();
+      return;
+    }
+    $.showLoading("正在提交...");
+    $.ajax({
+      url: '/course/add-order',
+      type: 'post',
+      dataType: 'json',
+      data: {
+        course_id: course_id,
+        ffrom : ffrom,
+        _csrf : csrfToken
+      },
+    })
+      .done(function(rs) {
+        $.hideLoading();
+        if(rs.code == 0 && rs.data.payId != undefined)
+        {
+          location.href = '/pay/pay/?id=' + rs.data.payId;
+        }
+        if(rs.code == 0 && rs.data.length == 0){
+          $.toast(rs.msg)
+          setTimeout(function () {
+            location.href = location.href;
+          },500)
+        }
+        if(rs.code != 0){
+          $.toast(rs.msg,"cancel")
+        }
+      })
+
+  }
+</script>
+<div class="mobileNew">
+  <div class="mNewFooter">
+    <ul class="items">
+      <li><a href="/">首页</a></li>
+      <li><a href="/about">关于我们</a></li>
+      <li><a href="/app">App下载</a></li>
+      <li><a href="//m2.yidianling.com/opion/opion">意见反馈</a></li>
+    </ul>
+    <p class="hotLine">服务热线：<a class="number" href="tel:400-114-1010">400-114-1010</a></p>
+    <p class="workTime">（服务时间：当日08:00-次日02:00）</p>
+    <p class="address">© 2015 - 2018上海袋虎信息技术有限公司 <br>沪ICP备15037258号</p>
+  </div>
+</div>
+
+
+<script>console.log('m_cnzz');</script>
+</body>
+</html>
+
+
+<!--<div class="kf-btn">-->
+<!--    <img src="//static.ydlcdn.com/mobile/images/btn_floating_kefu.png"/>-->
+<!--    <div>客服</div>-->
+<!--</div>-->
+<div class="kf-share-mask"></div>
+<div class="kf-share-wrapper">
+  <div class="kf-share-box">
+    <img src="//static.ydlcdn.com/mobile/images/img_pop_kefu.png" class="pop-kefu">
+    <a href="tel:400-114-1010" class="kf-phone-btn clearfix"><img class="fl" src="//static.ydlcdn.com/mobile/images/ico_pop_phone.png"/><span class="fl">情感热线(400-114-1010)</span></a>
+    <a href="https://dat.zoosnet.net/LR/Chatpre.aspx?id=DAT83236505&lng=cn" class="kf-dialog-btn"
+       target="_blank"><img class="fl" src="//static.ydlcdn.com/mobile/images/ico_pop_msg.png"/><span class="fl">在线客服</span></a>
+    <p class="kf-tip-text">早8:00-凌晨1:00</p>
+    <img  src="//static.ydlcdn.com/mobile/images/course_close.png" class="kf-share-close">
+  </div>
+</div>
+<script>
+  // 点击分享条出分享弹窗
+  $('.kefu').click(function () {
+    $('.kf-share-mask').addClass('visible');
+    $('.kf-share-box').addClass('visible');
+  });
+
+  // 关闭分享弹窗
+  $('.kf-share-close').click(function () {
+    $('.kf-share-mask').removeClass('visible');
+    $('.kf-share-box').removeClass('visible');
+  });
+  $('.kf-share-mask').click(function () {
+    $('.kf-share-mask').removeClass('visible');
+    $('.kf-share-box').removeClass('visible');
+  });
+</script>

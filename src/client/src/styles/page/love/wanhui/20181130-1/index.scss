@@ -1,0 +1,129 @@
+@import '~@/styles/base/var.scss';
+.page-love-wanhui-20181130-1{ background: #fff; padding-bottom:n(118); overflow: hidden;width:n(750);margin:0 auto;
+  .pic{ font-size: 0;
+    img{ display: block; width: 100%;}
+  }
+
+  .zmd{ width: 100%; height: n(56); background: rgba(248, 82, 108, .8);
+    margin-top:n(-56); position: relative; z-index: 2; padding:0 n(30);
+    .info{ float: left; color:#fff;line-height: n(56); font-weight: 600; font-size: n(24);
+      i{ display: inline-block; width: n(28); height: n(20);
+        background:url($imgPath+'/activity/love/wanhui/20181130-1/ico-notice.png') no-repeat;
+        background-size: cover; position: relative; top: n(2); margin-right: n(6);
+      }
+    }
+    .zmd-list{ float: left; width: n(400); height: n(56);
+      margin-left:n(40); overflow: hidden; color: #fff;
+
+      li{ height: n(56); line-height: n(60); font-size: n(20); overflow: hidden;
+        span{ font-weight: 400; color: #e5e5e5;
+          &:first-child{ margin-right: n(20);}
+        }
+      }
+    }
+  }
+  
+  .title{ margin-top:n(88);
+    &.mt{ margin-top:n(64);}
+  }
+
+  .list{ margin:n(40) n(30) 0 n(30);
+    .item{ width: n(690); height: n(240); margin-top:n(24); overflow: hidden; background:#fff;
+      box-shadow: 0 n(4) n(30) rgba(0,0,0,.08); border-radius: n(16);
+      dl{
+        dt{ float: left; width: n(192); height: n(192); position: relative; font-size: 0;
+          margin:n(22) 0 0 n(24);
+          img{ width: 100%; height: 100%;}
+        }
+
+        dd{ margin-left:n(248); padding:n(22) 0; position: relative;
+
+          strong{ display: block; font-size: n(32); color: #333; font-weight: 500;
+            i{ display: inline-block; width: n(24); height: n(24);
+              background: url("/src/images/activity/love/wanhui/20181130-1/ico-vip.png") no-repeat;
+              background-size: cover; margin-left: n(6);
+            }
+          }
+
+          .info1{ margin-top:n(6);
+            span{ display: block; font-weight: 400; color: #666; font-size:n(24);}
+          }
+
+          .info2{ margin-top:n(18);
+            span{ display: block; font-weight: 400; color: #999; font-size:n(24);
+              em{ font-weight: 500; color: #f7486c; font-size:n(32); margin-right: n(4);}
+            }
+          }
+
+          .btn{ display: block; width: n(142); height: n(56); line-height: n(56); text-align: center; color: #fff;
+            font-size: n(24); position: absolute; right: n(32); bottom:n(18); border-radius: n(28);
+            background:linear-gradient(90deg, #FF5266 5%, #FF1960 100%);
+            box-shadow:0 n(8) n(16) 0 rgba(247,89,75,0.37); font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .img-list{width:n(750);margin:0 auto 0;overflow: hidden;
+    .item{ width: n(750); 
+      img{
+        width:100%;display: block;
+      }
+    }
+  }
+  .bottom-box{width:n(750);height:n(714);margin:0 auto 0;background-color:#FF678A;
+    .box{width:n(670);height:n(630);padding-top:n(24);background-color:#fff;border-radius: n(20);margin:0 auto 0;position: relative;
+      .bottom-title{text-align:center;font-size:n(40);font-family:PingFangSC-Semibold!important;font-weight:600;color:rgba(220,53,69,1);
+        line-height:n(56);margin-bottom:n(14);
+      }
+      .bottom-list{width:n(630);height:n(502);margin:0 auto 0;
+        li{
+          width:n(630);
+          img{
+            width:n(630);height:n(502);display: block;
+          }
+        }
+      }
+      .swiper-pagination{
+        width:n(84);height:n(12);margin:0 auto;display:flex;justify-content: space-between;position: absolute;bottom:n(6);left:0;right:0;z-index:1;
+        .swiper-pagination-bullet{
+          width:n(12);height:n(12);background-color:#ddd;opacity: 1;
+        }
+        .swiper-pagination-bullet-active{
+          background-color:#FF678A;
+        }
+      }
+    }
+  }
+  .mt40{ margin-top:n(40);}
+
+  .copyright{ text-align: center; font-size: n(18); color: #666; background: #292c33;
+    height: n(60); line-height: n(60);
+  }
+
+  .ft{ width: 100%; height: n(120); position: fixed; left: 0; bottom:0;z-index:2;
+    .link{ width: n(750); height: n(120); margin: 0 auto; position: relative;
+      background: url($imgPath+'/activity/love/wanhui/20181130-1/f.png');
+      background-size: cover;
+      a{ float: left; height: n(120);
+        &.a1{ width: n(324);}
+        &.a2{ width: n(426);}
+      }
+    }
+  }
+}
+
+.modal-wanhui20181130{ width: n(558);
+   position: relative; text-align: center;
+
+  .am-modal-content{ overflow: initial; background: none;}
+
+  .pic{ width: n(558); font-size: 0; margin-bottom: n(60);
+    img{ width: 100%;}
+  }
+
+  .js_close{ display: inline-block; width: n(56); height: n(56);
+    background: url($imgPath+'/activity/love/wanhui/20181130-1/mol-close.png');
+    background-size: cover;
+  }
+}

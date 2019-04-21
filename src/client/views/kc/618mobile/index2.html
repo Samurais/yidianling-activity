@@ -1,0 +1,594 @@
+
+<head>
+  <meta charset="utf-8" />
+  <!-- 如果安装 GCF 按其渲染页面，否则使用最高版本IE内核渲染 -->
+  <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″ />
+  <!-- 强制让文档与设备的宽度保持1:1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <!-- 删除默认的苹果工具栏和菜单栏 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!--  在web app应用下状态条（屏幕顶部条）的颜色 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- 禁止了把数字转化为拨号链接 -->
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="renderer" content="webkit" />
+  <meta name="robots" content="index,follow" />
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <title>618知识狂欢节</title>
+  <link href="//static.ydlcdn.com/weui/style/weui.min.css?20180326111" rel="stylesheet">
+  <link href="//static.ydlcdn.com/weui/style/jquery-weui.min.css" rel="stylesheet">
+
+  <script src="//static.ydlcdn.com/weui/js/jquery-2.1.4.js?v=20160720"></script>
+  <script src="//static.ydlcdn.com/weui/js/jquery-weui.min.js?v=20160720"></script>
+  <script>
+    //  rem单位的转换
+    document.documentElement.style.fontSize = window.innerWidth/3.75 + 'px';
+    window.onresize = function () {
+      document.documentElement.style.fontSize = window.innerWidth/3.75 + 'px';
+    }
+
+  </script>
+</head>
+<link rel="stylesheet" href="//kc.yidianling.com/618mobile/static/css/common.css">
+<!--<link rel="stylesheet" href="//kc.yidianling.com/618mobile/static/css/index.css">-->
+<link rel="stylesheet" href="static/css/index.css">
+<!--<link rel="stylesheet" href="static/css/specialties.css">-->
+<script src="//kc.yidianling.com/618mobile/static/js/rem.js"></script>
+<script src="//hm.baidu.com/hm.js?709754f516138e611122a5d559d83423"></script>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?709754f516138e611122a5d559d83423";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<script>
+  var hostInfo = '//testh2.yidianling.com';
+  var platform = 'windows';
+  var browser = 'chrome';
+  window.sendDataToOC = function(params) {
+
+  };
+  if(browser == 'applewebkit') {
+    function connectWebViewJavascriptBridge(callback) {
+      if (window.WebViewJavascriptBridge) {
+        callback(WebViewJavascriptBridge)
+      } else {
+        document.addEventListener('WebViewJavascriptBridgeReady', function() {
+          callback(WebViewJavascriptBridge)
+        }, false)
+      }
+    }
+    connectWebViewJavascriptBridge(
+      function(bridge) {
+        bridge.init(function(message, responseCallback) {
+        })
+
+        bridge.registerHandler('javascriptHandler', function(data, responseCallback) {
+        })
+
+        window.sendDataToOC = function(params) {
+          bridge.callHandler("javascriptHandler", params, function(response){
+
+            if(typeof response.uid == 'undefined') {
+              return;
+            }
+            loginSite(response);
+          });
+        }
+      }
+    );
+  } else {//android
+
+    window.sendDataToOC = function(params) {
+      var a = '';
+      a = JSON.stringify(params);
+      window.javascriptHandler.sendDataToOC(a);
+      //alert(123);
+    };
+  }
+
+  //专家版 使用 wkview 注册方法
+  function sendDataToExp(params) {
+    if(browser == 'applewebkit') {
+      window.webkit.messageHandlers.MModel.postMessage(params);
+    } else {
+      var a = '';
+      a = JSON.stringify(params);
+      window.javascriptHandler.sendDataToOC(a);
+    }
+  }
+
+  function gotoOCChatCall(args) {
+    var params = {};
+    params.cmd = {};
+
+    params.cmd.params = args;
+    params.cmd.action_name = 'chat_call';
+
+    params.url = 'ydl_app';
+
+    sendDataToExp(params);
+  }
+  function sendData (par, action_name, scheme, type) {
+    var params = {};
+    params.cmd = {params:par, action_name: action_name};
+    params.url = scheme;
+
+    console.log(params);
+    if(type == 2) {//专家版本
+      sendDataToExp(params);
+      return;
+    }
+    sendDataToOC(params);
+  }
+  function loginOc() {
+    var params = {};
+    params.cmd = {};
+
+    params.cmd.params = {};
+    params.cmd.action_name = 'login';
+    params.url = 'ydl_app';
+
+    sendDataToOC(params);
+  }
+  //组装传入参数
+  function setParams(action_name,params,_url) {
+    var data = {
+      url:_url,
+      cmd:{
+        action_name:action_name,
+        params:params
+      }
+    };
+    console.log(data);
+    sendDataToOC(data);
+  }
+</script>
+<body>
+<header >
+  <img src="//kc.yidianling.com/618mobile/static/images/banner.jpg" alt="" width="100%">
+  <div class="tac mb30">
+    <span class="time">抢购时间：6.16-6.18</span>
+  </div>
+  <div class="df white lists mb30">
+    <div class="fx1">
+      <div class="paneOne">
+        <a href="#a1">
+          <h3>精品好课</h3>
+          <div>
+            折扣不止6.18折
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="fx1">
+      <div class="paneOne">
+        <a href="#a2">
+          <h3>买二赠一</h3>
+          <div>
+            优惠不止一点点
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="fx1">
+      <div class="paneOne">
+        <a href="#a3">
+          <h3>新课推荐</h3>
+          <div>
+            618好课来袭
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+</header>
+
+<div class="container">
+  <div class="box" id="a1">
+    <div class="mb30">
+      <h2 class="boxTitle">精品好课</h2>
+    </div>
+    <div class="boxContent">
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(693)" >
+            <img src="//img.yidianling.com/file/2018/04/11/9fnikhrt95iastvz.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(693)" >
+            <div class="row1 fz16 b w200">测试一下</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">哈哈哈哈哈哈哈哈哈</div>
+          </a>
+          <div>
+            <span class="fz20 b">0.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(693)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(695)" >
+            <img src="//img.yidianling.com/file/2018/04/12/q84ja24saahrt932.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(695)" >
+            <div class="row1 fz16 b w200">测试二下2</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">亲子课程,青春期教育,早恋指导)</div>
+          </a>
+          <div>
+            <span class="fz20 b">10.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(695)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(697)" >
+            <img src="//img.yidianling.com/file/2018/05/10/c5fl3xbr4kb99pmf.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(697)" >
+            <div class="row1 fz16 b w200">杭州</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">as的发发</div>
+          </a>
+          <div>
+            <span class="fz20 b">0.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(697)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box" id="a2">
+    <div class="mb30">
+      <h2 class="boxTitle">买二赠一</h2>
+    </div>
+    <div class="boxContent">
+      <div class="df mb20">
+        <div class="fx1">
+          <div  class="bd1 bdrs10">
+            <div class="bannerBj" style='background: url("https://img.yidianling.com/file/2018/04/12/q84ja24saahrt932.png") no-repeat center; background-size: 100% 0.9rem;'>
+              <a href="javascript:toCourse(695)"  style="width: 100%;height:100%;"></a>
+            </div>
+            <div class="p5">
+              <a href="javascript:toCourse(695)"  style="width: 100%;" >
+                <div class="rel">
+                  <div class="row2 fz16 b mb5" style="height: 0.45rem">测试二下2</div>
+                  <div>
+                    <span class="fz20 b">¥ 10.0</span>
+                    <del class="fz12 c9">¥ 0.0</del>
+                  </div>
+                  <span class="flag2">
+                                        618特价
+                                    </span>
+                </div>
+              </a>
+              <button class="btn r0 b0 w100p mt5 bdrs5" onclick="new_go_order(695)">
+                立即抢购
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="width:0.08rem"></div>
+
+        <div class="fx1">
+          <div  class="bd1 bdrs10">
+            <div class="bannerBj" style='background: url("https://img.yidianling.com/file/2018/05/10/c5fl3xbr4kb99pmf.png") no-repeat center; background-size: 100% 0.9rem;'>
+              <a href="javascript:toCourse(697)"  style="width: 100%;height:100%;"></a>
+            </div>
+            <div class="p5">
+              <a href="javascript:toCourse(697)"  style="width: 100%;" >
+                <div class="rel">
+                  <div class="row2 fz16 b mb5" style="height: 0.45rem">杭州</div>
+                  <div>
+                    <span class="fz20 b">¥ 0.0</span>
+                    <del class="fz12 c9">¥ 0.0</del>
+                  </div>
+                  <span class="flag2">
+                                        618特价
+                                    </span>
+                </div>
+              </a>
+              <button class="btn r0 b0 w100p mt5 bdrs5" onclick="new_go_order(697)">
+                立即抢购
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="mb15">
+      <div class="labelBj">
+        <span class="pl5">玩法说明</span>
+      </div>
+      <ul>
+        <li class="df mb5">
+          <div style="width: 0.35rem;">
+            <span class="bot">1</span>
+          </div>
+          <div>
+            购买“买二赠一”活动内两个及以上课程，皆可享受赠一活动；
+          </div>
+        </li>
+
+        <li class="df mb5">
+          <div style="width: 0.35rem;">
+            <span class="bot">2</span>
+          </div>
+          <div>
+            一个用户只享受一次赠送活动;
+          </div>
+        </li>
+
+        <li class="df mb5">
+          <div style="width: 0.35rem;">
+            <span class="bot">3</span>
+          </div>
+          <div>
+            赠送课程不限课程内容，可选择用户课程中任一课程进行兑换;
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="mb15">
+      <div class="labelBj">
+        <span class="pl5">兑换方式</span>
+      </div>
+      <p>
+        请添加客服微信领取兑换奖励
+      </p>
+      <div>
+        搜索微信号：<b>17826978324</b>
+        <div style="padding-left: 0.83rem">(备注壹点灵+注册手机号)</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="box" id="a3">
+    <div class="mb30">
+      <h2 class="boxTitle">课程推荐</h2>
+    </div>
+    <div class="boxContent">
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(695)" >
+            <img src="//img.yidianling.com/file/2018/04/12/q84ja24saahrt932.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(695)" >
+            <div class="row1 fz16 b w200">测试二下2</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">主讲专家：李青</div>
+          </a>
+          <div>
+            <span class="fz20 b">10.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(695)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="fx1 rel mr10">
+          <a href="javascript:toCourse(697)" >
+            <img src="//img.yidianling.com/file/2018/05/10/c5fl3xbr4kb99pmf.png" alt="" class="itemImg">
+            <span class="flag618">
+                                618特价
+                            </span>
+          </a>
+        </div>
+        <div class="fx1">
+          <a href="javascript:toCourse(697)" >
+            <div class="row1 fz16 b w200">杭州</div>
+            <div class="row1" style="padding-bottom:0.03rem;width:1.8rem;">主讲专家：王</div>
+          </a>
+          <div>
+            <span class="fz20 b">0.0</span>
+            <del class="fz12 c9">0.0</del>
+          </div>
+          <button class="btn abs2 r0 b0" onclick="new_go_order(697)">
+            立即抢购
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box" style="background: #d1a2ff;margin-top: 0.3rem;margin-bottom: 0.3rem;">
+    <div class="line_01">
+            <span>
+                活动说明
+            </span>
+    </div>
+    <ul>
+      <li class="df mb5">
+        <div style="width: 0.2rem;">
+          <span class="bot" style="background: #ab6bff;">1</span>
+        </div>
+        <div>
+          课程购买后，不支持退费
+        </div>
+      </li>
+
+      <li class="df mb5">
+        <div style="width: 0.2rem;">
+          <span class="bot" style="background: #ab6bff;">2</span>
+        </div>
+        <div>
+          任何疑问，请联系客服协助处理
+        </div>
+      </li>
+    </ul>
+
+    <div class="tac" style="width: 1.8rem;margin:0.3rem auto 0 auto" >
+      <div class="test1">
+        客服电话:400-114-1010
+      </div>
+      <div class="test1">
+        服务热线(早8:00-凌晨1:00)
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var csrfToken = '5seN-aBI9raMMGswLDWB0km42XRzYTlMWWMVsD3a3e3frs-x2A2-2vZ7DUMeY7eKMe-gJDQbDRoaVHvHCOqllw==';
+  var uid = '';
+  var ffrom = 'web';
+  var hostInfo = '//testh2.yidianling.com';
+  console.log(location.href);
+</script>
+</body><script type="text/javascript">
+  var share_info = JSON.parse('{"desc":"\u7cbe\u54c1\u597d\u8bfe6.18\u6298\uff0c\u66f4\u6709\u4e70\u4e8c\u9001\u4e00\uff0c\u65b0\u8bfe\u5c1d\u9c9c\uff0c\u4f18\u60e0\u4e0d\u6b62\u4e00\u70b9\u70b9\uff01","title":"618\u77e5\u8bc6\u72c2\u6b22\u8282\uff0c\u4f60\u60f3\u4e0d\u5230\u7684\u7684\u4f18\u60e0","cover":"https:\/\/img.ydlcdn.com\/file\/2018\/06\/13\/52lrcqecke85810n.jpg","share_url":"https:\/\/m.yidianling.com\/activity\/course18618"}');
+  var user_type = 1;
+  $(function(){
+    if(user_type == 1) {
+      setTimeout(function () {
+        //通用分享
+        var params = {share:share_info};
+        setParams('action_share',params,'ydl_app');
+      },300);
+    }else{
+      setTimeout(function () {
+        //通用分享
+        var params = {};
+        params.cmd = {};
+        params.cmd.params = {share:share_info};
+        params.cmd.action_name = 'action_share';
+        params.url = 'ydl_app';
+        sendDataToExp(params);
+      },300);
+    }
+  });
+  function toCourse(id) {
+    if( id ) {
+      if(user_type == 1) {
+        var action_name = 'course_detail';
+        var params = {course_id:id,url:hostInfo+'/course/'+id};
+        var url = 'http';
+        setParams(action_name,params,url);
+      }else{
+        ex_goCourse(id);
+      }
+
+    }
+  }
+
+
+  function ExgoLogin() {
+    var action_name = 'login';
+    var params = {};
+    var url = 'ydl_app';
+    setExpParams(action_name,params,url);
+  }
+
+  function new_go_order(course_id) {
+    if( !uid ){
+      if(user_type == 1) {
+        setParams('login',{},'ydl_app');
+        return;
+      }
+    }
+    $.showLoading("正在提交...");
+    $.ajax({
+      url: '/course/add-order',
+      type: 'post',
+      dataType: 'json',
+      data: {
+        course_id: course_id,
+        ffrom : ffrom,
+        _csrf : csrfToken
+      },
+    })
+      .done(function(data) {
+        console.log(data)
+        $.hideLoading();
+        var action_name = 'pay_course';
+        var rs = data.data;
+        var url = 'ydl_app';
+        if((data.code == 0 && !data.data.payId)){
+          $.toast(data.msg);
+          setTimeout(function () {
+            location.href = window.location;
+          },500);
+        }else if( data.code == -1 ){
+          if(user_type == 1) {
+            setParams('login',{},url);
+          }else{
+            var params = {};
+            params.cmd = {};
+            params.cmd.params = {};
+            params.cmd.action_name = 'login';
+            params.url = url;
+            sendDataToExp(params);
+          }
+        }else if(data.code != 0){
+          $.toast(data.msg,"cancel");
+        }else{
+          if(user_type == 1) {
+            setParams(action_name,rs,url);
+          }else{
+            var params = {};
+            params.cmd = {};
+            params.cmd.params = rs;
+            params.cmd.action_name = action_name;
+            params.url = url;
+            sendDataToExp(params);
+          }
+        }
+      })
+      .fail(function() {
+        console.log("error");
+      })
+      .always(function() {
+        console.log("complete");
+      });
+  }
+
+  function ex_goCourse(id) {
+    var params = {};
+    params.cmd = {};
+    params.cmd.params = {course_id:id,url:hostInfo+'/ex-course/'+id};
+    params.cmd.action_name = 'course_detail';
+    params.url = 'http';
+    sendDataToExp(params);
+  }
+
+</script>

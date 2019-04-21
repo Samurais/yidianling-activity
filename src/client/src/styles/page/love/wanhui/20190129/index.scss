@@ -1,0 +1,329 @@
+.page-love-wanhui-20190129{
+  @import "./mod-newbottom.scss";
+  $baseImageUrl:"/src/images/activity/love/wanhui/";
+  max-width: n(750);
+  margin: 0 auto;
+  background: #fff;
+  .in-top{
+    width:n(750);
+    height:n(98);
+  }
+  .top-container{
+    width:n(750);
+    font-size:0;
+    margin:0 auto;
+    img{
+      width:n(750);
+    }
+  }
+  .container{
+    overflow: hidden;
+    width:n(750);
+    font-size:0;
+    img.item{
+      display: block;
+      width:n(750);
+    }
+  }
+  .video-box{
+    width:n(750);
+    font-size:0;
+    position: relative!important;
+    z-index:1!important;
+    .video{
+      position: relative!important;
+      z-index:1!important;
+      source{
+        position: relative!important;
+        z-index:1!important;
+      }
+    }
+  }
+  .html-img{
+    width:n(750);
+  }
+  .sh-header{
+    width:n(750);
+    height:n(731);
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+  .expert-box{
+    width:100%;
+    background:#F9F9F9;
+    .expert-item{
+      font-size:0;
+      img{
+        width:n(750);
+      }
+    }
+  }
+  .honor-container{
+    width:n(750);
+    height:n(678);
+    position: relative;
+    .honor-bg{
+      width:n(750);
+      position: absolute;
+      top:0;
+      left:0;
+      z-index:0;
+    }
+    .honor-title{
+      width:n(750);
+      display: block;
+      font-family:PingFang-SC-Bold;
+      font-weight:bold;
+      color:rgba(51,51,51,1);
+      line-height:n(50);
+      text-align:center;
+      position: relative;
+      z-index: 0;
+    }
+    .honor-big-box{
+      position: relative;
+      width:n(750);
+      height:n(216);
+      margin:0 auto;
+      .honor-swiper{
+        width:n(630);
+        height:n(216);
+        margin:0 auto;
+        position: relative;
+        .item-box{
+          width:n(196);
+          height:n(216);
+          font-size:0;
+          display: flex;
+          flex-direction:column;
+          align-items: center;
+          margin:0 n(7);
+          .item-img{
+            width:100%;
+          }
+        }
+      }
+      .swiper-button-prev{
+        position: absolute;
+        outline: none;
+        // transform:scale(0.3) translate(0,-150%);
+        // background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23c3c3c3'/%3E%3C/svg%3E");
+        background-image:url("/src/images/activity/m/shanghai/arrow_left.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: left top;
+        width:n(16);
+        height:n(38);
+        top:n(42);
+        left:n(30);
+        margin:0;
+      }
+      .swiper-button-next{
+        position: absolute;
+        outline: none;
+        // transform:scale(0.3) translate(0,-150%);
+        // background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%23c3c3c3'/%3E%3C/svg%3E");
+        background-image:url("/src/images/activity/m/shanghai/arrow_right.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: left top;
+        width:n(16);
+        height:n(38);
+        top:n(42);
+        right:n(30);
+        margin:0;
+      }
+    }
+    .btn{
+      width:n(502);
+      height:n(96);
+      margin:n(60) auto 0;
+      position: relative;
+      z-index:0;
+      border-radius:n(47);
+      background:linear-gradient(90deg,rgba(120,203,255,1) 0%,rgba(30,161,243,1) 100%);
+      box-shadow: 0 n(8) n(18) 0 rgba(51,177,255,0.27);
+      font-size:n(36);
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      text-align:center;
+      line-height:n(96);
+    }
+  }
+  .case-box{
+    width:n(750);
+    height:n(916);
+    background:linear-gradient(-135deg, #8690A4 0%, rgba(64,72,88,.8) 100%);
+    overflow: hidden;
+    position:relative;
+    .case-title{
+      text-align:center;
+      font-family: PingFangSC-Medium;
+      font-size: n(48);
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: n(48);
+      padding-top:n(64);
+    }
+    .case-desc{
+      font-family: PingFangSC-Regular;
+      font-size: n(20);
+      line-height:n(28);
+      color: #FFFFFF;
+      padding-top:n(16);
+      text-align:center;
+    }
+    .case-inner-box{
+      width:n(750);
+      height:n(732);
+      position: absolute;
+      left:0;
+      bottom:0;
+      display: flex;
+      flex-direction:column;
+      justify-content: space-between;
+      .caselist{
+        width:n(750);
+        height:n(682);
+        .one-case{
+          width:100%;
+          height:100%;
+          font-size:0;
+          img{
+            display: block;
+            width:n(434);
+            height:n(682);
+            margin:0 auto;
+          }
+        }
+      }
+      .swiper-pagination-3{
+        width:n(750);height:n(8);line-height:n(8);margin:0 auto 0;text-align:center;
+        .swiper-pagination-bullet{
+          width:n(8);height:n(8);background-color:#fff;opacity: .2;border-radius:n(4);margin:0 n(4);
+        }
+        .swiper-pagination-bullet-active{
+          width:n(28);
+          background-color:#fff;
+          opacity: 1;
+          border-radius:n(4);
+        }
+      }
+    }
+
+  }
+  .user-say{
+    width:n(750);
+    height:n(424);
+    position: relative;
+    .user-list{
+      width:n(750);
+      height:n(408);
+      .one-user{
+        width:n(480);
+        height:n(408);
+        font-size:0;
+        img{
+          width:n(456);
+          height:n(376);
+          display: block;
+          margin:0 auto;
+          box-shadow: 0 n(16) n(32) 0 rgba(153,153,153,0.24);
+          border-radius: n(24);
+        }
+      }
+    }
+    .swiper-pagination-4{
+      width:n(750);height:n(8);line-height:n(8);text-align:center;position: absolute;bottom:0;left:0;
+      .swiper-pagination-bullet{
+        width:n(8);height:n(8);background-color:#383B3D;opacity:.2;border-radius:n(4);
+        margin:0 n(4);
+      }
+      .swiper-pagination-bullet-active{
+        width:n(28);
+        background:rgba(0,0,0,0.6);
+        opacity: 1;
+        border-radius:n(4);
+      }
+    }
+  }
+  .about-us{
+    .title-1{
+      width:n(690);
+      height:n(52);
+      margin:n(80) auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items:flex-end;
+      .title-left{
+        width:n(216);
+        height:n(48);
+        font-size:n(48);
+        font-family:PingFangSC-Semibold;
+        font-weight:600;
+        color:rgba(51,51,51,1);
+        line-height:n(48);
+        display: flex;
+        align-items:center;
+        i{
+          width:n(8);
+          height:n(40);
+          background:linear-gradient(180deg,rgba(252,168,141,1) 0%,rgba(254,115,69,1) 100%);
+          border-radius:n(6);
+          margin-right:n(16);
+        }
+      }
+      .title-right{
+        margin-top:n(80);
+        flex:1;
+        text-align:right;
+        display: flex;
+        justify-content: flex-end;
+        align-items:flex-end;
+        font-size:n(28);
+        font-family:PingFang-SC-Light;
+        font-weight:300;
+        color:rgba(68,68,68,1);
+        line-height:n(28);
+      }
+    }
+    .about-list{
+      width:n(750);
+      overflow: hidden;
+      .swiper-slide{
+        width:n(750);
+        height:n(360);
+        margin:0 auto;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        .imgr{
+          width:n(670); height: n(360);font-size:0;
+          img{
+            width:n(670); height: n(360);
+          }
+        }
+      }
+      
+    }
+    .swiper-pagination-2{
+      width:n(750);height:n(8);line-height:n(8);padding-top:n(32);text-align:center;position: relative;
+      .swiper-pagination-bullet{
+        width:n(8);height:n(8);background-color:#383B3D;opacity: .2;border-radius:n(4);
+        margin:0 n(4);
+      }
+      .swiper-pagination-bullet-active{
+        width:n(28);
+        background:#1DA1F2;
+        opacity: 1;
+        border-radius:n(4);
+      }
+    }
+  }
+  .in-bottom{
+    height:n(118);
+  }
+}

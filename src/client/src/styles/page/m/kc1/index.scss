@@ -1,0 +1,398 @@
+@import '~@/styles/base/var.scss';
+
+@mixin smallContent() {
+  margin: 0 n(18) n(30) n(18);
+  background: #ffffff;
+  box-shadow: 0 0 n(4) 0 rgba(102, 102, 102, 0.5);
+  border-radius: n(4);
+  padding: 0 n(4);
+}
+@mixin mainContent() {
+  background: #ffffff;
+  margin-bottom: n(30);
+  padding-bottom: n(30);
+}
+
+@mixin smallContentTitle() {
+  text-align: center;
+  font-weight: 800;
+  font-size: n(44);
+  line-height: n(100);
+
+}
+
+@mixin contentTitle() {
+  @include smallContentTitle;
+}
+
+@mixin defaultButton($width:200,$height:100) {
+  background-image: linear-gradient(90deg, #1da1f2 0%, #42c1ff 100%);
+  box-shadow: 0 n(8) n(10) 0 rgba(29, 161, 242, 0.35);
+  display: inline-block;
+  color: #ffffff;
+  font-size: n(28);
+  width: n($width);
+  height:n($height);
+  line-height: n($height);
+  border-radius: n($height);
+  margin: 0 auto;
+  text-align: center;
+  font-weight:400;
+}
+
+@mixin picClass($width:100,$height:100){
+  width: n($width);
+  height: n($height);
+  display: block;
+  background-size: cover;
+  margin: 0 auto n(46) auto;
+}
+
+.kc1{max-width: 1000px;margin: 0 auto}
+.mainnav {
+  height: n(96);
+  line-height: n(96);
+  background: #ffffff;
+  display: flex;
+  display: -webkit-flex;
+  padding-left: n(14);
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  .mainnav-link {
+    font-size: n(32);
+    color: #2ab6f6;
+    letter-spacing: n(1.4);
+    text-align: left;
+
+  }
+  .aside-icon {
+    width: n(122);
+    height: n(96);
+    background: url($imgPath+ "/activity/m/kc1/nav_btn.png") no-repeat;
+    background-size: n(122) n(96);
+  }
+  aside {
+    position: absolute;
+    z-index: 999;
+    width: n(750);
+    left: 0;
+    top: 0;
+    color: #666666;
+    background: rgba(0, 0, 0, 0.50);
+    height: 100%;
+    .mainnav-aside {
+      background: #ffffff;
+      width: n(750);
+    }
+    .mainnav-aside- {
+      &title {
+        height: n(60);
+        text-align: center;
+        font-size: n(28);
+        line-height: n(60);
+        padding-bottom: n(30);
+      }
+      &content {
+        overflow: hidden;
+        padding-left: n(40);
+      }
+      &link {
+        float: left;
+        width: n(208);
+        height: n(84);
+        line-height: n(84);
+        text-align: center;
+        background: #f8f8f8;
+        border-radius: n(4);
+        margin: 0 n(22) n(20) 0;
+        font-size: n(32);
+        color: #666666;
+      }
+      &link:active{
+        background:#4fc4ff;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.banner_img {
+  width: n(750);
+  height: n(584);
+  overflow: hidden;
+  background: url($imgPath+ "/activity/m/kc1/banner_img.png") no-repeat;
+  background-size: n(750) n(584);
+  display: block;
+  margin-bottom: n(30);
+  position: relative;
+  .banner-txt{
+    background: url($imgPath+ "/activity/m/kc1/banner_content.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: n(398);
+    height: n(532);
+    right: n(24);
+    top: n(38);
+  }
+
+}
+
+.apply-for-content {
+
+  @include smallContent;
+  &-title {
+    @include smallContentTitle;
+    height: n(90);
+    line-height: n(90);
+    font-size: n(36);
+    color: #333333;
+    //border-bottom:n(2) solid #dddddd;
+
+  }
+  &-list {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    li {
+      width: 33%;
+      position: relative;
+      text-align: center;
+      border-top: n(2) solid #dddddd;
+      border-left: n(2) solid #dddddd;
+      padding: n(10) 0;
+    }
+    li:nth-child(3n+1) {
+      border-left: 0 none;
+
+    }
+  }
+  .apply-for-icon {
+    background: url($imgPath+ "/activity/m/kc1/icon.png") no-repeat;
+    background-size: cover;
+    width: n(80);
+    height: n(80);
+    display: block;
+    margin: 0 auto
+  }
+  .ico-1 {
+    background-position: n(0) 0;
+  }
+  .ico-2 {
+    background-position: n(-97) 0;
+  }
+  .ico-3 {
+    background-position: n(-190) 0;
+  }
+  .ico-4 {
+    background-position: n(-290) 0;
+  }
+  .ico-5 {
+    background-position: n(-390) 0;
+  }
+  .ico-6 {
+    background-position: n(-490) 0;
+  }
+  .ico-7 {
+    background-position: n(-580) 0;
+  }
+  .ico-8 {
+    background-position: n(-680) 0;
+  }
+  .ico-9 {
+    background-position: n(-775) 0;
+  }
+  .ico-10 {
+    background-position: n(-870) 0;
+  }
+  .ico-11 {
+    background-position: n(-970) 0;
+  }
+  .ico-12 {
+    background-position: n(-1070) 0;
+  }
+  .ico-13 {
+    background-position: n(-1170) 0;
+  }
+  .ico-14 {
+    background-position: n(-1260) 0;
+  }
+  .ico-15 {
+    background-position: n(-1360) 0;
+  }
+  .title {
+    font-size: n(32);
+    color: #333333;
+    display: block;
+    text-align: center;
+    font-weight: 800
+  }
+  .txt {
+    text-align: center;
+    color: #666666;
+    display: block;
+    height: n(34);
+    overflow: hidden;
+  }
+  .btn {
+    @include defaultButton(196,46);
+    margin-top: n(10);
+  }
+}
+
+.info-box {
+  text-align: center;
+  @include smallContent;
+  color: #333333;
+  &-title {
+    height: n(100);
+    @include smallContentTitle;
+    border-bottom: n(2) solid #dddddd;
+  }
+  &-content {
+    line-height: n(68);
+    font-size: n(36);
+    padding-top: n(20);
+  }
+  .btn {
+    @include defaultButton(314,78);
+    margin-top: n(10);
+    margin-bottom: n(30);
+  }
+  .learn-image {
+    background: url($imgPath+ "/activity/m/kc1/Fourlearningstages.png") no-repeat;
+    background-size: cover;
+    width: n(600);
+    height: n(340);
+    margin: 0 auto n(20) auto;
+  }
+}
+
+.cource-list {
+  @include mainContent;
+  &-title {
+    @include contentTitle;
+    margin-bottom: n(22);
+  }
+  &-content {
+    ul {
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+    }
+    li {
+      border: n(2) solid #dedede;
+      border-radius: n(4);
+      width: n(344);
+      height: n(228);
+      margin:0 0 n(18) n(18);
+      .title {
+        line-height: n(66);
+      }
+      a {
+        span {
+          font-size: n(32);
+          color: #333333;
+          font-weight: lighter;
+        }
+        strong{
+          font-weight: 800;
+          color: #3ABAFC;
+          padding: 0 n(10);
+        }
+        img {
+          width: n(344);
+          height: n(162);
+        }
+      }
+    }
+
+  }
+  &-bigimg{
+    width: n(570);
+    height: n(400);
+    background: url($imgPath+ "/activity/m/kc1/400159399_banner.png") no-repeat;
+    background-size: cover;
+    display: block;
+
+  }
+  &-maintxt{
+    font-size:n(44);
+    color:#333333;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .buttonBox{ text-align: center;}
+  .btn{
+    @include defaultButton(314,78);
+  }
+}
+.news-info{
+  @include mainContent;
+  &-title{
+    @include contentTitle;
+  }
+  &-content{
+    text-align: center;
+  }
+
+  .server_pic{
+    background: url($imgPath+"/activity/m/kc1/service.png") no-repeat;
+    @include picClass(750,118);
+
+
+  }
+  .CCTV_pic{
+    background: url($imgPath+"/activity/m/kc1/CCTV.png") no-repeat;
+    @include picClass(464,50);
+  }
+  .reward{
+    background: url($imgPath+"/activity/m/kc1/Honor.png") no-repeat;
+    @include picClass(670,220);
+  }
+  .shizhanbiao{
+    background: url($imgPath+"/activity/m/kc1/shizhanbiao.png") no-repeat;
+    @include picClass(664,432);
+  }
+  .Contrast_img{
+    background: url($imgPath+"/activity/m/kc1/Contrast_img.png") no-repeat;
+    @include picClass(652,492);
+  }
+  .teacher_pic{
+    background: url($imgPath+"/activity/m/kc1/teacher.png") no-repeat;
+    @include picClass(704,434);
+    margin-bottom: 0;
+  }
+  .teacher_txt{
+    border:n(2) solid #dedede;
+    padding: n(20);
+    font-weight: lighter;
+    color: #333333;
+    font-size: n(50);
+    margin: 0 n(18) n(40) n(18);
+    text-align: left;
+  }
+  .btn{
+    @include defaultButton(314,78);
+  }
+  .btn_long{
+    @include defaultButton(702,78);
+  }
+  .promotion{
+    background: url($imgPath+"/activity/m/kc1/promotion.png") no-repeat;
+    @include picClass(562,278);
+    margin-top: n(20);
+    margin-bottom: n(90);
+  }
+}
+
+.float_button{
+  position: fixed;
+  @include defaultButton(702,76);
+  bottom: n(30);
+  left: n(24);
+  z-index: 1000;
+}

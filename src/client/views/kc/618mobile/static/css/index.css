@@ -1,0 +1,197 @@
+body{
+    background: #d1a2ff !important;
+    max-width:100% !important
+}
+.time{
+    padding: 0.05rem 0.15rem;
+    background: #ac6cff;
+    font-size: 0.16rem;
+    color:#fff;
+}
+.paneOne{
+    background: url(../images/pane.png) no-repeat center;
+    background-size: 100%;
+    background-position: 0;
+    height: 0.6rem;
+    text-align: center;
+}
+.paneOne>a>div{
+    font-size: 0.12rem;
+}
+.paneOne>a>h3{
+    padding-top: 0.05rem;
+}
+.paneOne>a{
+    color:white;
+}
+.box{
+    margin:0.1rem;
+    padding: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    background: white;
+}
+
+.boxTitle{
+    background: url(../images/titleBj.png) no-repeat center;
+    background-size: 70%;
+    text-align: center;
+    height: 0.6rem;
+    color: white;
+    line-height: 0.66rem;
+}
+.flag618{
+    background: #ea3628;
+    font-size: 0.12rem;
+    /*bottom: 0.04rem;*/
+    top:0.56rem;
+    right: 0;
+    padding: 0.03rem 0.07rem;
+    border-radius: 0.1rem 0 0 0.1rem;
+    color:white;
+    position: absolute;
+    font-weight: 600;
+}
+.flag2{
+  font-size: 0.1rem;
+  top: 0.52rem;
+  right: 0;
+  padding: 0.01rem;
+  border-radius: 0.05rem;
+  color: #ff5778;
+  border: 1px solid #ff5778;
+  position: absolute;
+}
+
+.btn{
+    background: #ff5778;
+    color:white;
+    font-size: 0.12rem;
+}
+.itemImg{
+    width:1.5rem;
+    height:0.8rem;
+}
+.boxContent .item{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-bottom: 0.22rem;
+    position: relative;
+}
+.abs2{
+    position: absolute;
+}
+
+/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 370px) {
+    .abs2{
+        position: relative;
+    }
+}
+.bot{
+    width: 0.1rem;
+    height: 0.1rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #d3a5ff;
+    display: inline-block;
+    line-height: 0.1rem  ;
+    color: white;
+    text-align: center;
+    font-size: 0.1rem;
+    padding: 0.02rem;
+}
+
+.labelBj{
+    background: url("../images/label.png") no-repeat center;
+    background-size: 0.75rem 0.21rem;
+    width: 0.75rem;
+    height: 0.21rem;
+    display: inline-block;
+    color:white;
+    font-size: 0.15rem;
+    margin-bottom: 0.15rem;
+}
+.detail{
+    font-size: 0.18rem;
+    text-align: center;
+    position: absolute;
+    padding: 0.1rem;
+    margin: 0;
+}
+.line_01 {
+    height: 1px;
+    border-top: 1px solid #2d2f2c;
+    text-align: center;
+    font-size: 0.16rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.line_01 span {
+    position: relative;
+    top: -0.12rem;
+    background: #d1a2ff;
+    padding: 0 0.2rem;
+}
+.line{
+    width:100%;
+    height:0.15rem;
+    margin:0.05rem;
+    background-color: #ccc;
+}
+.public{
+    width:0.8rem;
+    height:100%;
+    display:inline-block;
+    text-align: justify;
+    vertical-align:top;
+    background-color: #aaa;
+}
+.public::after{
+    content:"";
+    display: inline-block;
+    width:100%;
+    overflow:hidden;
+    height:0;
+}
+.bannerBj{
+    /*background: url("https://img.ydlcdn.com/file/2018/04/28/an6opwqdx2i6hxz0.jpg") no-repeat center;*/
+    background-size: 100% 0.9rem;
+    height: 0.9rem;
+    border-radius: 0.1rem 0.1rem 0 0;
+}
+.test1 {
+    text-align:justify;
+    text-justify:distribute-all-lines;/*ie6-8*/
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+    line-height: 0.13rem;
+    margin-bottom: 0.05rem;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){/* chrome*/
+    .test1:after{
+        content:".";
+        display: inline-block;
+        width:100%;
+        overflow:hidden;
+        height:0;
+    }
+}
+/*用来处理jquery-weui.min.css的影响*/
+@media (min-width: 400px) {
+  html {
+    font-size: 110.4px !important;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,263 @@
+@import '~@/styles/base/var.scss';
+
+.page-activity-act1010{ background: #fff; width: n(750); margin:0 auto; padding-bottom:n(20); overflow: hidden;
+
+  .header{
+
+    .toptext{ width: n(750); margin: 0 auto;
+      dt{ width:n(750); height: n(765);
+        background:url($imgPath+'/activity/t/act1010/top-bg.png') no-repeat;
+        background-size: cover;
+      }
+      dd{ width: n(738); height: n(304); margin:n(-100) auto 0 auto; color: #000; font-size: n(28);
+        box-sizing: border-box; padding: n(50) n(50) 0 n(50); text-indent: n(60);
+        background:url($imgPath+'/activity/t/act1010/top-text.png') no-repeat;
+        background-size: cover;
+      }
+    }
+
+    section{
+      width: n(710); margin:0 auto; margin-top:n(40);
+      box-shadow: 0 0 n(30) rgba(0,0,0,.1); border-radius: n(12); overflow: hidden;
+
+      .banner{ width: n(710); height: n(140);
+        @for $i from 1 through 6
+        {
+          &.t-#{$i}
+          {
+            background:url($imgPath+'/activity/t/act1010/t-#{$i}.png') no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+
+      @for $i from 1 through 10
+      {
+        .p-#{$i}
+        {
+          background:url($imgPath+'/activity/t/act1010/p-#{$i}.png') no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .more{ width: n(710); height: n(108); text-align: center; line-height: n(108);
+        color: #666; font-size: n(26);
+
+        a{ color: #666;}
+
+        i{ display: inline-block; width: n(26); height: n(26); position: relative;
+          top:n(6); margin-left:n(4);
+          background:url($imgPath+'/activity/t/act1010/arrow.png') no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .list1{ margin:0 n(10);
+        li{ display: inline-block; width: n(326); border-radius: n(12); height: n(522);
+          overflow: hidden; background:#fff; margin:n(18) n(9) 0 n(9); box-sizing: border-box;
+          dt{ width: n(326); height: n(260); text-align: center; overflow: hidden; font-size: 0;}
+          dd{ padding:n(26); border:n(1) solid rgba(224,224,224,1); box-sizing: border-box; border-top:0; border-radius:0 0 n(12) n(12);
+            strong{ display: block; font-size: n(30); color: #000;}
+            p{ height: n(72); padding:n(10) 0 0 0; color: #666; font-size: n(24);}
+            div{ margin-top:n(16);}
+          }
+        }
+      }
+
+      .list2{ margin:0 n(10);
+        li{ display: inline-block; width: n(326); border-radius: n(12); height: n(414);
+           background:#fff; margin:n(18) n(9) 0 n(9); box-sizing: border-box; overflow: hidden;
+
+          dt{ width: n(326); height: n(180); text-align: center; overflow: hidden; font-size: 0;}
+          dd{ padding:n(26); border:n(1) solid rgba(224,224,224,1); border-top:0; border-radius:0 0 n(12) n(12); box-sizing: border-box;
+            p{ height: n(84); padding:n(8) 0 n(12) 0; color: #000; font-size: n(30); font-weight: bold; text-align: center;
+              &.textleft{ text-align: left;}
+              small{ display: block; color: #999; font-weight: normal; font-size: n(24); margin-top:n(4);}
+            }
+            div{ margin-top:n(16);}
+          }
+        }
+      }
+
+      .list3{ margin:0 n(10);
+        li{ width: n(670); border-radius: n(12); height: n(300);
+          background:#f7f7f7; margin:n(18) auto 0 auto; padding:n(30); box-sizing: border-box;
+          dt{ font-size: n(30); color: #000; font-weight: bold;
+            em{ color: #1DA1F2; font-weight: bold;}
+          }
+          dd{ padding:n(20); background: #fff; margin-top:n(30);
+            p{ font-size: n(26); color: #666;}
+            div{ margin-top:n(10); height: n(36); line-height: n(36);
+              span{ height: n(36); line-height: n(36); color: #999; font-size: n(24);}
+              .sp1{ float: left;
+                i{ display: inline-block; width: n(36); height: n(36); margin-right: n(6);
+                  position: relative; top:n(8);  border-radius: 50%;
+                  &.face-1{
+                    background:url($imgPath+'/activity/t/act1010/face-1.png') no-repeat;
+                    background-size: cover;
+                  }
+                  &.face-2{
+                    background:url($imgPath+'/activity/t/act1010/face-2.png') no-repeat;
+                    background-size: cover;
+                  }
+                }
+              }
+              .sp2{ float: right;}
+            }
+          }
+        }
+      }
+
+      .list4{ margin:0 n(10);
+        li{ width: n(670); height: n(164); margin: 0 auto; padding:0 n(10);
+          background:#fff; margin:n(30) auto 0 auto;
+
+          &.line{ border-bottom: n(1) solid #f0f0f0;
+            padding-bottom: n(30);
+          }
+
+          dt{ float: right; width: n(284); height: n(164); border-radius: n(12);
+          }
+          dd{ float: left; width: n(360);
+            p{ color: #333; font-size: n(30); font-weight: bold;}
+            div{ color:#666; font-size: n(20); margin-top:n(40);}
+          }
+        }
+      }
+    }
+  }
+
+  .btn{
+    color:#fff; display: inline-block; text-align: center;
+    box-sizing: border-box;
+
+    &.big{ width: n(580); height: n(80); line-height: n(80); font-size: n(34);
+      border-radius: n(40); background: #1DA1F2;
+    }
+
+    &.small{ width: n(272); height: n(60); line-height: n(60); font-size: n(26);
+      border-radius: n(30); border:n(1) solid #1DA1F2; color: #1DA1F2;
+    }
+  }
+
+  .control{ text-align: center; margin-top:n(50);}
+
+  h3{ font-size: n(44); color:#333;
+    text-align: center; padding:n(68) 0 n(52) 0;
+
+    &.cor1{ color: #fff;}
+  }
+
+  .intro{ width: n(710); margin:0 auto; margin-top:n(40); padding-bottom:n(70);
+    box-shadow: 0 0 n(30) rgba(0,0,0,.1); border-radius: n(12);
+
+    .banner{ width: n(710); height: n(304);
+      background:url($imgPath+'/activity/m/biaodan/banner2.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    .list{ margin:0 n(40);
+      dl{ height: n(96); margin-top:n(52);
+        dt{ float: left; width: n(96); height: n(96);
+          @for $i from 1 through 4
+          {
+            &.i-#{$i}
+            {
+              background:url($imgPath+'/activity/m/biaodan/i-#{$i}.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+
+        dd{ margin-left:n(130);
+          strong{ color: #333; font-size: n(30);}
+          p{ color: #666; font-size: n(24); margin-top:n(5);}
+        }
+      }
+    }
+
+    .control{}
+  }
+
+  .fuwu{ width:n(750); padding:0 0 n(60) 0; margin-top:n(60);
+    background:url($imgPath+'/activity/m/biaodan/bg.jpg') repeat;
+    background-size: 100% auto;
+
+    .list{ padding:0 n(15); margin-top:n(-30);
+      dl{ display: inline-block; width: n(330); height: n(436); margin:n(30) n(15) 0 n(15);
+        background: #fff; border-radius: n(12); overflow: hidden;
+        dt{ width: n(330); height: n(260);
+          @for $i from 1 through 4
+          {
+            &.p-#{$i}
+            {
+              background:url($imgPath+'/activity/m/biaodan/p-#{$i}.jpg') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+
+        dd{ padding:n(28) n(20);
+          strong{ color: #333; font-size: n(30);}
+          p{ color: #666; font-size: n(24); margin-top:n(5);}
+        }
+      }
+    }
+  }
+
+  .aboutus{
+    width: n(710); margin:0 auto; margin-top:n(40); padding-bottom:n(70);
+    box-shadow: 0 0 n(30) rgba(0,0,0,.1); border-radius: n(12);
+
+    .banner{ width: n(710); height: n(336);
+      background:url($imgPath+'/activity/m/biaodan/banner3.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    ul{ width: n(650); margin: 0 auto;
+      li{ margin-top:n(60);
+        h5{ color: #333; font-size: n(34);}
+        p{ color: #666; font-size: n(30);}
+      }
+    }
+  }
+
+  .footer{ display: none; height: n(140); width: n(750); box-sizing:border-box; padding:0 n(15); position: fixed; bottom: 0;
+    border-top:n(1) solid #e0e0e0; z-index: 999; background: #fff;
+
+    a{ display: inline-block; width: n(330); height: n(88); border-radius: n(44); padding-left:n(40);
+      text-align: center; line-height: n(44); color: #fff; font-size: n(34); margin:n(26) n(15) 0 n(15);
+      line-height: n(88); box-sizing:border-box;
+
+      &.btn1{ color: #1DA1F2; border:n(1) solid #1DA1F2;
+        background: #E8F5FD url($imgPath+'/activity/m/biaodan/ico-f-1.png') no-repeat n(50) n(24);
+        background-size: n(38);
+      }
+      &.btn2{ color: #fff;
+        border:n(1) solid #1DA1F2;
+        background: #1DA1F2 url($imgPath+'/activity/m/biaodan/ico-f-2.png') no-repeat n(50) n(24);
+        background-size: n(38);
+      }
+    }
+  }
+
+  .swiper-container{ overflow: inherit;}
+  .swiper-pagination-bullet{ background: rgba(0,0,0,.2);
+    &.swiper-pagination-bullet-active{
+      background: rgba(0,0,0,.4);
+    }
+  }
+}
+
+.modal-proxy-bd-yy{ text-align: center;
+  .top{ width: 100%; height: n(200);
+    background: #1DA1F2 url($imgPath+'/activity/m/biaodan/dialog.jpg') no-repeat;
+    background-size: cover;
+  }
+  h1{ font-size: n(44); margin-top:n(20); color: #3d3d3d;}
+  p{ color: #3d3d3d; font-size: n(30);}
+  a{ margin:n(30) 0 n(50) 0; display: inline-block; width: n(280); height: n(76); border-radius: n(38);
+    color: #fff; font-size: n(30); line-height: n(76); background: #1DA1F2;
+  }
+}
+

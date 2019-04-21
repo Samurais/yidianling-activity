@@ -1,0 +1,2172 @@
+/**{color: #333;}*/
+html {
+	width: 100%;
+	/*height: 100%;*/
+	font-size: 14px;
+	/*font-size: 1.4rem;*/
+	overflow-x: hidden;
+}
+body {
+	width: 100%;
+	/*height: 100%;*/
+	font-size: 10px;
+	font-size: 62.5%;
+	color: #333;
+	position: relative;
+	overflow-x: hidden;
+}
+img {
+	/*max-width: 100%;*/
+	width: 100%;
+	display: block;
+}
+.wrapper {
+	width: 100%;
+}
+.fl{float: left;}
+.fr{float: right;}
+.m-rl {
+	margin: 0 4.667%;
+    width: 90.666%;
+}
+.m-auto {
+	margin: 0 auto;
+}
+.goConsult {
+	/*玫红色按钮*/
+	width: 44.12%;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #f84d6a;
+	margin-top: 21px;
+	display: block;
+}
+.underline:after {
+	content: '';
+	height: 1.5px;
+	width: 6.4%;
+	margin: 15px auto 27.5px auto;
+	background-color: #f84d6a;
+	display: block;
+}
+.swiper-pagination{
+	width: 100%;
+}
+.swiper-pagination{
+	margin-top: -25px;
+	left: 0;
+}
+.swiper-pagination-bullet{
+	width: 5px;
+	height: 5px;
+	margin-right: 5px;
+	opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active,
+.speech .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.experts .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background-color: #898989;
+	opacity: 1;
+}
+/*.head{
+	min-height: 400px;
+	_height: 400px;
+}*/
+/*@media only screen and (min-width: 414px) {
+	.head{
+		min-height: 620px;
+		_height: 400px;
+	}
+}*/
+.head,.compare, .media,.about{
+	position: relative;
+}
+.head .head_content,.compare_content{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.head .logo {
+    width: 90.666%;
+	padding: 11.5px 4.667%;
+	position: fixed;
+    z-index: 99;
+}
+.head .logo img {
+	width: 41.73%;
+	clear: both;
+	display: inline-block;
+}
+.head .head_content .desp {
+	float: right;
+	font-size: 13px;
+	line-height: 17px;
+	color: #606060;
+	text-align: right;
+}
+.head .head_content .title{
+	margin-top: 92.5px;
+}
+.head .head_content .title .titleimg {
+	width: 73.2%;
+}
+.head .head_content .title a.goConsult {
+    background-color: transparent;
+    border: 1px solid #f84d6a;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    border-radius: 19.5px;
+	-moz-border-radius: 19.5px;
+	-webkit-border-radius: 19.5px;
+	color: #f84d6a;
+}
+.head .toplist {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.box{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	clear: both;
+	display: block;
+}
+.box h3 {
+	font-weight: normal;
+	text-align: center;
+	font-size: 25px;
+	margin: 35px 0 20px;
+}
+.helplist ul{
+	margin: 0 auto;
+	display: inline-block;
+}
+.helplist li{
+	width: 25.74%;
+	float: left;
+}
+.helplist li:nth-child(2){
+	margin: 0 11.39%;
+}
+.helplist .circle{
+	width: 87px;
+	height: 87px;
+	border: solid 1px #f84d6a;
+	position: relative;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.helplist .circle:before{
+	content:"";
+	position: absolute;
+	left: calc(50% - 8px);
+	left: -moz-calc(50% - 8px);
+	left: -webkit-calc(50% - 8px);
+	bottom: -8px;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #FFFFFF;
+	z-index: 3;
+}
+.helplist .circle:after{
+	content:"";
+	position: absolute;
+	left: calc(50% - 8px);
+	left: -moz-calc(50% - 8px);
+	left: -webkit-calc(50% - 8px);
+	bottom: -10px;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #f84d6a;
+	z-index: 2;
+}
+.helplist .circle img{
+	width: 35px;
+	margin: 26px;
+}
+.helplist li>p{
+	font-size: 18px;
+	line-height: 1.1;
+	color: #f84d6a;
+	margin-top: 24px;
+}
+.helplist a.goConsult,.compare a.goConsult,.about a.goConsult,.step a.goConsult,.helplist2 a.goConsult{
+	width: 51.4667%;
+	height: 40px;
+	margin: 30px auto 40px auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.reason{
+	color: #323333;
+	background-color: #f4f4f4;
+	padding-bottom: 10px;
+}
+.reason li{
+	margin: 0 5.2%;
+	width: 89.6%;
+	clear: both;
+}
+.reason li>img{
+	width: 16.37%;
+	margin: 0 7.4% 25px 7.4%;
+	float: left;
+}
+.reason .reason_right{
+	width: 68.8%;
+	text-align:left;
+	float: left;
+}
+.reason .reason_right>p{
+	font-size: 20px;
+	margin-top: 7px;
+}
+.reason .reason_right>span{
+	font-size: 14px;
+    /* line-height: 1.3; */
+    color: #888888;
+    line-height: 30px;
+}
+.compare{
+	color: white;
+}
+.compare h3 {
+	margin-top: 50px;
+}
+.compare_content>div{
+	width: 81.846%;
+	background-color: white;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 30px 4.41% 10px 4.41%;
+	margin: 0 4.667%;
+}
+.speech .tips{
+	font-size: 14px;
+	color: #999999;
+	margin: -10px 0 15px 0;
+}
+.speech .phone{
+	width: 76.53%;
+	padding: 0 11.685%;
+	position: relative;
+	overflow: hidden;
+}
+.speech .speech_swiper .swiper-container{
+    width: 69.5%;
+    position: absolute;
+    top: 23px;
+    left: 15.3335%;
+}
+/*.speech .phone>img{
+	position: relative;
+    z-index: 12;
+}*/
+.speech .swiper-pagination{
+	bottom: 25px;
+}
+.speech .swiper-pagination-bullet{
+	background-color: #c4c4c4;
+}
+.speech_content{
+	color: white;
+	background-color: #f84d6a;
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+}
+.speech_content li{
+	width: 50%;
+	margin: 30px 0;
+	line-height: 35px;
+	float: left;
+	display: inline-block;
+}
+.speech_content li:nth-child(1){
+	border-right: solid #FFFFFF 1px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.speech_content p{
+	line-height: 1;
+}
+.speech_content .num{
+	font-size: 14px;
+	padding-left: 20%;
+}
+.speech_content .rate{
+	font-size: 34.5px;
+    font-weight: 350;
+	padding: 3px 0 0 20%;
+}
+.speech_content li:nth-child(2) .num{
+	padding-left: 17.33%;
+}
+.speech_content li:nth-child(2) .rate{
+	padding-left: 16.8%;
+}
+.experts{
+	background-color: #f6f6f6;
+}
+.experts .experts_swiper .swiper-container{
+	width: 88%;
+	padding: 39px 0 35px 0;
+	background-color: white;
+	-webkit-border-radius: 10.5px;
+	-moz-border-radius: 10.5px;
+	-ms-border-radius: 10.5px;
+	-o-border-radius: 10.5px;
+	border-radius: 10.5px;
+	box-shadow: 0px 0px 16px 0px rgba(160, 24, 6, 0.1);
+	margin-bottom: 70px;
+}
+.experts .experts_swiper .swiper-container img{
+	width: 51.4667%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 auto;
+	box-shadow: 0px 0px 0px 10.5px rgba(51, 51, 51, 0.05);
+	-webkit-box-shadow: 0px 0px 0px 10.5px rgba(51, 51, 51, 0.05);
+}
+.experts .experts_swiper .swiper-container .name{
+	font-size: 20px;
+	margin-top: 25px;
+}
+.experts .experts_swiper .swiper-container .desp{
+	font-size: 14px;
+	color: #707070;
+	line-height: 1.4;
+}
+.experts .swiper-pagination{
+	margin-top: -50px;
+}
+.experts .swiper-pagination-bullet{
+	background-color: #BFBFBF;
+}
+.media h3{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+.media h3.underline:after{
+	margin: 5px auto 10px auto;
+}
+.media h3>p{
+	font-size: 14px;
+	line-height: 2;
+	color: #999999;
+}
+.step{
+	background-color: #f4f5f9
+}
+.about .about_content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+}
+.about .about_swiper .swiper-container{
+	width: 82.5%;
+	/*height: 176px;*/
+    margin: 0 auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+.about .about_swiper .swiper-container img{
+	border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.about .swiper-pagination{
+	margin-top: 10px;
+	left: 0;
+}
+.about .swiper-pagination-bullet{
+	background-color: #7a7a7a;
+}
+.about .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background-color: #d9d9d9;
+}
+.about p{
+	font-size: 13px;
+	line-height: 1.7;
+	margin: 40px 32px 50px 32px;
+	text-align: left;
+}
+.contact {
+    text-align: center;
+    background-color: #292c33;
+    padding: 34px 0 105px 0;
+    position: relative;
+}
+.contact a{
+	font-size: 34.5px;
+	color: white;
+}
+.contact .workTime{
+	font-size: 14px;
+	color: white;
+	margin: 5px 0 20px 0;
+}
+.contact .workTime.underline:after{
+	height: 1px;
+}
+.contact .copyRight{
+	font-size: 12px;
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    letter-spacing: 1px;
+    color: #7e7e7e;
+    width: 140%;
+    position: absolute;
+    left: -20%;
+}
+.fixed_menu {
+	width: 100%;
+	font-size: 13px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 99;
+}
+.fixed_menu a {
+	width: 30.27%;
+	height: 65px;
+	background-color: white;
+	color: #999999;
+	float: left;
+	display: inline-block;
+}
+.fixed_menu a.wechat {
+	border-right: solid 1px #F0F0F0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.fixed_menu a i {
+	width: 30.5px;
+	height: 25px;
+	background-size: cover;
+	display: block;
+	vertical-align: middle;
+	margin: 12.5px auto 5px auto;
+}
+.fixed_menu a i.icon_wechat {
+	background-image: url(../images/520/bottom/wechat.png);
+}
+.fixed_menu a i.icon_tel {
+	background-image: url(../images/520/bottom/tel.png);
+}
+.fixed_menu a.goConsult {
+	width: 39.46%;
+	color: white;
+	background-color: #f84d6a;
+	font-size: 17px;
+	margin: 0;
+	line-height: 65px;
+}
+@media only screen and (max-width: 374px) {
+	.speech .tips{
+		font-size: 12px;
+	}
+	.box h3 {
+		font-size: 22px;
+		margin-top: 30px;
+	}
+	.helplist a.goConsult, .compare a.goConsult, .about a.goConsult, .step a.goConsult{
+		height: 36px;
+		line-height: 36px;
+		margin: 20px auto 30px auto;
+	}
+	.helplist .circle{
+		width: 76px;
+   		height: 76px;
+	}
+	.helplist .circle img{
+		width: 32px;
+		margin: 23px;
+	}
+	.helplist li>p{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.reason .reason_right>p{
+		font-size: 16px;
+	}
+	.reason .reason_right>span{
+		font-size: 10px;
+    	line-height: 20px;
+	}
+	.speech_content li{
+		margin: 20px 0;
+	}
+	.speech_content .rate{
+		font-size: 30px;
+	}
+	.about p{
+		font-size: 12px;
+		margin: 30px 32px 20px 32px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.speech .speech_swiper .swiper-container{
+		top: 18px;
+	}
+	.helplist .circle{
+		width: 68px;
+   		height: 68px;
+	}
+	.helplist .circle img{
+		width: 26px;
+		margin: 21px;
+	}
+	.helplist li>p{
+		font-size: 14px;
+		line-height: 14px;
+	}
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+	.speech .speech_swiper .swiper-container{
+		top: 27px;
+	}
+}
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+	.speech .speech_swiper .swiper-container{
+		top: 30px;
+	}
+}
+/******************2017-11-26 520.yidianling.com底部菜单改版*******************/
+/*.fixed_menu_1{
+	width: 100%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 99;
+}
+.fixed_menu_1 a{
+	width: 50%;
+	height: 65px;
+	line-height: 65px;
+	color: white;
+	float: left;
+	display: inline-block;
+}
+.fixed_menu_1 a.wechat{
+	width: 44%;
+	background-color: #34cd65;
+}
+.fixed_menu_1 a.online{
+	width: 56%;
+	background-color: #f84d6a;
+}
+.fixed_menu_1 a i {
+	width: 31px;
+	height: 25px;
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0 3.6%;
+	display: inline-block;
+}
+.fixed_menu_1 .wechat .icon_wechat{
+	background-image: url(../images/520/bottom/1/wechat.png);
+}
+.fixed_menu_1 .online .icon_online{
+	width: 25px;
+	height: 25px;
+	background-image: url(../images/520/bottom/1/online.png);
+}
+.fixed_menu_1 .tel{
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	position: absolute;
+	bottom: 115px;
+	right: 5px;
+}
+.fixed_menu_1 .tel .icon_tel{
+	width: 29px;
+    height: 31px;
+	background-image: url(../images/520/bottom/1/tel.png);
+	margin: -5.5px 0 0;
+}
+.fixed_menu_2{
+	width: 100%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 99;
+}
+.fixed_menu_2 a{
+	width: 50%;
+	height: 65px;
+	line-height: 65px;
+	color: white;
+	float: left;
+	display: inline-block;
+}
+.fixed_menu_2 a.wechat{
+	width: 44%;
+	color: #999999;
+	background-color: #ffffff;
+}
+.fixed_menu_2 a.online{
+	width: 56%;
+	background-color: #f84d6a;
+}
+.fixed_menu_2 a i {
+	width: 31px;
+	height: 25px;
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0 3.6%;
+	display: inline-block;
+}
+.fixed_menu_2 .wechat .icon_wechat{
+	background-image: url(../images/520/bottom/2/wechat.png);
+}
+.fixed_menu_2 .online .icon_online{
+	width: 25px;
+	height: 25px;
+	background-image: url(../images/520/bottom/2/online.png);
+}
+.fixed_menu_2 .tel{
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	position: absolute;
+	bottom: 115px;
+	right: 0;
+}
+.fixed_menu_2 .tel .icon_tel{
+	width: 29px;
+    height: 31px;
+	background-image: url(../images/520/bottom/2/tel.png);
+	margin: -5.5px 0 0;
+}
+.fixed_menu_3{
+	width: 100%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 99;
+}
+.fixed_menu_3 a{
+	width: 50%;
+	height: 65px;
+	line-height: 65px;
+	color: white;
+	float: left;
+	display: inline-block;
+}
+.fixed_menu_3 a.wechat{
+	width: 44%;
+	color: #999999;
+	background-color: #ffffff;
+}
+.fixed_menu_3 a.online{
+	width: 46.4%;
+	padding-right: 9.6%;
+	text-align: right;
+	background-color: #f84d6a;
+}
+.fixed_menu_3 a i {
+	width: 31px;
+	height: 25px;
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0 3.6%;
+	display: inline-block;
+}
+.fixed_menu_3 .wechat .icon_wechat{
+	background-image: url(../images/520/bottom/3/wechat.png);
+}
+.fixed_menu_3 .online .icon_online{
+	width: 87px;
+    height: 102px;
+    background-image: url(../images/520/bottom/3/online.png);
+    position: absolute;
+    left: 40.4%;
+    bottom: 0;
+}
+.fixed_menu_3 .tel{
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #f84d6a;
+	box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	position: absolute;
+	bottom: 115px;
+	right: 0;
+}
+.fixed_menu_3 .tel .icon_tel{
+	width: 29px;
+    height: 31px;
+	background-image: url(../images/520/bottom/3/tel.png);
+	margin: -5.5px 0 0;
+}
+.fixed_menu_4{
+	width: 100%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 99;
+}
+.fixed_menu_4 a{
+	width: 40%;
+	height: 65px;
+	line-height: 65px;
+	color: white;
+	float: left;
+	display: inline-block;
+}
+.fixed_menu_4 a.wechat{
+	background-color: #34cd65;
+	padding-right: 10%;
+}
+.fixed_menu_4 a.online{
+	background-color: #f84d6a;
+	padding-left: 10%;
+}
+.fixed_menu_4 a i {
+	width: 31px;
+	height: 25px;
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0 3.6%;
+	display: inline-block;
+}
+.fixed_menu_4 .wechat .icon_wechat{
+	background-image: url(../images/520/bottom/4/wechat.png);
+}
+.fixed_menu_4 .tel{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	position: absolute;
+	bottom: -4px;
+	left: -37.5px;
+    margin-left: 50%;
+}
+.fixed_menu_4 .tel .icon_tel{
+	width: 30px;
+	height: 32px;
+	background-image: url(../images/520/bottom/4/tel.png);
+	margin: 5px 22.5px 0;
+}*/
+/***************2017-11-28三个子页面，banner，你是否遭受以下困扰？，我们为你提供*******************/
+.helplist2 ul{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+	display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+	justify-content: center;
+}
+.helplist2 ul:nth-of-type(2){
+	margin-top: 25px;
+}
+.helplist2 li a img{
+	width: 50%;
+	margin: 0 auto;
+}
+.helplist2 li>p{
+	font-size: 18px;
+	line-height: 1.1;
+	color: #f84d6a;
+	margin-top: 10px;
+}
+/*.head_content .title h2{
+	font-size: 43px;
+	color: #f84d6a;
+	font-weight: 900;
+}
+.head_content .title h3{
+	font-size: 18px;
+	margin-top: 12px;
+}
+.head_content .title h3:after{
+    content: '';
+    height: 2px;
+    width: 7.06%;
+    margin: 15px 0 15px 0;
+    background-color: #a0a0a0;
+    display: block;
+}
+.head_content .title p{
+	font-size: 15px;
+	color: #626262;
+	margin-bottom: 8px;
+}
+.head_content .title p:before{
+	content: '';
+    height: 8px;
+    width: 8px;
+    background-color: #f84d6a;
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    box-shadow: 0px 0px 3px 0px rgba(174, 30, 54, 0.22);
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(174, 30, 54, 0.22);
+    display: inline-block;
+}*/
+#dialog {
+    width: 74.67%;
+    text-align: center;
+    position: fixed;
+    z-index: 208;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.box_new .box_new_a1 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 37px;
+    height: 34px;
+}
+.box_new .box_new_a2 {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 96%;
+    height: 79%;
+}
+/**************2017-12-04 520.yidianling.com新底部按钮**************/
+.fixed_menu_5{
+	width: 100%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 99;
+}
+.fixed_menu_5 a{
+	color: white;
+}
+.fixed_menu_5 .left,.fixed_menu_5 .online{
+    float: left;
+    display: inline-block;
+}
+.fixed_menu_5 .left{
+	width: 54.93%;
+	height: 45px;
+	background-color: #34cd65;
+	font-size: 16px;
+	padding: 10px 0;
+}
+.fixed_menu_5 .left.left-new{
+	width: 35%;
+	font-size: 20px;
+	background-color: #fff;
+}
+@media (max-width: 321px) {
+    .fixed_menu_5 .left.left-new {
+        font-size:18px;
+    }
+}
+.fixed_menu_5 .left.left-new a{
+	width: 100%;
+	color: #999;
+}
+.fixed_menu_5 .left a{
+	width: 50%;
+    float: left;
+    display: inline-block;
+}
+.fixed_menu_5 .left a.wechat{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right: solid white 1px;
+}
+.fixed_menu_5 .left a span{
+	line-height: 24px;
+	display: block;
+}
+.fixed_menu_5 .left.left-new a span{
+	line-height: 45px;
+	display: inline;
+}
+.fixed_menu_5 .online{
+	width: 45.07%;
+	height: 65px;
+	background-color: #f84d6a;
+    line-height: 65px;
+}
+.fixed_menu_5 .online.online-new{
+	width:65%;
+}
+.fixed_menu_5 .online.online-new .icon_msg{
+	position: relative;
+	top: -2px;
+	width: 24px;
+	height: 24px;
+	background: url(../images/520/bottom/6/msg_new.png);
+	background-size: cover;
+}
+.fixed_menu_5 a i {
+	width: 30px;
+	height: 24px;
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0 3.6%;
+	display: inline-block;
+}
+.fixed_menu_5 .wechat .icon_wechat{
+	background-image: url(../images/520/bottom/5/wechat.png);
+}
+.fixed_menu_5 .tel2 .icon_tel2{
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/520/bottom/5/tel2.png);
+}
+.fixed_menu_5 .left-new .tel2 .icon_tel2{
+	position: relative;
+	top: -2px;
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/520/bottom/6/tel_new.png);
+}
+.fixed_menu_5 .online .icon_online{
+	width: 25px;
+	height: 25px;
+	background-image: url(../images/520/bottom/5/online.png);
+}
+.fixed_menu_5 .tel{
+	display: none;
+	width: 58px;
+	height: 58px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(174, 30, 54, 0.22);
+	position: absolute;
+	bottom: 115px;
+	right: 5px;
+}
+.fixed_menu_5 .tel .icon_tel{
+	width: 29px;
+    height: 31px;
+	background-image: url(../images/520/bottom/5/tel.png);
+	margin: 13.5px 0 0;
+}
+/************2017-12-08 520.yidianling.com新增3个子页面*************/
+.titleimg2{
+	width: 50.9333%;
+}
+/*************2017-12-09 520.yidianling.com微信私聊界面***************/
+.wechat_list{
+	background-color: #fbf9fe;
+	height: 100%;
+}
+.wechat_list header{
+	background-color: white;
+	font-size: 15px;
+	line-height: 49px;
+	border-bottom: solid 1px #EAEAEA;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+.wechat_list header i.icon_back{
+	width: 12px;
+	height: 21.5px;
+	background: url(../images/520/wechat_list/back.png) no-repeat;
+	background-size: cover;
+    vertical-align: middle;
+    margin-right: 15px;
+    display: inline-block;
+}
+.wechat_list .list>li{
+	background-color: white;
+	margin: 10px 2.667% 0 2.667%;
+	padding: 33px 12px;
+    overflow: hidden;
+    clear: both;
+    /*display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;*/
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.wechat_list .list>li>img{
+	width: 69px;
+	height: 69px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+}
+.wechat_list .list>li>span.tel:before{
+	content: '金牌专家助理';
+	font-size: 18px;
+	line-height: 22.5px;
+	margin-bottom: 8px;
+	font-weight: 400;
+	display: block;
+}
+.wechat_list .list>li>span.tel{
+	font-size: 14px;
+	float: left;
+    margin: 10px 0 10px 20px;
+}
+.wechat_list .list>li>span.num:before{
+	content: '已服务';
+	font-size: 14px;
+	line-height: 22.5px;
+	color: #333333;
+	display: block;
+}
+.wechat_list .list>li>span.num{
+	font-size: 20px;
+	color: #ef835d;
+	float: right;
+    margin: 10px 0;
+}
+.wechat_list .list>li>span.num:after{
+	content: '人';
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	display: inline-block;
+}
+.wechat_list .list>li:last-child{
+	background-color: transparent;
+	padding: 0;
+}
+.wechat_list .list ul.btn_wrapper{
+	width: 100%;
+}
+.wechat_list .list ul.btn_wrapper>li{
+	width: 31.55%;
+	text-align: center;
+	font-size: 13px;
+	background-color: white;
+	padding: 18px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+}
+.wechat_list .list ul.btn_wrapper>li:nth-child(2){
+	margin: 0 2.675%;
+}
+.wechat_list .list ul.btn_wrapper img{
+	width: 32.143%;
+	margin: 0 auto;
+	display: block;
+}
+.wechat_list .list ul.btn_wrapper a{
+	width: 70.8%;
+	height: 27px;
+	line-height: 27px;
+	font-size: 13px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 22px auto 0 auto;
+	display: block;
+}
+.wechat_list .list ul.btn_wrapper a.tel{
+	color: #25afff;
+	border: solid 1px #25afff;
+}
+.wechat_list .list ul.btn_wrapper a.online{
+	color: #ef835d;
+	border: solid 1px #ef835d;
+}
+.wechat_list .list ul.btn_wrapper a.wechat{
+	color: #09bb07;
+	border: solid 1px #09bb07;
+}
+.wechat_list footer{
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+	margin: 20px 0;
+}
+/************2017-12-15关于我们***********/
+.about_us .swiper-pagination-bullet{
+	background: #c0c0c0;
+}
+.about_us .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background: #f84d6a;
+}
+.about_us .head .logo{
+	position: static;
+}
+.about_us .tabs{
+	box-shadow: 0px 3.5px 10.5px 0px rgba(113, 0, 19, 0.04);
+	-webkit-box-shadow: 0px 3.5px 10.5px 0px rgba(113, 0, 19, 0.04);
+	background-color: white;
+	width: 100%;
+	top: 0;
+	z-index: 50;
+}
+.about_us .tabs a{
+	width: 25%;
+	line-height: 40px;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+	border-bottom: solid 2px white;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	display: inline-block;
+}
+.about_us .tabs a.on{
+	color: #f84d6a;
+	border-bottom: solid 2px #f84d6a;
+}
+.about_us .about .swiper-pagination{
+	margin-top: -25px;
+}
+.about_us .about .about_swiper .swiper-container{
+	width: 90.666%;
+}
+.about_us .about p{
+	color: #666666;
+	font-size: 15px;
+	margin: 20px 4.667% 50px 4.667%;
+}
+.about_us .about p>span:not(:last-of-type){
+	display: block;
+	margin-bottom: 10px;
+}
+.about_us .care{
+	background-color: #F6F6F6;
+	width: 80.8%;
+    padding: 0 9.6%;
+}
+.about_us .care_swiper{
+	text-align: left;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0px 3.5px 10.5px 0px rgba(26, 5, 9, 0.06);
+	-webkit-box-shadow: 0px 3.5px 10.5px 0px rgba(26, 5, 9, 0.06);
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom: 68px;
+}
+.about_us .care_swiper .swiper-pagination{
+	margin-top: 26px;
+}
+.about_us .care_swiper img{
+	border-top-left-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+}
+.about_us .care_swiper article{
+	padding: 22px 6.75% 30px 6.75%;
+}
+.about_us .care_swiper .title{
+	font-size: 20px;
+	font-weight: bold;
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+}
+.about_us .care_swiper .desp{
+	font-size: 15px;
+	line-height: 22px;
+	color: #666666;
+	word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 5; /** 显示的行数 **/
+    overflow: hidden;  /** 隐藏超出的内容 **/
+    margin: 11px 0;
+}
+.about_us .care_swiper .time{
+	font-size: 11px;
+	color: #b8b8b8;
+}
+.about_us .honor{
+	background-color: #fffaf2;
+}
+.about_us .honor_swiper{
+	margin-bottom: 70px;
+}
+.about_us .honor_swiper img{
+	width: 43.6%;
+	float: left;
+}
+.about_us .honor_swiper img:nth-child(n){
+	margin: 0 3.4% 20px 4.7%;
+}
+.about_us .honor_swiper img:nth-child(2n){
+	margin: 0 4.7% 20px 0;
+}
+.about_us .honor_swiper .swiper-pagination{
+	margin-top: 30px;
+}
+.about_us .contact{
+	background-color: white;
+}
+.about_us .contact section{
+	padding: 15px 0 10px 0;
+	margin: 0 4.7%;
+}
+.about_us .contact section.bordeBottom{
+	border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.about_us .contact section p{
+	font-size: 12.5px;
+	line-height: 21.5px;
+	text-align: left;
+}
+.about_us .contact p.title{
+	font-size: 14.5px;
+	font-weight: bold;
+}
+.about_us .contact p.title i{
+	width: 17px;
+    height: 15px;
+	background-size: cover;
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline-block;
+}
+.about_us .contact p.title i.icon_telWay{
+	background-image: url(../images/520/about_us/tel.png);
+}
+.about_us .contact p.title i.icon_businessContact{
+	background-image: url(../images/520/about_us/mail.png);
+}
+.about_us .contact p>a{
+	font-size: 20.5px;
+	font-weight: bold;
+	color: #333333;
+}
+#LRfloater0{
+	right: 0 !important;
+    top: auto !important;
+    bottom: 0;
+    width: 55%;
+    height: 65px;
+    overflow: hidden;
+}
+#LRfloater0 img{
+	float: right;
+	width: 100%;
+	height: 65px;
+}
+/******************20180117 底部新2种版本按钮测试*********************/
+.fixed_menu_6{
+	width: 100%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 2147483700;
+}
+.fixed_menu_6 .tel,.fixed_menu_6 .online{
+    display: inline-block;
+    float: left;
+    height: 60px;
+	line-height: 60px;
+}
+@media (max-width: 321px) {
+    .fixed_menu_6{
+        font-size:18px;
+    }
+}
+.fixed_menu_6 .tel{
+   width: 40%;
+   background-color: #FFFFFF;
+   color: #000000;
+}
+
+.fixed_menu_6 .online{
+	width: 60%;
+	background-color: #f84d6a;
+	color: #FFF;
+}
+/*.fixed_menu_6_xxlgd .online,*/
+/*.fixed_menu_6_xxlgd .online.online-new{*/
+	/*width: 100%;*/
+/*}*/
+/*.fixed_menu_6_xxlgd .left-new,*/
+/*.fixed_menu_6_xxlgd .tel{*/
+	/*display: none;*/
+
+/*}*/
+
+
+.fixed_menu_6 a i {
+	width: 19.5px;
+	height: 24px;
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0 3.6%;
+	display: inline-block;
+}
+.fixed_menu_6 .icon_tel{
+	background-image: url(../images/520/bottom/tel_black.png);
+}
+.fixed_menu_7{
+	padding: 20px 0;
+	width: 100%;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	z-index: 99;
+	font-size: 20px;
+	background-color: #FFFFFF;
+}
+.fixed_menu_7 .tel,.fixed_menu_7 .online{
+    display: inline-block;
+    float: left;
+    height: 44.5px;
+	line-height: 44.5px;
+	border-radius: 7px;
+}
+@media (max-width: 321px) {
+    .fixed_menu_7{
+        font-size:18px;
+    }
+}
+.fixed_menu_7 .tel{
+	margin: 0 1.33% 0 4%;
+	width: 40.8%;
+	background-color: #FFFFFF;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #f84d6a;
+	color: #f84d6a;
+}
+.fixed_menu_7 .online{
+	margin: 0 4% 0 1.33%;
+	width: 48.54%;
+	background-color: #f84d6a;
+	color: #FFF;
+}
+.fixed_menu_7 a i {
+	width: 19.5px;
+	height: 24px;
+	background-size: cover;
+	vertical-align: middle;
+	margin: 12.5px 3.6%;
+	display: inline-block;
+}
+.fixed_menu_7 .icon_tel{
+	background-image: url(../images/520/bottom/tel_pink.png);
+}
+.bubble:after{
+	display: none;
+    content: '1';
+    position: absolute;
+    right: 10%;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+   -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    background-color: red;
+    font-size: 22px;
+    color: white;
+}
+.toplist{
+	top: 600px;
+}
+.toplist2{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	padding: 17.5px 0;
+	width: 100%;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.toplist2>li{
+	flex: 1;
+	color: white;
+	text-align: center;
+}
+.toplist2>li:nth-child(2){
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+.toplist2>li>p{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 16px;
+	font-size: 13px;
+}
+.toplist2 .icon_top1,
+.toplist2 .icon_top2,
+.toplist2 .icon_top3{
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: top;
+	width: 31px;
+	height: 31px;
+}
+.toplist2 .icon_top1{
+	background: url(../images/520/toplist/icon-top1.png) no-repeat center;
+	background-size: cover;
+}
+.toplist2 .icon_top2{
+	background: url(../images/520/toplist/icon-top2.png) no-repeat center;
+	background-size: cover;
+}
+.toplist2 .icon_top3{
+	background: url(../images/520/toplist/icon-top3.png) no-repeat center;
+	background-size: cover;
+}
+/**************20180129挽回爱情改版*************/
+.wanhuiaiqing{
+	background-color: #f5f6f7;
+}
+.wanhuiaiqing .titleimg{
+	width: 63.53%!important;
+}
+.wanhuiaiqing .goConsult{
+	width: 38.09%;
+}
+.toplist3{
+	margin-top: 10px;
+	font-size: 0;
+	overflow: hidden;
+}
+.toplist3-li{
+	display: inline-block;
+	width: 29.867%;
+	padding-bottom: 20px;
+	background-color: #fff;
+	font-size: 14px;
+	color: #fb768d;
+	text-align: center;
+}
+.toplist3 .icon_top1,.toplist3 .icon_top2,.toplist3 .icon_top3{
+	display: inline-block;
+	margin: 20px 0 6px 0;
+	vertical-align: top;
+	width: 28px;
+	height: 28px;
+}
+.toplist3-li:first-child,.toplist3-li:last-child{
+	margin: 0 2.53%;
+}
+.toplist3 .icon_top1{
+	background: url(../images/wanhuiaiqing/toplist01.png) no-repeat center;
+	background-size: cover;
+}
+.toplist3 .icon_top2{
+	background: url(../images/wanhuiaiqing/toplist02.png) no-repeat center;
+	background-size: cover;
+}
+.toplist3 .icon_top3{
+	background: url(../images/wanhuiaiqing/toplist03.png) no-repeat center;
+	background-size: cover;
+}
+.wanhuiaiqing .helplist2 ul{
+	padding: 0 4%;
+	justify-content: space-around;
+}
+.wanhuiaiqing .helplist2 .goConsult{
+	margin: 30px auto 0 auto;
+}
+.resolve-list{
+	padding: 0 4%;
+	font-size: 0;
+	text-align: center;
+}
+.resolve-item{
+	display: inline-block;
+	float: left;
+	width: 48.555%;
+	margin-top: 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #fff;
+}
+.resolve-item:nth-child(2n){
+	margin-left: 2.89%;
+}
+.resolve-item img{
+	width: 25.69%;
+	margin: 20px auto 0 auto;
+}
+.resolve-item>a>p:nth-of-type(1){
+	font-size: 16px;
+	line-height: 27px;
+	color: #f84d6a;
+	font-weight: bold;
+}
+.resolve-item>a>p:nth-of-type(2){
+	height: 32px;
+	padding: 0 8.95% 14px 8.95%;
+	font-size: 12px;
+	line-height: 16px;
+	color: #666666;
+}
+.case{
+	background-color: #fff;
+}
+.case-swiper .swiper-container{
+	padding-bottom: 40px
+}
+.case-swiper .swiper-slide{
+	width: 60%;
+	margin: 0 10px;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.08);
+	border-radius: 10px;
+	border: solid 1px #ebebeb;
+	font-size: 13px;
+	line-height: 21px;
+	color: #666;
+	text-align: left;
+	overflow: hidden;
+}
+.case-swiper .swiper-slide .case-desc{
+	margin: 20px 9.1%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	overflow: hidden;
+}
+.case-swiper .swiper-pagination-bullet{
+	width: 6px;
+	height: 6px;
+	background-color: #fff;
+	border: solid 1px #cccccc;
+}
+.case-swiper .swiper-pagination-bullet-active{
+	background-color: #f84d6a;
+	border: solid 1px #f84d6a;
+}
+.case-content{
+	padding: 5px 9.1%;
+	background-color: #f5f5f5;
+	/*box-shadow: 0px -1px 0px 0px #f0f0f0;*/
+	font-size: 0;
+	color: #333;
+}
+.case-content>img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 11px;
+}
+.case-content>span{
+	font-size: 12px;
+	line-height: 30px;
+}
+.case-tips{
+	margin-bottom: 35px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #b3b3b3;
+}
+.case-mask-wrapper{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 200;
+}
+.case-swiper .case-mask-wrapper .swiper-slide{
+	width: 80%;
+    margin: 15% 10%;
+    height: 470px;
+    overflow: hidden;
+}
+.case-swiper .case-mask-wrapper .swiper-slide .case-desc{
+	-webkit-line-clamp: initial;
+	overflow-y: scroll;
+    height: 390px;
+}
+.case-mask-close{
+	display: none;
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    z-index: 201;
+    width: 30px;
+    height: 30px;
+    background: url(//love.yidianling.com/images/newHeader/close@2x.png) no-repeat center;
+    background-size: cover;
+}
+.case-swiper .case-mask-wrapper .case-mask-close{
+	display: block;
+}
+/*.case-mask .case-desc{
+	font-size: 16px;
+    background: white;
+    margin: 20% 10%;
+    padding: 4%;
+    text-align: left;
+    width: 72%;
+    height: 72%;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    border: solid 1px #ebebeb;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666;
+}*/
+.wanhuiaiqing .experts{
+	width: 92%;
+	padding: 0 4% 18.5px 4%;
+	background-color: transparent;
+}
+.experts-item{
+	position: relative;
+	float: left;
+	margin: 0 0 22.5px 0;
+	width: 48.406%;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.experts-item:nth-child(2n){
+	margin-left: 3.188%;
+}
+.experts-img{
+	min-height: 100px;
+	background-color: #e5e5e5;
+	border-radius: 10px 10px 0px 0px;
+}
+.experts-detail{
+	padding: 0 10px;
+}
+.experts-name{
+	margin: 8px 0 5px 0;
+	font-size: 17px;
+}
+.experts-desc{
+	height: 28px;
+	font-size: 11px;
+}
+.experts-btn{
+	position: absolute;
+	bottom: -17px;
+	left: 23.2035%;
+	width: 46.407%;
+	height: 25.5px;
+	line-height: 25.5px;
+	background-color: #f84e6a;
+	border-radius: 3px;
+	font-size: 10.5px;
+	color: white;
+	text-align: center;
+}
+.step{
+	position: relative;
+}
+.step ul{
+	padding: 0 4% 40px 4%;
+}
+.step li{
+	width: 33.333%;
+	float: left;
+}
+.step li>span{
+	float: left;
+    width: 35%;
+    margin-right: 5%;
+	font-size: 32px;
+	font-weight: 900;
+	color: #e94d66;
+}
+.step li>div{
+	width: 56px;
+	width: 59.38%;
+	font-weight: bold;
+	text-align: left;
+	float: left;
+}
+.step li>div>p:nth-child(1){
+	font-size: 13px;
+	color: #323333;
+	line-height: 18px;
+}
+.step li>div>p:nth-child(2){
+	margin-top: 4px;
+	font-size: 7px;
+	color: #999999;
+}
+.step-arrow{
+	position: absolute;
+	left: 30%;
+	top: 115px;
+	width: 35%;
+}
+.step-arrow img{
+	width: 11.81%;
+	display: inline-block;
+}
+/***********2018-03-22-m-情感壹点灵-好柿推广页************/
+.fl{
+	float: left;
+}
+.haoshi{
+	padding-bottom: 57.5px;
+	padding-bottom: 87.5px;
+	background-color: white;
+}
+.haoshi .head .head_content .title a.goConsult{
+	width: 44.12%;
+	height: 40px;
+	background-color: #ff6666;
+	border-radius: 19.5px;
+	border: solid 1px #f84d6a;
+	line-height: 40px;
+	color: white;
+}
+.haoshi_header .nav{
+	height:50px;
+	background: #fff;
+	border-bottom:1px solid #e6e6e6;
+	overflow: hidden;
+}
+.haoshi_header .logo{
+	display: inline-block;
+	width: 32.5%;
+	height: 50px;
+	background: url(//m.love.yidianling.com/images/logo.png) center no-repeat;
+	background-size: contain;
+	margin-left: 15px;
+}
+.haoshi_header .menu_nav a:hover{
+	color:#ff644f;
+}
+.haoshi_header li:nth-child(2){
+	display: inline-block;
+	width: 32.66667%;
+	height:50px;
+	background: url(//m.haoshi99.com/haoshi/mobile/haoshi/images/haoshi_promote/tel400.png) center no-repeat;
+	background-size: contain;
+    margin-right: 15px;
+    margin-top: -1px;
+}
+.haoshi_banner a{
+	position:absolute;
+	bottom:15%;
+	left:20px;
+	width:35%;
+}
+.haoshi h3{
+	margin: 40px 0 20px 0;
+	font-size: 25px;
+	line-height: 22px;
+	font-weight: normal;
+    text-align: left;
+}
+.haoshi .head .head_content .title {
+    margin-top: 46px;
+}
+.haoshi .underline:before{
+	display: inline-block;
+	content: '';
+	width: 4.5px;
+	height: 24.5px;
+    margin: 0 10px 0 0;
+    background-color: #ff644f;
+    vertical-align: top;
+}
+.haoshi .underline:after{
+	display: none;
+}
+.haoshi .titleimg{
+	width: 80.589%!important;
+}
+input[type=button]{
+	border: none;
+}
+input[type=tel]{
+	color: #333333;
+	-webkit-appearance: none;
+	border: none;
+}
+input[type=tel]:focus {
+	border-color: #9ecaed;
+	-webkit-box-shadow: 0 0 5px #9ecaed;
+	-moz-box-shadow: 0 0 5px #9ecaed;
+	-ms-box-shadow: 0 0 5px #9ecaed;
+	-o-box-shadow: 0 0 5px #9ecaed;
+	box-shadow: 0 0 5px #9ecaed;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #eeeeee;}
+input:-moz-placeholder, textarea:-moz-placeholder {color:#eeeeee;}
+input::-moz-placeholder, textarea::-moz-placeholder {color:#eeeeee;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#eeeeee;}
+.haoshi .inputbar {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 88.266%;
+	padding: 20px 5.867%;
+	background-color: rgba(0, 0, 0, 0.43);
+}
+.haoshi .inputbar-title{
+	padding-bottom: 10px;
+	font-size: 17.5px;
+	color: #ffffff;
+}
+.haoshi .inputbar-ctrl{
+	float: left;
+	width: 63.444%;
+	height: 40px;
+	padding-left: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	font-size: 12.5px;
+	line-height: 40px;
+}
+.haoshi .inputbar-btn{
+	float: right;
+	width: 32.326%;
+	height: 40px;
+	background-color: #ff644f;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #f9f9f9;
+}
+.haoshi .inputbar-remark{
+	display: none;
+	color: #fff;
+    font-size: 12px;
+    padding-top: 5px;
+    clear: both;
+}
+.haoshi .box{
+	width: 89.333%;
+	margin: 0 auto 30px auto;
+}
+.haoshi .helplist2{
+	padding: 40px 0 30px 0;
+	border-radius: 5px;
+	background-color: #f5f5f5;
+}
+.haoshi .helplist2 ul{
+	padding: 0;
+}
+.haoshi .helplist2 ul:nth-of-type(2){
+	margin-top: 30px;
+}
+.haoshi .helplist2 li>p{
+	font-size: 17px;
+	color: #ff644f;
+}
+.haoshi .helplist2 .goConsult{
+	width: 56.716%;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #FF644F;
+	font-size: 20px;
+}
+.haoshi .question{
+	padding: 0 0 50px 0;
+	border-radius: 5px;
+	background-color: #f5f5f5;
+}
+.haoshi .question-title{
+	width: 100%;
+	height: 170px;
+	background-color: #ffffff;
+	border-radius: 5px 5px 0px 0px;
+	background: url(../images/haoshi/bg01.png) no-repeat center;
+	background-size: cover;
+	font-size: 25px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 170px;
+}
+.haoshi .question-text:before{
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	content: '';
+	width: 17px;
+	height: 17px;
+	margin: 3px 10px 0 15px;
+	background: url(../images/haoshi/circle.png) no-repeat center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background-size: cover;
+}
+.haoshi .question-text{
+	position: relative;
+	padding: 27px 25px 0 42px;
+	font-size: 15px;
+	line-height: 23px;
+	text-align: left;
+}
+.haoshi .swiper-pagination{
+	margin-top: 10px;
+}
+.haoshi .swiper-pagination-bullet{
+	width: 21.5px;
+	height: 2px;
+	background-color: rgba(255, 95, 109, 0.4);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+.haoshi .swiper-pagination-bullet-active{
+	background-color: #ff5f6d;
+}
+.haoshi .resolve{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+    background-color: #f5f5f5;
+	text-align: left;
+}
+.haoshi .resolve-title{
+	margin: 25px 30px 13.5px 30px;
+	font-size: 18px;
+	color: #ff5f6d;
+	font-weight: bold;
+}
+.haoshi .resolve-desc{
+	padding: 0 30px 25px 30px;
+	font-size: 15px;
+	line-height: 24px;
+}
+.haoshi .resolve .swiper-pagination{
+	margin-top: 20px;
+}
+.haoshi .fixed_menu_6 .icon_tel{
+	background-image: url(../images/haoshi/tel.png)
+}
+.haoshi .fixed_menu_6 .tel{
+	width: 40%;
+	height: 57.5px;
+	background-color: #ffffff;
+	border: solid 1px #e5e5e5;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 57.5px;
+	color: #ff644f;
+}
+.haoshi .fixed_menu_6 .online{
+	width: 60%;
+	height: 57.5px;
+	background-color: #ff644f;
+	font-size: 18px;
+	line-height: 57.5px;
+	color: #ffffff;
+}
+.haoshi .fixed_menu_6 .icon_online{
+	width: 23px;
+	height: 26px;
+	background-image: url(../images/haoshi/online.png)
+}
+@media only screen and (max-width: 374px) {
+	.haoshi h3{
+		font-size: 22px;
+	}
+	.haoshi .inputbar-title{
+		font-size: 16px;
+	}
+	.haoshi .question-title{
+		height: 140px;
+		font-size: 22px;
+		line-height: 140px;
+	}
+}
+
+.appointment_specialist{background: #ffffff; margin-top: 10px}
+.appointment_specialist .title{ margin: 30px 0 25px 0}
+.appointment_specialist ul{ padding:0 6% 15px 6%;}
+.appointment_specialist li{border: .5px solid #b3b3b3; border-radius: 5px; height: 48px; display: flex; margin-bottom: 10px;}
+.appointment_specialist li.focus{border-color: #f7526e;height: 47px; border-width: 1px}
+.appointment_specialist li .appointment_specialist_title{ width: 46px; height: 34px; margin: 7px 0; border-right: .5px solid #b3b3b3; background: no-repeat center center;}
+.appointment_specialist li .form_name{ background-image: url("../images/appointment/appointment_name.png"); background-size: 22px 22px}
+.appointment_specialist li .form_tel{ background-image: url("../images/appointment/appointment_tel.png"); background-size: 22px 22px;}
+.appointment_specialist li .send_code{ line-height: 47px;  color: #f7526e; font-size: 14px; padding: 0 10px; text-align: right; border: 0 none; background: none}
+.appointment_specialist li .send_code_disabled{color: #b2b2b2}
+.appointment_specialist li .form_code{ background-image: url("../images/appointment/appointment_code.png"); background-size: 22px 22px}
+.appointment_specialist li .appointment_specialist_input {padding-left: 12px; border: 0 none; font-size: 16px; color: #333333;flex: 1; width: 100px;}
+.appointment_specialist .appointment_submit{ padding:0; font-size:15px;border-radius: 47px; border-color:#f7526e;  background: #f7526e; color: #ffffff; width: 88%;display: block; height: 47px; margin: 0 6% 25px 6%; border: 0 none}
+.appointment_specialist li .appointment_specialist_input::-webkit-input-placeholder { /* WebKit browsers */
+	font-size: 14px;
+	color: #b3b3b3;
+}
+.appointment_specialist li .appointment_specialist_input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	font-size: 14px;
+	color: #b3b3b3;
+}
+.appointment_specialist li .appointment_specialist_input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	font-size: 14px;
+	color: #b3b3b3;
+}
+.appointment_specialist li .appointment_specialist_input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	font-size: 14px;
+	color: #b3b3b3;
+}
+.appointment_specialist li input[type=tel]:focus{ border: 0 none;box-shadow: 0 0 0 #ffffff;}
+.weui-toast--text{ padding: 16px; font-size: 15px}
+.wanhuiaiqing .appointment_specialist .appointment_submit{ }
+
+/***************************** 2018/12/21部分页面改版天猫背书 ******************************/
+.new-logo{
+	width:100%;
+	/*border-top:8px solid linear-gradient(#FB2B3F, #DF2032);
+	border-image: -webkit-linear-gradient( #FB2B3F, #DF2032) 8 0;
+	border-image: -moz-linear-gradient( #FB2B3F, #DF2032) 8 0;
+	border-image: linear-gradient( #FB2B3F, #DF2032) 8 0; */
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:99;
+}
+.new-logo .border-top{
+	width:100%;
+	height:0.4rem;
+	background: linear-gradient(#FB2B3F, #DF2032);
+}
+.new-logo .logo-tmail{
+	width:61%;
+	margin:12px 0 11px 4.267%;
+	display: block;
+}
+.new-logo .icon-top{
+	width:19%;
+	display: block;
+	position:absolute;
+	right:4.267%;
+	top:0;
+}
+.new-top-1,.new-top-2{
+	width:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:99;
+}
+.new-top-1{
+	display: none;
+}
+.new-top-2{
+	display: block;
+}

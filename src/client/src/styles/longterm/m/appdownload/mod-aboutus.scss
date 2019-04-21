@@ -1,0 +1,21 @@
+
+  .mod-aboutus{ width: n(750); margin: 0 auto; padding:n(80) 0; background: #f0f0f0;
+    .main-title{ margin-top: 0;}
+    .content{ width: n(690); margin: n(60) auto 0; background: #fff; border-radius: n(8);
+      box-shadow: 0 n(10) n(20) rgba(0,0,0,.05);
+      .list{ width: 100%; height: n(380); font-size: 0; border-radius: n(8) n(8) 0 0; overflow: hidden;
+        img{ width: 100%;}
+
+        .swiper-pagination-bullet{ width: n(12); height: n(12); margin:0 n(4);
+
+          &.swiper-pagination-bullet-active{
+            background: #fff; width: n(40); border-radius: n(6);
+          }
+        }
+      }
+
+      .text{ padding:n(30);
+        p{ font-size: n(28); color: #666;}
+      }
+    }
+  }

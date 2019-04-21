@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>证书查询</title>
+  <link rel="stylesheet" href="./css/kz_dengru.css">
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header-img">
+      <img src="./images/kzimg/PC_LOGO@2X.png" alt="">
+      <span class="span1">壹点灵官网</span>
+    </div>
+    <div class="view-font">
+      <p class="view-font-p">壹点灵专业技能证书全国联网查询系统</p>
+    </div>
+    <div class="view-list">
+      <div class="view-list-header">
+        <div class="header2">
+          <p class="view-list-header-p">查询结果</p>
+          <div class="aa"></div>
+          <div class="bb"></div>
+          <div class="view-line"></div>
+        </div>
+        <div class="view-list-body">
+          <p class="font-p">个人信息</p>
+          <span class="alert-span">很抱歉，没有查询到您的信息！</span>
+          <ul class="phone-ul-2" id="userInfo">
+            <li><span class="phone-ul-span1">姓名：</span><span class="phone-ul-span2" id="userInfoName"></span></li>
+            <li><span class="phone-ul-span1">性别：</span><span class="phone-ul-span2" id="userInfoSex"></span></li>
+            <li><span class="phone-ul-span1">身份证号：</span><span class="phone-ul-span2"
+                                                               id="userIDcard"></span></li>
+          </ul>
+          <p class="font-p">证书信息</p>
+
+          <ul class="phone-ul" id="userZSInfo">
+
+
+          </ul>
+
+        </div>
+        <div class="a">
+          <a href="./index_kz.html" class="view-list-a">
+            重新查询
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="view-footer">
+      <p>Copyright © 2015 - 2019 杭州袋虎信息技术有限公司 心理咨询 浙ICP备18004841号-2</p>
+      <p>浙公网安备 33010802009067号</p>
+    </div>
+  </div>
+</div>
+<script src="//static.ydlcdn.com/mobile/js/jquery-2.1.0.min.js"></script>
+
+<script>
+  (function (doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth > 3000 ? 3000 : docEl.clientWidth;
+        if (!clientWidth) {
+          return
+        }
+        ;
+        docEl.style.fontSize = 100 * (clientWidth / 768) + 'px';
+      };
+    recalc();
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+  })(document, window)
+
+</script>
+<script>
+  $(function () {
+    var zsData = JSON.parse(sessionStorage.getItem('zsData')).data;
+    if(zsData !==""){
+      $('.alert-span').css('display',"none");
+      var str = [];
+      for (var i = 0; i < zsData.credential.length; i++) {
+        var data =zsData.credential[i];
+        str += ' <li> <div class="phone-ul-line"></div></li>'
+          + '<li><span class="phone-ul-span1">证书编号：</span><span class="phone-ul-span2" id="phone-ul-span3">'+data.certificate_number+'</span></li>'
+          + '<li><span class="phone-ul-span1">证书级别：</span><span class="phone-ul-span2">'+data.certificate_rank+'</span></li>'
+          + '<li><span class="phone-ul-span1">证书名称：</span><span class="phone-ul-span2">'+data.certificate_name+'</span></li>'
+          + '<li><span class="phone-ul-span1">评定成绩：</span><span class="phone-ul-span2">'+data.status+'</span></li>'
+        ;
+
+      }
+      $('#userInfoName').html(zsData.name);
+      $('#userInfoSex').html(zsData.gender);
+      $('#userIDcard').html(zsData.id_number);
+
+      $(str).appendTo($("#userZSInfo"));
+    }else{
+      $('#userInfo').css('display',"none");
+      $('.font-p').css('display',"none");
+    }
+  })
+</script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">
+  <!--<meta name="viewport" content="width=device-widht,initial-scale=1,maximum-scale=1,user-scalable=no">-->
+  <title>证书查询</title>
+  <link rel="stylesheet" href="./css/kz_dengru.css">
+</head>
+
+
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header-img">
+      <a href="https://www.ydl.com/">
+      <img src="./images/kzimg/PC_LOGO@2X.png" alt=""></a>
+      <a href="https://www.ydl.com/"> <span class="span1">壹点灵官网</span></a>
+    </div>
+    <div class="view-font">
+      <p class="view-font-p">壹点灵专业技能证书全国联网查询系统</p>
+    </div>
+    <div class="view-dengru">
+      <div class="view-x">
+        <p>姓名：</p>
+        <input type="text" placeholder="请输入姓名" id="userName">
+        <p>证书编号：</p>
+        <input type="text" placeholder="请输入证书编号" id="zsID">
+        <p>身份证号：</p>
+        <input type="text" placeholder="请输入身份证号" id="IDcard">
+        <span class="phone-font">*证书编号和身份证号必填一项</span>
+        <p>验证码：</p>
+        <input type="text" id="code_input" class="input-yzm" value="" placeholder="请输入验证码"/>
+        <div class="yzm">
+          <!--<img src="" alt="">-->
+          <div id="v_container"></div>
+        </div>
+        <p id="tingshi"></p>
+        <div class="div-1">
+          <a href="index_kz_jieguo.html" class="view-button" id="zsSubmit">查询</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2015 - 2019 杭州袋虎信息技术有限公司 心理咨询 浙ICP备18004841号-2</p>
+      <p>浙公网安备 33010802009067号</p>
+    </div>
+  </div>
+
+</div>
+<script>
+  (function (doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth > 3000 ? 3000 : docEl.clientWidth;
+        if (!clientWidth) {
+          return
+        }
+        ;
+        docEl.style.fontSize = 100 * (clientWidth / 768) + 'px';
+      };
+    recalc();
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+  })(document, window)
+</script>
+
+
+<script src="//static.ydlcdn.com/mobile/js/jquery-2.1.0.min.js"></script>
+
+<script src="./js/verifyCode.js"></script>
+<script>
+  var verifyCode = new GVerify("v_container");
+  document.getElementById("zsSubmit").onclick = function () {
+    var res = verifyCode.validate(document.getElementById("code_input").value);
+    if (res) {
+      ajaxCheck();
+      return false;
+    } else {
+      $('#tingshi').html('验证码输入错误');
+      return false;
+    }
+  }
+
+  function ajaxCheck() {
+    var userName = $('#userName').val();
+    var zsID = $('#zsID').val();
+    var IDcard = $('#IDcard').val();
+
+    $.ajax({
+      type: 'get',
+      async: false,
+      url: 'https://app2.yidianling.com/v3/credential/search?name='+userName+'&cf_number='+zsID+'&id_number='+IDcard,
+      dataType: "jsonp",
+      jsonp: "callback",
+      // url: 'https://easy-mock.com/mock/5b31fe9ea32a2426727592c2/yidianling/v3/sign/contract',
+      // dataType: "json",
+      success: function (data) {
+        console.log(data);
+        console.log(JSON.stringify(data))
+        sessionStorage.setItem('zsData',JSON.stringify(data))
+        window.location.href='./index_kz_jieguo.html';
+      }
+    })
+  }
+
+</script>
+<script src="./js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+@import '~@/styles/base/var.scss';
+@media only screen and (device-width: 375px) and (device-height: 812px) and(-webkit-device-pixel-ratio: 3) {
+  .page-hd-20190123{
+    .point{
+      bottom: n(40) !important;
+
+    }
+    .NianZhong .bottom_pic{ bottom: n(114)}
+    .NianZhong .swiper-slide .main-info{ margin-top: n(-50)}
+  }
+}

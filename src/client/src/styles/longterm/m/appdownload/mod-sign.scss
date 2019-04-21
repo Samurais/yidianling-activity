@@ -1,0 +1,13 @@
+
+  .mod-sign{ width: n(684); margin: n(60) auto 0;
+    .item{
+      display: inline-block; width: n(170); height: n(170);
+      text-align: center; position: relative;
+      img{ width: n(170); height: n(170); display: block;
+        position: absolute; left: 0; top:0; z-index: 1;
+      }
+      span{ font-size: n(28); color: #666; position: relative; z-index: 2;
+        top:n(110);
+      }
+    }
+  }

@@ -1,0 +1,65 @@
+
+.page-longterm-m-appdownload{ background: #fff;
+
+  .header{ position: relative; z-index: 10;
+    .top{ width: n(750); height: n(422); margin: 0 auto; position: relative; z-index: 1;
+      .top-bg{ font-size: 0; position: relative;
+        img{ width: n(750);}
+        &:after{ content: ""; display: block; width: n(750); font-size: 0; height: n(70);
+          position: absolute; bottom: n(-4); z-index: 2;
+          background:url($imgPathLongterm+'/appdownload/top-bg-line.png') no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+    .info{ width: n(690); font-size: 0; position: relative; background: #fff;
+      height: n(520); border-radius: n(30); margin:n(-360) auto 0; z-index: 2; box-sizing: border-box;
+      padding-top:n(80); box-shadow: 0 n(10) n(20) rgba(0,0,0,.1); position: relative;
+
+      .pic{width: n(690); margin: 0 auto; font-size: 0;
+        img{ width: 100%;}
+      }
+
+      .top-control{ width: 100%; height: n(80); text-align: center; position: absolute; bottom: n(50);
+        .fixed{ width: 100%; height: n(80); z-index: 10;
+          &.move{ position: fixed; bottom: n(20); left: 0;}
+        }
+      }
+      .ico-1{ display: block; width: n(92); height: n(80);
+        position: absolute; right: n(30); top:n(-10);
+        background:url($imgPathLongterm+'/appdownload/ico-1.png') no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .btn-fixed{ display: inline-block; width: n(564); height: n(80); line-height: n(80);
+      text-align: center; font-size: n(36); border-radius: n(40);
+      box-shadow: 0px 0px 8px 0px rgba(29, 161, 242, 0.66); color: #fff; position: relative;
+      background:#42C1FF linear-gradient(to left, #1DA1F2, #42C1FF);
+
+      &:after{ display: block; content: ""; width: n(132); height: n(64);
+        position: absolute; right: n(-30); top: n(-20);
+        background:url($imgPathLongterm+'/appdownload/ico-2.png') no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  .main{ border-top:n(20) solid #f0f0f0;}
+
+  .zbtime{ padding:n(80) 0 n(60) 0; width: n(750); margin: 0 auto; font-size: 0;
+    img{ width: 100%;}
+  }
+
+  .footer{ background: #f0f0f0; padding:n(40) 0 n(140);
+    p{ font-size: n(20); color: #999; text-align: center;}
+  }
+
+  @import "./mod-sign.scss";
+  @import "./mod-column.scss";
+  @import "./mod-zmd.scss";
+  @import "./mod-zxlj.scss";
+  @import "./mod-aboutus.scss";
+  @import "./mod-fuwu.scss";
+}

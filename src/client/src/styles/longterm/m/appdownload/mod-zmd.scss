@@ -1,0 +1,26 @@
+
+  .mod-zmd{ width: n(690); margin: n(34) auto 0;
+    border-top:n(1) solid #f0f0f0; height: n(80);
+    position: relative;
+
+    i{ display: block; position: absolute;
+      &.ico{ width: n(112); height: n(40); left: 0; top: n(20);
+        background:url($imgPathLongterm+'/appdownload/zmd-ico.png') no-repeat;
+        background-size: cover;
+      }
+      &.symbol{ font-weight: 500; width: n(12); height: n(20);
+        font-size: 0; right: 0; top: n(30);
+        background:url($imgPathLongterm+'/appdownload/zmd-symbol.png') no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .zmd-list{ width: n(500); overflow: hidden; height: n(40);
+      margin:n(20) 0 0 n(150);
+
+      li{ line-height: n(42);
+        color: #999; font-size: n(26);
+        em{ color: #0CACF4; margin:0 n(10);}
+      }
+    }
+  }
